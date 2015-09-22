@@ -10,3 +10,4 @@ pytest-cache
 pytest-django
 pytest-pep8
 pytest-sugar
+Werkzeug
