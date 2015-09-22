@@ -3,7 +3,6 @@ import dj_database_url
 
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
-project_path = lambda *a: os.path.join(BASE_DIR, *a)
 SECRET_KEY = '*a8-=b!z34(hv2ak7s(c_guh5*7aq!7z=da=cp&t3gd&ifrl6i'
 DEBUG = os.environ.get('DEBUG', False)
 
@@ -49,7 +48,7 @@ ROOT_URLCONF = 'dicodigital.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [project_path('templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,13 +85,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_ROOT = project_path('public', 'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (project_path('static'), )
-
-MEDIA_ROOT = project_path('public', 'media')
-MEDIA_URL = '/media/'
-ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 
 # CORS
