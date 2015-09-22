@@ -24,6 +24,7 @@ DJANGO_APPS = (
 
 THIRD_PARTY_APPS = (
     'django_extensions',
+    'corsheaders',
 )
 
 PROJECT_APPS = ()
@@ -90,6 +91,11 @@ STATICFILES_DIRS = (project_path('static'), )
 MEDIA_ROOT = project_path('public', 'media')
 MEDIA_URL = '/media/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
+
+
+# CORS
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Logging
