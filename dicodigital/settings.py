@@ -90,6 +90,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
+# Rest framework
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
+}
+
+
 # CORS
 
 CORS_ORIGIN_ALLOW_ALL = True
