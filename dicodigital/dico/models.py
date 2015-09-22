@@ -15,4 +15,5 @@ class Word(models.Model):
 class Definition(models.Model):
     word = models.ForeignKey(Word, verbose_name='mot')
     creator = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name='creator')
+    description = models.TextField(max_length=500)
     related = models.ManyToManyField(Word, related_name='related_words', verbose_name='mots relatifs')
