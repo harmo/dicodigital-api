@@ -1,0 +1,12 @@
+-r base.txt
+django-debug-toolbar
+django-debug-panel
+flake8
+ipdb
+pep8
+httpie
+pytest
+pytest-cache
+pytest-django
+pytest-pep8
+pytest-sugar
