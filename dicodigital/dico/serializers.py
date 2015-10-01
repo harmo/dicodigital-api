@@ -10,7 +10,7 @@ class Definition(serializers.ModelSerializer):
 
 
 class Word(serializers.ModelSerializer):
-    definitions = Definition(many=True)
+    definitions = Definition(many=True, read_only=True)
 
     class Meta:
         model = models.Word
