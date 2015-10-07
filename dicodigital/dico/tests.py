@@ -51,3 +51,11 @@ class ConnectedTest(TestUtils):
         response = self.c.get('/word/test-word/')
         self.assertEqual(response.status_code, 200)
 
+    def test_word_update(self):
+        data = {'label': 'test word'}
+        self.c.post('/word/', data, format='json')
+        update_data = {'label': 'test word (updated)', 'word': 'test-word'}
+        response = self.c.put('/word/', update_data, format='json')
+        self.assertEqual(response.data['label'], update_data['label'])
+        response = self.c.get('/word/test-word/')
+        self.assertNotEqual(response.data['label'], data['label'])
