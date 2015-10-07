@@ -9,6 +9,10 @@ class Word(viewsets.ModelViewSet,
     serializer_class = serializers.Word
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
+    def perform_create(self, serializer):
+        """ Add the current connected user as creator """
+        serializer.save(creator=self.request.user)
+
 
 class Definition(viewsets.ModelViewSet,
                  generics.DestroyAPIView):

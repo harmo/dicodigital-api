@@ -37,3 +37,10 @@ class ConnectedTest(TestUtils):
     def test_can_list_after_login(self):
         response = self.c.get('/word/')
         self.assertEqual(response.status_code, 200)
+
+    def test_creator_linked_during_word_creation(self):
+        data = {'label': 'test word'}
+        response = self.c.post('/word/', data, format='json')
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.data['label'], data['label'])
+        self.assertEqual(response.data['creator'], self.user.username)
