@@ -44,3 +44,10 @@ class ConnectedTest(TestUtils):
         self.assertEqual(response.status_code, 201)
         self.assertEqual(response.data['label'], data['label'])
         self.assertEqual(response.data['creator'], self.user.username)
+
+    def test_word_auto_slug(self):
+        data = {'label': 'test word'}
+        self.c.post('/word/', data, format='json')
+        response = self.c.get('/word/test-word/')
+        self.assertEqual(response.status_code, 200)
+
