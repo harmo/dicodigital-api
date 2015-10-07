@@ -6,3 +6,4 @@ django-suit
 django-extensions
 dj-database-url
 psycopg2
+django-autoslug
