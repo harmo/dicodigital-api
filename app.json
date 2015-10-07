@@ -1,6 +1,7 @@
 {
   "name": "Dicodigital Api",
   "description": "API for https://lite6.framapad.org/p/dicodigital",
+  "repository": "",
   "keywords": [
       "dicodigital",
       "django",
