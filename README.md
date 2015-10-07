@@ -1,6 +1,6 @@
 # Test, deploy !!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Anaethelion/dicodigital-api/tree/WIP)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Anaethelion/dicodigital-api/tree/WIP)
 
 # DicoDigital API
 
