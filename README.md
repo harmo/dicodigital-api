@@ -1,3 +1,7 @@
+# Test, deploy !!
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 # DicoDigital API
 
 API for [https://lite6.framapad.org/p/dicodigital](https://lite6.framapad.org/p/dicodigital)
