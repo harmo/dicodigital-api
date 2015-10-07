@@ -10,14 +10,17 @@ class Definition(serializers.ModelSerializer):
 
 
 class Word(serializers.ModelSerializer):
+    url = serializers.HyperlinkedIdentityField(
+        view_name='word-detail',
+        lookup_field='slug',
+        read_only=True)
     definitions = Definition(many=True, required=False)
     creator = serializers.SlugRelatedField(
-        slug_field='username',
-        read_only=True)
+        slug_field='username', read_only=True)
 
     class Meta:
         model = models.Word
-        fields = ('label', 'creator',
+        fields = ('label', 'creator', 'url',
                   'created_at', 'definitions')
 
     def create(self, validated_data):
