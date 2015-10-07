@@ -3,11 +3,12 @@ from rest_framework import generics, viewsets, permissions
 from . import serializers, models
 
 
-class Word(viewsets.ModelViewSet,
-           generics.DestroyAPIView):
+class Word(viewsets.ModelViewSet, generics.CreateAPIView,
+           generics.UpdateAPIView, generics.DestroyAPIView):
     queryset = models.Word.objects.all()
     serializer_class = serializers.Word
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    lookup_field = 'slug'
 
     def perform_create(self, serializer):
         """ Add the current connected user as creator """
