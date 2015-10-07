@@ -6,5 +6,4 @@ django-suit
 django-extensions
 dj-database-url
 dj-static
-gunicorn
 psycopg2
