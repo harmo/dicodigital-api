@@ -1,1 +1,1 @@
-web: gunicorn dicodigital.wsgi
+web: gunicorn dicodigital.wsgi --log-file -
