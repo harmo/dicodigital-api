@@ -1,0 +1,1 @@
+web: gunicorn dicodigital.wsgi --log-file -

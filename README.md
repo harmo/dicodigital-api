@@ -4,6 +4,10 @@ API for [https://lite6.framapad.org/p/dicodigital](https://lite6.framapad.org/p/
 
 Build with [Django](https://www.djangoproject.com/) and [Django-rest-framework](http://www.django-rest-framework.org/)
 
+# One click deploy !!
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Anaethelion/dicodigital-api/tree/WIP)
+
 
 ## Requirements
 

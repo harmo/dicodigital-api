@@ -3,7 +3,10 @@ import dj_database_url
 
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
-SECRET_KEY = '*a8-=b!z34(hv2ak7s(c_guh5*7aq!7z=da=cp&t3gd&ifrl6i'
+SECRET_KEY = os.environ.get(
+        'DJANGO_SECRET_KEY',
+        '*a8-=b!z34(hv2ak7s(c_guh5*7aq!7z=da=cp&t3gd&ifrl6i'
+    )
 DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = ['*']
@@ -88,7 +91,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'staticfiles'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # CORS
 
