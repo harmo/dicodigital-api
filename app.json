@@ -1,0 +1,31 @@
+{
+  "name": "Dicodigital Api",
+  "description": "API for https://lite6.framapad.org/p/dicodigital",
+  "repository": "https://github.com/Anaethelion/dicodigital-api/tree/WIP",
+  "keywords": [
+      "dicodigital",
+      "django",
+      "api",
+      "python"
+  ],
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "env": {
+    "DJANGO_SECRET_KEY": {
+      "description": "A randomly generated secret to secure your Django installation",
+      "generator": "secret"
+    },
+    "DJANGO_SETTINGS_MODULE": {
+        "description": "Settings file for django",
+        "value": "dicodigital.settings"
+    },
+    "DEBUG": {
+        "description": "Is it for debugging purposes ?",
+        "value": "False"
+    }
+  },
+  "scripts": {
+    "postdeploy": "sh -c 'python manage.py syncdb --noinput; python manage.py migrate --noinput'"
+  }
+}

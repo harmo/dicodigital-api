@@ -5,4 +5,5 @@ django-cors-headers
 django-suit
 django-extensions
 dj-database-url
-psycopg2
+dj-static
+django-autoslug

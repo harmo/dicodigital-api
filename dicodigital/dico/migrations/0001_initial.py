@@ -15,28 +15,25 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Definition',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True, serialize=False)),
-                ('creator', models.ForeignKey(verbose_name='creator', to=settings.AUTH_USER_MODEL)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
+                ('text', models.TextField(max_length=500)),
+                ('created_at', models.DateTimeField(auto_now_add=True)),
+                ('is_primary', models.BooleanField(default=False)),
+                ('contributor', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
             ],
         ),
         migrations.CreateModel(
             name='Word',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True, serialize=False)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('label', models.CharField(max_length=128)),
+                ('created_at', models.DateTimeField(auto_now_add=True)),
+                ('creator', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
             ],
-            options={
-                'verbose_name': 'Mot',
-            },
-        ),
-        migrations.AddField(
-            model_name='definition',
-            name='related',
-            field=models.ManyToManyField(verbose_name='mots relatifs', related_name='related_words', to='dico.Word'),
         ),
         migrations.AddField(
             model_name='definition',
             name='word',
-            field=models.ForeignKey(verbose_name='mot', to='dico.Word'),
+            field=models.ForeignKey(to='dico.Word'),
         ),
     ]
