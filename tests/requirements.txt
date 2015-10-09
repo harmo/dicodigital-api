@@ -1,0 +1,12 @@
+django
+djangorestframework
+django-cors-headers
+django-suit
+django-extensions
+dj-database-url
+dj-static
+django-autoslug
+pytest
+pytest-django
+pytest-sugar
+psycopg2

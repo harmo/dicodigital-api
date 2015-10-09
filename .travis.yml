@@ -1,0 +1,24 @@
+language: python
+
+python:
+  - "3.4"
+
+addons:
+  postgresql: "9.4"
+
+before_install:
+  - export TRAVIS=True
+  - export DJANGO_SETTINGS_MODULE=tests.settings
+
+install:
+  - pip install -r tests/requirements.txt --quiet
+
+env:
+  - PYTHONPATH=.:$PYTHONPATH
+
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+
+script:
+  - python manage.py migrate --noinput
+  - py.test --ds=tests.settings
