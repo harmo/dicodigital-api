@@ -87,3 +87,12 @@ class ConnectedTest(TestUtils):
         self.assertEqual(response.status_code, 201)
         self.assertEqual(len(response.data['definitions']), 1)
         self.assertEqual(response.data['creator'], response.data['definitions'][0]['contributor'])
+
+    def test_add_multiples_definitions_to_new_word(self):
+        data = {'label': 'test word',
+                'definitions': [{'text': 'this is the definition'},
+                                {'text': 'this is another definition'}]}
+        response = self.c.post(self.url_word_list, data, format='json')
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(len(response.data['definitions']), 2)
+
