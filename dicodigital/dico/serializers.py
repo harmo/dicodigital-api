@@ -5,10 +5,14 @@ from . import models
 class Definition(serializers.ModelSerializer):
     contributor = serializers.SlugRelatedField(
         slug_field='username', read_only=True)
+    word = serializers.HyperlinkedRelatedField(
+        view_name='word-detail',
+        lookup_field='slug',
+        read_only=True)
 
     class Meta:
         model = models.Definition
-        fields = ('text', 'contributor',
+        fields = ('word', 'text', 'contributor',
                   'is_primary', 'created_at')
 
 
