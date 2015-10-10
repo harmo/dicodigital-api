@@ -25,6 +25,6 @@
     }
   },
   "scripts": {
-    "postdeploy": "sh -c 'python manage.py syncdb --noinput; python manage.py migrate --noinput'; python manage.py loaddata fixtures/users.json words/definitions.json fixtures/definitions.json"
+    "postdeploy": "sh -c 'python manage.py migrate --noinput; python manage.py loaddata fixtures/users.json words/definitions.json fixtures/definitions.json'"
   }
 }
