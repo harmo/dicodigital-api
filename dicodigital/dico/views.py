@@ -11,7 +11,7 @@ class WordCursorPagination(pagination.CursorPagination):
 
 
 class DefinitionCursorPagination(pagination.CursorPagination):
-    ordering = 'word'
+    ordering = 'word_id'
     page_size = 20
 
 class Word(viewsets.ModelViewSet, generics.CreateAPIView,
