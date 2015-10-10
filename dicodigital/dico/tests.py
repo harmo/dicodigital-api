@@ -11,6 +11,8 @@ class TestUtils(TestCase):
         super(TestUtils, self).setUp()
         self.user = get_user_model().objects.create(
             username='test_user', password='test')
+        self.user2 = get_user_model().objects.create(
+            username='test_user2', password='test')
         self.c = APIClient()
         self.url_word_list = reverse('word-list')
         self.url_definition_list = reverse('definition-list')
@@ -125,3 +127,12 @@ class ConnectedTest(TestUtils):
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertEqual(definition_response.status_code, 201)
         self.assertEqual(word_response.data['url'], definition_response.data['word'])
+
+    def test_definition_contributor_different_than_word_creator(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        self.c.logout()
+        self.c.force_authenticate(user=self.user2)
+        definition_data = {'text': 'this is the definition', 'word': 'test-word'}
+        definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
+        self.assertNotEqual(definition_response.data['contributor'], word_response.data['creator'])
