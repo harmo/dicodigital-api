@@ -73,3 +73,17 @@ class ConnectedTest(TestUtils):
         update_data = {'label': 'test word (updated)', 'word': 'word-does-not-exist'}
         response = self.c.put(self.url_word_list, update_data, format='json')
         self.assertEqual(response.status_code, 404)
+
+    def test_add_empty_definition_to_new_word(self):
+        data = {'label': 'test word',
+                'definitions': [{}]}
+        response = self.c.post(self.url_word_list, data, format='json')
+        self.assertEqual(response.status_code, 400)
+
+    def test_creator_linked_during_add_definition_to_new_word(self):
+        data = {'label': 'test word',
+                'definitions': [{'text': 'this is the definition'}]}
+        response = self.c.post(self.url_word_list, data, format='json')
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(len(response.data['definitions']), 1)
+        self.assertEqual(response.data['creator'], response.data['definitions'][0]['contributor'])

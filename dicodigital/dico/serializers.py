@@ -3,6 +3,9 @@ from . import models
 
 
 class Definition(serializers.ModelSerializer):
+    contributor = serializers.SlugRelatedField(
+        slug_field='username', read_only=True)
+
     class Meta:
         model = models.Definition
         fields = ('text', 'contributor',
@@ -24,6 +27,11 @@ class Word(serializers.ModelSerializer):
                   'created_at', 'definitions')
 
     def create(self, validated_data):
+        definitions = []
         if 'definitions' in validated_data:
-            validated_data.pop('definitions')
-        return models.Word.objects.create(**validated_data)
+            definitions = validated_data.pop('definitions')
+        word = models.Word.objects.create(**validated_data)
+        for definition in definitions:
+            models.Definition.objects.create(
+                word=word, contributor=word.creator, **definition)
+        return word
