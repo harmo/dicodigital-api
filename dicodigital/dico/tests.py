@@ -136,3 +136,17 @@ class ConnectedTest(TestUtils):
         definition_data = {'text': 'this is the definition', 'word': 'test-word'}
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertNotEqual(definition_response.data['contributor'], word_response.data['creator'])
+
+    def test_if_definition_is_primary_only_if_first_added(self):
+        word_data = {'label': 'test word'}
+        self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': 'test-word'}
+        definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
+        self.assertTrue(definition_response.data['is_primary'])
+        definition_data = {'text': 'this is a second definition', 'word': 'test-word'}
+        definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
+        self.assertFalse(definition_response.data['is_primary'])
+        response = self.c.get(self.url_word_list + 'test-word/')
+        self.assertEqual(len(response.data['definitions']), 2)
+        self.assertTrue(response.data['definitions'][0]['is_primary'])
+        self.assertFalse(response.data['definitions'][1]['is_primary'])

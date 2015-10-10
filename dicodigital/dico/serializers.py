@@ -18,7 +18,13 @@ class Definition(serializers.ModelSerializer):
     def create(self, validated_data):
         word_slug = validated_data.pop('word')
         word = models.Word.objects.get(slug=word_slug)
-        return models.Definition.objects.create(word=word, **validated_data)
+        is_primary = True
+        if word.definitions.count() > 0:
+            is_primary = False
+        return models.Definition.objects.create(
+            word=word,
+            is_primary=is_primary,
+            **validated_data)
 
 
 class Word(serializers.ModelSerializer):
