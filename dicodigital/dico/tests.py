@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
+import pytest
 from django.core.urlresolvers import reverse
 from django.contrib.auth import get_user_model
 from django.test import TestCase
+from django.db import IntegrityError
 from rest_framework.test import APIClient
 
 
@@ -13,6 +15,7 @@ class TestUtils(TestCase):
             username='test_user', password='test')
         self.c = APIClient()
         self.url_word_list = reverse('word-list')
+        self.url_definition_list = reverse('definition-list')
 
 
 class AnonymousTest(TestUtils):
@@ -102,3 +105,8 @@ class ConnectedTest(TestUtils):
                                 {'text': 'this is another definition'}]}
         response = self.c.post(self.url_word_list, data, format='json')
         self.assertTrue(response.data['definitions'][0]['is_primary'])
+
+    def test_add_definition_to_none_word(self):
+        data = {'text': 'this is the definition'}
+        with pytest.raises(IntegrityError):
+            self.c.post(self.url_definition_list, data, format='json')

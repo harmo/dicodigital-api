@@ -5,6 +5,7 @@ from . import views
 
 router = DefaultRouter()
 router.register(r'word', views.Word)
+router.register(r'definition', views.Definition)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
