@@ -1,4 +1,4 @@
-# DicoDigital API  ![](https://travis-ci.org/harmo/dicodigital-api.svg?branch=master)
+# DicoDigital API  [![dicodigital-api on Travis](https://travis-ci.org/harmo/dicodigital-api.svg?branch=master)](https://travis-ci.org/harmo/dicodigital-api)
 
 API for [https://lite6.framapad.org/p/dicodigital](https://lite6.framapad.org/p/dicodigital)
 
