@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from rest_framework import generics, viewsets, permissions
 from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 from . import serializers, models
 
 
@@ -16,8 +17,10 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
         serializer.save(creator=self.request.user)
 
     def put(self, request, *args, **kwargs):
+        """ Retrieve a word with its slug and update it """
         word_slug = request.data.pop('word')
-        word = models.Word.objects.get(slug=word_slug)
+        queryset = models.Word.objects.all()
+        word = get_object_or_404(queryset, slug=word_slug)
         serializer = serializers.Word(
             word, data=request.data, context={'request': request})
         if serializer.is_valid():

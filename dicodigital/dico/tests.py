@@ -61,3 +61,15 @@ class ConnectedTest(TestUtils):
         self.assertEqual(response.data['label'], update_data['label'])
         response = self.c.get(self.url_word_list + 'test-word/')
         self.assertNotEqual(response.data['label'], data['label'])
+
+    def test_word_label_empty(self):
+        data = {'label': ''}
+        response = self.c.post(self.url_word_list, data, format='json')
+        self.assertEqual(response.status_code, 400)
+
+    def test_label_update_word_not_found(self):
+        data = {'label': 'test word'}
+        self.c.post(self.url_word_list, data, format='json')
+        update_data = {'label': 'test word (updated)', 'word': 'word-does-not-exist'}
+        response = self.c.put(self.url_word_list, update_data, format='json')
+        self.assertEqual(response.status_code, 404)
