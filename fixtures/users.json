@@ -1,192 +1,192 @@
 [
     {
-        "model": "auth.user",
         "pk": "1",
         "fields": {
-            "is_superuser": true,
-            "is_staff": true,
+            "username": "admin",
             "is_active": true,
-            "username": "admin"
-        }
+            "is_staff": true,
+            "is_superuser": true
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "2",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "anon",
             "is_active": true,
-            "username": "anon"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "3",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "Farlistener",
             "is_active": true,
-            "username": "Farlistener"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "4",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "Le pagu",
             "is_active": true,
-            "username": "Le pagu"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "5",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "Ma\u00eftan\u00e9",
             "is_active": true,
-            "username": "Ma\u00eftan\u00e9"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "6",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "NanaL",
             "is_active": true,
-            "username": "NanaL"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "7",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "Natouille",
             "is_active": true,
-            "username": "Natouille"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "8",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "Nico toussa",
             "is_active": true,
-            "username": "Nico toussa"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "9",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "Relf",
             "is_active": true,
-            "username": "Relf"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "10",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "Simon",
             "is_active": true,
-            "username": "Simon"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "11",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "_o< Koin Koin",
             "is_active": true,
-            "username": "_o< Koin Koin"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "12",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "carobee",
             "is_active": true,
-            "username": "carobee"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "13",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "goldoraf",
             "is_active": true,
-            "username": "goldoraf"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "14",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "harmo",
             "is_active": true,
-            "username": "harmo"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "15",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "nico",
             "is_active": true,
-            "username": "nico"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "16",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "numahell",
             "is_active": true,
-            "username": "numahell"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "17",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "saisai",
             "is_active": true,
-            "username": "saisai"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "18",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "ticabri",
             "is_active": true,
-            "username": "ticabri"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     },
     {
-        "model": "auth.user",
         "pk": "19",
         "fields": {
-            "is_superuser": false,
-            "is_staff": false,
+            "username": "tth",
             "is_active": true,
-            "username": "tth"
-        }
+            "is_staff": false,
+            "is_superuser": false
+        },
+        "model": "auth.user"
     }
 ]
