@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
-import pytest
 from django.core.urlresolvers import reverse
 from django.contrib.auth import get_user_model
 from django.test import TestCase
-from django.db import IntegrityError
 from rest_framework.test import APIClient
 
 
@@ -116,5 +114,6 @@ class ConnectedTest(TestUtils):
 
     def test_add_definition_to_none_word(self):
         data = {'text': 'this is the definition'}
-        with pytest.raises(IntegrityError):
-            self.c.post(self.url_definition_list, data, format='json')
+        response = self.c.post(self.url_definition_list, data, format='json')
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.data, 'word parameter is missing')

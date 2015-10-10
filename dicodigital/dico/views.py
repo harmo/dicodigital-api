@@ -32,8 +32,20 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
         return Response(serializer.data)
 
 
-class Definition(viewsets.ModelViewSet,
+class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
                  generics.DestroyAPIView):
     queryset = models.Definition.objects.all()
     serializer_class = serializers.Definition
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+
+    def perform_create(self, serializer):
+        """ Add the current connected user as contributor """
+        serializer.save(contributor=self.request.user)
+
+    def create(self, request, *args, **kwargs):
+        """ Check if word parameter is in data """
+        if 'word' not in request.data:
+            return Response('word parameter is missing',
+                            status=status.HTTP_400_BAD_REQUEST)
+
+        return super(Definition, self).create(request, *args, **kwargs)
