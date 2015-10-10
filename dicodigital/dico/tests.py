@@ -117,3 +117,11 @@ class ConnectedTest(TestUtils):
         response = self.c.post(self.url_definition_list, data, format='json')
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.data, 'word parameter is missing')
+
+    def test_add_definition_to_existant_word(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': 'test-word'}
+        definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
+        self.assertEqual(definition_response.status_code, 201)
+        self.assertEqual(word_response.data['url'], definition_response.data['word'])

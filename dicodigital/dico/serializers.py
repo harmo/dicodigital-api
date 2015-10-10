@@ -15,6 +15,11 @@ class Definition(serializers.ModelSerializer):
         fields = ('word', 'text', 'contributor',
                   'is_primary', 'created_at')
 
+    def create(self, validated_data):
+        word_slug = validated_data.pop('word')
+        word = models.Word.objects.get(slug=word_slug)
+        return models.Definition.objects.create(word=word, **validated_data)
+
 
 class Word(serializers.ModelSerializer):
     url = serializers.HyperlinkedIdentityField(

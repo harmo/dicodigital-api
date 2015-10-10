@@ -40,12 +40,12 @@ class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
 
     def perform_create(self, serializer):
         """ Add the current connected user as contributor """
-        serializer.save(contributor=self.request.user)
+        serializer.save(contributor=self.request.user,
+                        word=self.request.data['word'])
 
     def create(self, request, *args, **kwargs):
         """ Check if word parameter is in data """
-        if 'word' not in request.data:
+        if 'word' not in self.request.data:
             return Response('word parameter is missing',
                             status=status.HTTP_400_BAD_REQUEST)
-
         return super(Definition, self).create(request, *args, **kwargs)
