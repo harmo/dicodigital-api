@@ -5,10 +5,14 @@ from django.shortcuts import get_object_or_404
 from . import serializers, models
 
 
-class CustomCursorPagination(pagination.CursorPagination):
+class WordCursorPagination(pagination.CursorPagination):
     ordering = 'slug'
     page_size = 20
 
+
+class DefinitionCursorPagination(pagination.CursorPagination):
+    ordering = 'word'
+    page_size = 20
 
 class Word(viewsets.ModelViewSet, generics.CreateAPIView,
            generics.UpdateAPIView, generics.DestroyAPIView):
@@ -16,7 +20,7 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
     serializer_class = serializers.Word
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     lookup_field = 'slug'
-    pagination_class = CustomCursorPagination
+    pagination_class = WordCursorPagination
 
     def perform_create(self, serializer):
         """ Add the current connected user as creator """
@@ -43,7 +47,7 @@ class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
     queryset = models.Definition.objects.all()
     serializer_class = serializers.Definition
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
-    pagination_class = CustomCursorPagination
+    pagination_class = DefinitionCursorPagination
 
     def perform_create(self, serializer):
         """ Add the current connected user as contributor """
