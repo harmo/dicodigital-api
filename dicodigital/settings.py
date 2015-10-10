@@ -35,7 +35,8 @@ PROJECT_APPS = (
     'dicodigital.dico',
 )
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
+if 'TRAVIS' not in os.environ:
+    INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
