@@ -79,6 +79,14 @@ DATABASES = {
 }
 
 
+# Cache
+# https://docs.djangoproject.com/en/1.8/ref/settings/#caches
+CACHE = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+    }
+}
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
