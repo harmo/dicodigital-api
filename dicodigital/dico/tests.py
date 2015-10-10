@@ -77,6 +77,14 @@ class ConnectedTest(TestUtils):
         response = self.c.put(self.url_word_list, update_data, format='json')
         self.assertEqual(response.status_code, 404)
 
+    def test_word_update_on_none_word(self):
+        data = {'label': 'test word'}
+        self.c.post(self.url_word_list, data, format='json')
+        update_data = {'label': 'test word (updated)'}
+        response = self.c.put(self.url_word_list, update_data, format='json')
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.data, 'word parameter is missing')
+
     def test_add_empty_definition_to_new_word(self):
         data = {'label': 'test word',
                 'definitions': [{}]}
