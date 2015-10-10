@@ -28,6 +28,7 @@ THIRD_PARTY_APPS = (
     'django_extensions',
     'rest_framework',
     'corsheaders',
+    'rest_framework_swagger',
 )
 
 PROJECT_APPS = (

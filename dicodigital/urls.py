@@ -21,4 +21,5 @@ import dicodigital.dico.urls
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include(dicodigital.dico.urls)),
+    url(r'^docs/', include('rest_framework_swagger.urls')),
 ]
