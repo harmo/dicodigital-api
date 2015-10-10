@@ -32,6 +32,10 @@ class Word(serializers.ModelSerializer):
             definitions = validated_data.pop('definitions')
         word = models.Word.objects.create(**validated_data)
         for definition in definitions:
+            is_primary = True if definition == definitions[0] else False
             models.Definition.objects.create(
-                word=word, contributor=word.creator, **definition)
+                word=word,
+                contributor=word.creator,
+                is_primary=is_primary,
+                **definition)
         return word

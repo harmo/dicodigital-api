@@ -96,3 +96,9 @@ class ConnectedTest(TestUtils):
         self.assertEqual(response.status_code, 201)
         self.assertEqual(len(response.data['definitions']), 2)
 
+    def test_primary_definition_was_set_during_add_definitions_to_new_word(self):
+        data = {'label': 'test word',
+                'definitions': [{'text': 'this is the definition'},
+                                {'text': 'this is another definition'}]}
+        response = self.c.post(self.url_word_list, data, format='json')
+        self.assertTrue(response.data['definitions'][0]['is_primary'])
