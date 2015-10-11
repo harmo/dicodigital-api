@@ -48,6 +48,15 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
             serializer.save()
         return Response(serializer.data)
 
+    def list(self, request, *args, **kwargs):
+        """
+        ---
+        parameters:
+            - name: search
+              paramType: query
+        """
+        return super(Word, self).list(request, *args, **kwargs)
+
 
 class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
                  generics.DestroyAPIView):
