@@ -17,6 +17,9 @@ class TestUtils(TestCase):
         self.url_word_list = reverse('word-list')
         self.url_definition_list = reverse('definition-list')
 
+    def url_word_search(self, slug):
+        return self.url_word_list + '?search=' + slug
+
 
 class AnonymousTest(TestUtils):
 
@@ -53,7 +56,7 @@ class ConnectedTest(TestUtils):
     def test_word_auto_slug(self):
         data = {'label': 'test word'}
         self.c.post(self.url_word_list, data, format='json')
-        response = self.c.get('/word/test-word/')
+        response = self.c.get(self.url_word_search('test word'))
         self.assertEqual(response.status_code, 200)
 
     def test_word_update(self):
@@ -62,8 +65,10 @@ class ConnectedTest(TestUtils):
         update_data = {'label': 'test word (updated)', 'word': 'test-word'}
         response = self.c.put(self.url_word_list, update_data, format='json')
         self.assertEqual(response.data['label'], update_data['label'])
-        response = self.c.get(self.url_word_list + 'test-word/')
-        self.assertNotEqual(response.data['label'], data['label'])
+        response = self.c.get(self.url_word_search('test word'))
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertNotEqual(results[0]['label'], data['label'])
 
     def test_word_label_empty(self):
         data = {'label': ''}
@@ -146,7 +151,8 @@ class ConnectedTest(TestUtils):
         definition_data = {'text': 'this is a second definition', 'word': 'test-word'}
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertFalse(definition_response.data['is_primary'])
-        response = self.c.get(self.url_word_list + 'test-word/')
-        self.assertEqual(len(response.data['definitions']), 2)
-        self.assertTrue(response.data['definitions'][0]['is_primary'])
-        self.assertFalse(response.data['definitions'][1]['is_primary'])
+        response = self.c.get(self.url_word_search('test word'))
+        results = response.data.get('results')
+        self.assertEqual(len(results[0]['definitions']), 2)
+        self.assertTrue(results[0]['definitions'][0]['is_primary'])
+        self.assertFalse(results[0]['definitions'][1]['is_primary'])

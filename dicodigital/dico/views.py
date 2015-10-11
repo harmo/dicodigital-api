@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from rest_framework import generics, viewsets, permissions, status, pagination
+from rest_framework import generics, viewsets, permissions, status, pagination, filters
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 from . import serializers, models
@@ -22,6 +22,8 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     lookup_field = 'slug'
     pagination_class = WordCursorPagination
+    filter_backends = (filters.SearchFilter,)
+    search_fields = ('label',)
 
     def get_queryset(self):
         return super(Word, self).get_queryset()\
