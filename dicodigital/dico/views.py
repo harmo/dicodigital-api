@@ -14,6 +14,7 @@ class DefinitionCursorPagination(pagination.CursorPagination):
     ordering = 'word_id'
     page_size = 20
 
+
 class Word(viewsets.ModelViewSet, generics.CreateAPIView,
            generics.UpdateAPIView, generics.DestroyAPIView):
     queryset = models.Word.objects.all()
@@ -21,6 +22,11 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     lookup_field = 'slug'
     pagination_class = WordCursorPagination
+
+    def get_queryset(self):
+        return models.Word.objects\
+            .prefetch_related('creator', 'definitions__contributor')\
+            .all()
 
     def perform_create(self, serializer):
         """ Add the current connected user as creator """
@@ -48,6 +54,11 @@ class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
     serializer_class = serializers.Definition
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     pagination_class = DefinitionCursorPagination
+
+    def get_queryset(self):
+        return models.Definition.objects\
+            .prefetch_related('contributor', 'word')\
+            .all()
 
     def perform_create(self, serializer):
         """ Add the current connected user as contributor """
