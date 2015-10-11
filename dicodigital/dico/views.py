@@ -20,7 +20,7 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
     queryset = models.Word.objects.all()
     serializer_class = serializers.Word
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
-    lookup_field = 'slug'
+    lookup_field = 'id'
     pagination_class = WordCursorPagination
     filter_backends = (filters.SearchFilter,)
     search_fields = ('label',)

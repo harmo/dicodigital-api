@@ -7,7 +7,7 @@ class Definition(serializers.ModelSerializer):
         slug_field='username', read_only=True)
     word = serializers.HyperlinkedRelatedField(
         view_name='word-detail',
-        lookup_field='slug',
+        lookup_field='id',
         read_only=True)
 
     class Meta:
@@ -30,7 +30,7 @@ class Definition(serializers.ModelSerializer):
 class Word(serializers.ModelSerializer):
     url = serializers.HyperlinkedIdentityField(
         view_name='word-detail',
-        lookup_field='slug',
+        lookup_field='id',
         read_only=True)
     definitions = Definition(many=True, required=False)
     creator = serializers.SlugRelatedField(
