@@ -24,9 +24,8 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
     pagination_class = WordCursorPagination
 
     def get_queryset(self):
-        return models.Word.objects\
-            .prefetch_related('creator', 'definitions__contributor')\
-            .all()
+        return super(Word, self).get_queryset()\
+            .prefetch_related('creator', 'definitions__contributor')
 
     def perform_create(self, serializer):
         """ Add the current connected user as creator """
@@ -56,9 +55,8 @@ class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
     pagination_class = DefinitionCursorPagination
 
     def get_queryset(self):
-        return models.Definition.objects\
-            .prefetch_related('contributor', 'word')\
-            .all()
+        return super(Definition, self).get_queryset()\
+            .prefetch_related('contributor', 'word')
 
     def perform_create(self, serializer):
         """ Add the current connected user as contributor """
