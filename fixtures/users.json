@@ -1,0 +1,192 @@
+[
+    {
+        "model": "auth.user",
+        "pk": "1",
+        "fields": {
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "username": "admin"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "2",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "anon"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "3",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "Farlistener"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "4",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "Le pagu"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "5",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "Ma\u00eftan\u00e9"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "6",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "NanaL"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "7",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "Natouille"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "8",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "Nico toussa"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "9",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "Relf"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "10",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "Simon"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "11",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "_o< Koin Koin"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "12",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "carobee"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "13",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "goldoraf"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "14",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "harmo"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "15",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "nico"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "16",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "numahell"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "17",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "saisai"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "18",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "ticabri"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "19",
+        "fields": {
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "username": "tth"
+        }
+    }
+]

@@ -1,7 +1,6 @@
 {
   "name": "Dicodigital Api",
   "description": "API for https://lite6.framapad.org/p/dicodigital",
-  "repository": "https://github.com/harmo/dicodigital-api",
   "keywords": [
       "dicodigital",
       "django",
@@ -26,6 +25,6 @@
     }
   },
   "scripts": {
-    "postdeploy": "sh -c 'python manage.py syncdb --noinput; python manage.py migrate --noinput'"
+    "postdeploy": "sh -c 'python manage.py migrate --noinput; python manage.py loaddata fixtures/users.json fixtures/words.json fixtures/definitions.json'"
   }
 }
