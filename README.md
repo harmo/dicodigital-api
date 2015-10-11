@@ -14,6 +14,10 @@ Build with [Django](https://www.djangoproject.com/) and [Django-rest-framework](
 * Python 3
 * Virtualenv
 
+## API Documentation
+
+[Django REST Swagger](https://github.com/marcgibbons/django-rest-swagger/) was installed and is accessible directly from your app to ```/docs/```
+
 ## Development
 
 Get the project and install dependencies:

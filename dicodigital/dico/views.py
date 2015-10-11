@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from rest_framework import generics, viewsets, permissions, status, pagination
+from rest_framework import generics, viewsets, permissions, status, pagination, filters
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 from . import serializers, models
@@ -20,13 +20,14 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
     queryset = models.Word.objects.all()
     serializer_class = serializers.Word
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
-    lookup_field = 'slug'
+    lookup_field = 'id'
     pagination_class = WordCursorPagination
+    filter_backends = (filters.SearchFilter,)
+    search_fields = ('label',)
 
     def get_queryset(self):
-        return models.Word.objects\
-            .prefetch_related('creator', 'definitions__contributor')\
-            .all()
+        return super(Word, self).get_queryset()\
+            .prefetch_related('creator', 'definitions__contributor')
 
     def perform_create(self, serializer):
         """ Add the current connected user as creator """
@@ -47,6 +48,15 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
             serializer.save()
         return Response(serializer.data)
 
+    def list(self, request, *args, **kwargs):
+        """
+        ---
+        parameters:
+            - name: search
+              paramType: query
+        """
+        return super(Word, self).list(request, *args, **kwargs)
+
 
 class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
                  generics.DestroyAPIView):
@@ -56,9 +66,8 @@ class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
     pagination_class = DefinitionCursorPagination
 
     def get_queryset(self):
-        return models.Definition.objects\
-            .prefetch_related('contributor', 'word')\
-            .all()
+        return super(Definition, self).get_queryset()\
+            .prefetch_related('contributor', 'word')
 
     def perform_create(self, serializer):
         """ Add the current connected user as contributor """
