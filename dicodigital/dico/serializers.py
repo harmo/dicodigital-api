@@ -38,7 +38,7 @@ class Word(serializers.ModelSerializer):
 
     class Meta:
         model = models.Word
-        fields = ('label', 'creator', 'url',
+        fields = ('id', 'label', 'creator', 'url',
                   'created_at', 'definitions')
 
     def create(self, validated_data):
