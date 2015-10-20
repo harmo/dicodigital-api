@@ -5,14 +5,7 @@ from django.db import models, migrations
 from django.conf import settings
 
 
-# Functions from the following migrations need manual copying.
-# Move them and any dependencies into this file, then update the
-# RunPython operations to refer to the local versions:
-# dicodigital.dico.migrations.0003_word_slug
-
 class Migration(migrations.Migration):
-
-    replaces = [('dico', '0001_initial'), ('dico', '0002_auto_20151001_2018'), ('dico', '0003_word_slug'), ('dico', '0004_remove_word_slug')]
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
