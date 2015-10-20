@@ -82,7 +82,7 @@ class ConnectedTest(TestUtils):
         update_data = {'label': 'test word (updated)'}
         response = self.c.put(self.url_word_list, update_data, format='json')
         self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'Word parameter is missing')
+        self.assertEqual(response.data, 'word parameter is missing')
 
     def test_add_empty_definition_to_new_word(self):
         data = {'label': 'test word',
@@ -117,7 +117,7 @@ class ConnectedTest(TestUtils):
         data = {'text': 'this is the definition'}
         response = self.c.post(self.url_definition_list, data, format='json')
         self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'Word parameter is missing')
+        self.assertEqual(response.data, 'word parameter is missing')
 
     def test_add_definition_to_existant_word(self):
         word_data = {'label': 'test word'}
@@ -150,3 +150,43 @@ class ConnectedTest(TestUtils):
         self.assertEqual(len(results[0]['definitions']), 2)
         self.assertTrue(results[0]['definitions'][0]['is_primary'])
         self.assertFalse(results[0]['definitions'][1]['is_primary'])
+
+    def test_definition_update_with_missing_id(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
+        self.c.post(self.url_definition_list, definition_data, format='json')
+        definition_updated = {'text': 'this is the updated definition'}
+        response = self.c.put(self.url_definition_list, definition_updated)
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.data, 'definition parameter is missing')
+
+    def test_definition_update_with_none_id(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
+        self.c.post(self.url_definition_list, definition_data, format='json')
+        definition_updated = {'text': 'this is the updated definition', 'definition': ''}
+        response = self.c.put(self.url_definition_list, definition_updated)
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.data, 'definition ID cannot be None')
+
+    def test_definition_update_with_unknow_id(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
+        self.c.post(self.url_definition_list, definition_data, format='json')
+        definition_updated = {'text': 'this is the updated definition', 'definition': 0}
+        response = self.c.put(self.url_definition_list, definition_updated)
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.data, 'definition ID must be an integer > 0')
+
+    def test_definition_update_successful(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
+        def_response = self.c.post(self.url_definition_list, definition_data, format='json')
+        definition_updated = {'text': 'this is the updated definition', 'definition': def_response.data['id']}
+        response = self.c.put(self.url_definition_list, definition_updated, format='json')
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'this is the updated definition')

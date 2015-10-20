@@ -20,20 +20,29 @@ class Checks(object):
     class Meta:
         abstract = True
 
+    def _check_id(self, keyword):
+        """ Check if <keyword> parameter is in data """
+        if keyword not in self.request.data:
+            return '{} parameter is missing'.format(keyword)
+        """ Check if <keyword> parameter is not None """
+        if self.request.data[keyword] == '':
+            return '{} ID cannot be None'.format(keyword)
+        """ Check if <keyword> parameter is > 0 """
+        if int(self.request.data[keyword]) < 1:
+            return '{} ID must be an integer > 0'.format(keyword)
+
     def check_word_id(self):
-        """ Check if word parameter is in data """
-        if 'word' not in self.request.data:
-            return 'Word parameter is missing'
-        """ Check if word parameter is not None """
-        if self.request.data['word'] is None:
-            return 'Word ID cannot be None'
-        """ Check if word parameter is > 0 """
-        if self.request.data['word'] < 1:
-            return 'Word ID must be an integer > 0'
+        message = self._check_id('word')
+        if message is not None:
+            return message
+
+    def check_definition_id(self):
+        message = self._check_id('definition')
+        if message is not None:
+            return message
 
 
-class Word(viewsets.ModelViewSet, generics.CreateAPIView,
-           generics.UpdateAPIView, generics.DestroyAPIView, Checks):
+class Word(viewsets.ModelViewSet, Checks):
     queryset = models.Word.objects.all()
     serializer_class = serializers.Word
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
@@ -74,8 +83,7 @@ class Word(viewsets.ModelViewSet, generics.CreateAPIView,
         return super(Word, self).list(request, *args, **kwargs)
 
 
-class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
-                 generics.DestroyAPIView, Checks):
+class Definition(viewsets.ModelViewSet, Checks):
     queryset = models.Definition.objects.all()
     serializer_class = serializers.Definition
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
@@ -95,8 +103,23 @@ class Definition(viewsets.ModelViewSet, generics.CreateAPIView,
                         word=self.request.data['word'])
 
     def create(self, request, *args, **kwargs):
-        """ Create the word """
+        """ Create the definition, with the word """
         message = self.check_word_id()
         if message is not None:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
         return super(Definition, self).create(request, *args, **kwargs)
+
+    def put(self, request, *args, **kwargs):
+        """ Retrieve a definition with its ID and update it """
+        message = self.check_definition_id()
+        if message is not None:
+            return Response(message, status=status.HTTP_400_BAD_REQUEST)
+
+        definition_id = request.data.pop('definition')
+        queryset = models.Definition.objects.all()
+        definition = get_object_or_404(queryset, id=definition_id)
+        serializer = serializers.Definition(
+            definition, data=request.data, context={'request': request})
+        if serializer.is_valid():
+            serializer.save()
+        return Response(serializer.data)

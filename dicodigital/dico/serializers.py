@@ -12,7 +12,7 @@ class Definition(serializers.ModelSerializer):
 
     class Meta:
         model = models.Definition
-        fields = ('word', 'text', 'contributor',
+        fields = ('id', 'word', 'text', 'contributor',
                   'is_primary', 'created_at')
 
     def create(self, validated_data):
