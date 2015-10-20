@@ -6,5 +6,4 @@ django-suit
 django-extensions
 dj-database-url
 dj-static
-django-autoslug
 django-rest-swagger

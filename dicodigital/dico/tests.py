@@ -17,8 +17,8 @@ class TestUtils(TestCase):
         self.url_word_list = reverse('word-list')
         self.url_definition_list = reverse('definition-list')
 
-    def url_word_search(self, slug):
-        return self.url_word_list + '?search=' + slug
+    def url_word_search(self, label):
+        return self.url_word_list + '?search=' + label
 
 
 class AnonymousTest(TestUtils):
@@ -53,16 +53,10 @@ class ConnectedTest(TestUtils):
         self.assertEqual(response.data['label'], data['label'])
         self.assertEqual(response.data['creator'], self.user.username)
 
-    def test_word_auto_slug(self):
-        data = {'label': 'test word'}
-        self.c.post(self.url_word_list, data, format='json')
-        response = self.c.get(self.url_word_search('test word'))
-        self.assertEqual(response.status_code, 200)
-
     def test_word_update(self):
         data = {'label': 'test word'}
-        self.c.post(self.url_word_list, data, format='json')
-        update_data = {'label': 'test word (updated)', 'word': 'test-word'}
+        word_response = self.c.post(self.url_word_list, data, format='json')
+        update_data = {'label': 'test word (updated)', 'word': word_response.data['id']}
         response = self.c.put(self.url_word_list, update_data, format='json')
         self.assertEqual(response.data['label'], update_data['label'])
         response = self.c.get(self.url_word_search('test word'))
@@ -75,12 +69,12 @@ class ConnectedTest(TestUtils):
         response = self.c.post(self.url_word_list, data, format='json')
         self.assertEqual(response.status_code, 400)
 
-    def test_label_update_word_not_found(self):
+    def test_label_update_word_not_gt_0(self):
         data = {'label': 'test word'}
         self.c.post(self.url_word_list, data, format='json')
-        update_data = {'label': 'test word (updated)', 'word': 'word-does-not-exist'}
+        update_data = {'label': 'test word (updated)', 'word': 0}
         response = self.c.put(self.url_word_list, update_data, format='json')
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 400)
 
     def test_word_update_on_none_word(self):
         data = {'label': 'test word'}
@@ -88,7 +82,7 @@ class ConnectedTest(TestUtils):
         update_data = {'label': 'test word (updated)'}
         response = self.c.put(self.url_word_list, update_data, format='json')
         self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'word parameter is missing')
+        self.assertEqual(response.data, 'Word parameter is missing')
 
     def test_add_empty_definition_to_new_word(self):
         data = {'label': 'test word',
@@ -123,12 +117,12 @@ class ConnectedTest(TestUtils):
         data = {'text': 'this is the definition'}
         response = self.c.post(self.url_definition_list, data, format='json')
         self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'word parameter is missing')
+        self.assertEqual(response.data, 'Word parameter is missing')
 
     def test_add_definition_to_existant_word(self):
         word_data = {'label': 'test word'}
         word_response = self.c.post(self.url_word_list, word_data, format='json')
-        definition_data = {'text': 'this is the definition', 'word': 'test-word'}
+        definition_data = {'text': 'this is the definition', 'word': 1}
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertEqual(definition_response.status_code, 201)
         self.assertEqual(word_response.data['url'], definition_response.data['word'])
@@ -138,17 +132,17 @@ class ConnectedTest(TestUtils):
         word_response = self.c.post(self.url_word_list, word_data, format='json')
         self.c.logout()
         self.c.force_authenticate(user=self.user2)
-        definition_data = {'text': 'this is the definition', 'word': 'test-word'}
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertNotEqual(definition_response.data['contributor'], word_response.data['creator'])
 
     def test_if_definition_is_primary_only_if_first_added(self):
         word_data = {'label': 'test word'}
-        self.c.post(self.url_word_list, word_data, format='json')
-        definition_data = {'text': 'this is the definition', 'word': 'test-word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertTrue(definition_response.data['is_primary'])
-        definition_data = {'text': 'this is a second definition', 'word': 'test-word'}
+        definition_data = {'text': 'this is a second definition', 'word': word_response.data['id']}
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertFalse(definition_response.data['is_primary'])
         response = self.c.get(self.url_word_search('test word'))

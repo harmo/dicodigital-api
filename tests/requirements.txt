@@ -3,7 +3,6 @@ djangorestframework
 django-cors-headers
 dj-database-url
 dj-static
-django-autoslug
 pytest
 pytest-django
 pytest-sugar

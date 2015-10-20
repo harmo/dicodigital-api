@@ -16,8 +16,8 @@ class Definition(serializers.ModelSerializer):
                   'is_primary', 'created_at')
 
     def create(self, validated_data):
-        word_slug = validated_data.pop('word')
-        word = models.Word.objects.get(slug=word_slug)
+        word_id = validated_data.pop('word')
+        word = models.Word.objects.get(id=word_id)
         is_primary = True
         if word.definitions.count() > 0:
             is_primary = False
