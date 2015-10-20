@@ -59,6 +59,10 @@ class Word(viewsets.ModelViewSet, Checks):
         """ Add the current connected user as creator """
         serializer.save(creator=self.request.user)
 
+    def create(self, request, *args, **kwargs):
+        """ Create the word """
+        return super(Word, self).create(request, *args, **kwargs)
+
     def put(self, request, *args, **kwargs):
         """ Retrieve a word with its ID and update it """
         message = self.check_word_id()
@@ -75,6 +79,7 @@ class Word(viewsets.ModelViewSet, Checks):
 
     def list(self, request, *args, **kwargs):
         """
+        Search a word with label
         ---
         parameters:
             - name: search

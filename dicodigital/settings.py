@@ -119,6 +119,14 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 
+# DOC
+
+SWAGGER_SETTINGS = {
+    'is_authenticated': True,
+    'enabled_methods': ['get', 'post', 'put', 'delete'],
+}
+
+
 # Logging
 if DEBUG:
     try:
