@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from rest_framework import generics, viewsets, permissions, status, pagination, filters
+from rest_framework import viewsets, permissions, status, pagination, filters
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 from . import serializers, models
