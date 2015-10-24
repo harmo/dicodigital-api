@@ -2,7 +2,7 @@
 from rest_framework import viewsets, permissions, status, pagination, filters
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
-from . import serializers, models
+from . import serializers, models, filters as my_filters
 
 
 class WordCursorPagination(pagination.CursorPagination):
@@ -48,8 +48,8 @@ class Word(viewsets.ModelViewSet, Checks):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     lookup_field = 'id'
     pagination_class = WordCursorPagination
-    filter_backends = (filters.SearchFilter,)
-    search_fields = ('label',)
+    filter_backends = (filters.DjangoFilterBackend,)
+    filter_class = my_filters.WordFilter
 
     def get_queryset(self):
         return super(Word, self).get_queryset()\
@@ -80,10 +80,6 @@ class Word(viewsets.ModelViewSet, Checks):
     def list(self, request, *args, **kwargs):
         """
         Search a word with label
-        ---
-        parameters:
-            - name: search
-              paramType: query
         """
         return super(Word, self).list(request, *args, **kwargs)
 
