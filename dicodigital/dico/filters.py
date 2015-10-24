@@ -4,6 +4,8 @@ from . import models
 
 class WordFilter(filters.FilterSet):
 
+    creator = filters.CharFilter(name='creator__username')
+
     class Meta:
         model = models.Word
-        fields = ['label']
+        fields = ['label', 'creator']

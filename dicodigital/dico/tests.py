@@ -21,6 +21,9 @@ class TestUtils(TestCase):
     def url_word_search(self, label):
         return self.url_word_list + '?label=' + label
 
+    def url_word_search_by_creator(self, creator):
+        return self.url_word_list + '?creator=' + creator
+
 
 class AnonymousTest(TestUtils):
 
@@ -40,6 +43,16 @@ class AnonymousTest(TestUtils):
         self.assertEqual(len(results), 1)
         self.assertContains(response, 'test word')
         response = self.c.get(self.url_word_search('unexistant word'))
+        self.assertEqual(len(response.data.get('results')), 0)
+
+    def test_search_word_by_creator(self):
+        models.Word.objects.create(
+            label='test word', creator=self.user)
+        response = self.c.get(self.url_word_search_by_creator('test_user'))
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertContains(response, 'test word')
+        response = self.c.get(self.url_word_search_by_creator('unexistant_user'))
         self.assertEqual(len(response.data.get('results')), 0)
 
 
@@ -71,6 +84,16 @@ class ConnectedTest(TestUtils):
         results = response.data.get('results')
         self.assertEqual(len(results), 1)
         self.assertContains(response, data['label'])
+
+    def test_search_word_by_creator(self):
+        data = {'label': 'test word'}
+        self.c.post(self.url_word_list, data, format='json')
+        response = self.c.get(self.url_word_search_by_creator('test_user'))
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertContains(response, 'test word')
+        response = self.c.get(self.url_word_search_by_creator('unexistant_user'))
+        self.assertEqual(len(response.data.get('results')), 0)
 
     def test_word_update(self):
         data = {'label': 'test word'}
