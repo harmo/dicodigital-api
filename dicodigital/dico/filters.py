@@ -1,4 +1,5 @@
 import django_filters as filters
+from random import randint
 from . import models
 
 
@@ -8,6 +9,7 @@ class WordFilter(filters.FilterSet):
     first = filters.MethodFilter(action='search_by_first_letter')
     def_like = filters.MethodFilter(action='search_by_word_in_definition')
     empty = filters.MethodFilter(action='search_without_definition')
+    random = filters.MethodFilter(action='get_random_word')
 
     class Meta:
         model = models.Word
@@ -22,3 +24,9 @@ class WordFilter(filters.FilterSet):
     def search_without_definition(self, queryset, value):
         empty = True if value == 'true' else False
         return queryset.filter(definitions__isnull=empty)
+
+    def get_random_word(self, queryset, value):
+        ids = [word.id for word in queryset.all()]
+        if len(ids) > 2:
+            return queryset.filter(id=randint(ids[0], ids[-1]))
+        return queryset
