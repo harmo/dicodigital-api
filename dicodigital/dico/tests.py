@@ -3,6 +3,7 @@ from django.core.urlresolvers import reverse
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from rest_framework.test import APIClient
+from . import models
 
 
 class TestUtils(TestCase):
@@ -18,7 +19,10 @@ class TestUtils(TestCase):
         self.url_definition_list = reverse('definition-list')
 
     def url_word_search(self, label):
-        return self.url_word_list + '?search=' + label
+        return self.url_word_list + '?label=' + label
+
+    def url_word_search_by_creator(self, creator):
+        return self.url_word_list + '?creator=' + creator
 
 
 class AnonymousTest(TestUtils):
@@ -30,6 +34,26 @@ class AnonymousTest(TestUtils):
     def test_can_list(self):
         response = self.c.get(self.url_word_list)
         self.assertEqual(response.status_code, 200)
+
+    def test_search_word_by_label(self):
+        models.Word.objects.create(
+            label='test word', creator=self.user)
+        response = self.c.get(self.url_word_search('test word'))
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertContains(response, 'test word')
+        response = self.c.get(self.url_word_search('unexistant word'))
+        self.assertEqual(len(response.data.get('results')), 0)
+
+    def test_search_word_by_creator(self):
+        models.Word.objects.create(
+            label='test word', creator=self.user)
+        response = self.c.get(self.url_word_search_by_creator('test_user'))
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertContains(response, 'test word')
+        response = self.c.get(self.url_word_search_by_creator('unexistant_user'))
+        self.assertEqual(len(response.data.get('results')), 0)
 
 
 class ConnectedTest(TestUtils):
@@ -53,6 +77,24 @@ class ConnectedTest(TestUtils):
         self.assertEqual(response.data['label'], data['label'])
         self.assertEqual(response.data['creator'], self.user.username)
 
+    def test_search_word_by_label(self):
+        data = {'label': 'test word'}
+        self.c.post(self.url_word_list, data, format='json')
+        response = self.c.get(self.url_word_search('test word'))
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertContains(response, data['label'])
+
+    def test_search_word_by_creator(self):
+        data = {'label': 'test word'}
+        self.c.post(self.url_word_list, data, format='json')
+        response = self.c.get(self.url_word_search_by_creator('test_user'))
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertContains(response, 'test word')
+        response = self.c.get(self.url_word_search_by_creator('unexistant_user'))
+        self.assertEqual(len(response.data.get('results')), 0)
+
     def test_word_update(self):
         data = {'label': 'test word'}
         word_response = self.c.post(self.url_word_list, data, format='json')
@@ -60,6 +102,8 @@ class ConnectedTest(TestUtils):
         response = self.c.put(self.url_word_list, update_data, format='json')
         self.assertEqual(response.data['label'], update_data['label'])
         response = self.c.get(self.url_word_search('test word'))
+        self.assertEqual(len(response.data.get('results')), 0)
+        response = self.c.get(self.url_word_search('test word (updated)'))
         results = response.data.get('results')
         self.assertEqual(len(results), 1)
         self.assertNotEqual(results[0]['label'], data['label'])
@@ -122,7 +166,7 @@ class ConnectedTest(TestUtils):
     def test_add_definition_to_existant_word(self):
         word_data = {'label': 'test word'}
         word_response = self.c.post(self.url_word_list, word_data, format='json')
-        definition_data = {'text': 'this is the definition', 'word': 1}
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
         definition_response = self.c.post(self.url_definition_list, definition_data, format='json')
         self.assertEqual(definition_response.status_code, 201)
         self.assertEqual(word_response.data['url'], definition_response.data['word'])
