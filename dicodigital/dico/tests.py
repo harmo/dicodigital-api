@@ -24,6 +24,15 @@ class TestUtils(TestCase):
     def url_word_search_by_creator(self, creator):
         return self.url_word_list + '?creator=' + creator
 
+    def url_word_search_by_first_letter(self, letter):
+        return self.url_word_list + '?first=' + letter
+
+    def url_word_search_by_definition(self, word):
+        return self.url_word_list + '?def_like=' + word
+
+    def url_word_search_without_definition(self, str_bool):
+        return self.url_word_list + '?empty=' + str_bool
+
 
 class AnonymousTest(TestUtils):
 
@@ -234,3 +243,60 @@ class ConnectedTest(TestUtils):
         response = self.c.put(self.url_definition_list, definition_updated, format='json')
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'this is the updated definition')
+
+    def test_search_word_by_first_letter(self):
+        data = {'label': 'a word'}
+        self.c.post(self.url_word_list, data, format='json')
+        data = {'label': 'test word'}
+        self.c.post(self.url_word_list, data, format='json')
+        search = self.c.get(self.url_word_search_by_first_letter('t'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]['label'], data['label'])
+        search = self.c.get(self.url_word_search_by_first_letter('a'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]['label'], 'a word')
+        search = self.c.get(self.url_word_search_by_first_letter('z'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 0)
+
+    def test_search_word_by_plain_text_in_definition(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
+        self.c.post(self.url_definition_list, definition_data, format='json')
+        definition_data['text'] = 'another definition'
+        self.c.post(self.url_definition_list, definition_data, format='json')
+        word2_data = {'label': 'second test word'}
+        word2_response = self.c.post(self.url_word_list, word2_data, format='json')
+        definition2_data = {'text': 'again one definition', 'word': word2_response.data['id']}
+        self.c.post(self.url_definition_list, definition2_data, format='json')
+        search = self.c.get(self.url_word_search_by_definition('the definition'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertEqual(len(results[0]['definitions']), 2)
+        search = self.c.get(self.url_word_search_by_definition('again one'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertEqual(len(results[0]['definitions']), 1)
+        search = self.c.get(self.url_word_search_by_definition('an inexistant one'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 0)
+
+    def test_search_words_without_definition(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
+        self.c.post(self.url_definition_list, definition_data, format='json')
+        search = self.c.get(self.url_word_search_without_definition('true'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 0)
+        word2_data = {'label': 'second test word'}
+        self.c.post(self.url_word_list, word2_data, format='json')
+        search = self.c.get(self.url_word_search_without_definition('true'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        search = self.c.get(self.url_word_search_without_definition('false'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
