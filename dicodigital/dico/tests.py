@@ -24,6 +24,9 @@ class TestUtils(TestCase):
     def url_word_search_by_creator(self, creator):
         return self.url_word_list + '?creator=' + creator
 
+    def url_word_search_by_first_letter(self, letter):
+        return self.url_word_list + '?first=' + letter
+
 
 class AnonymousTest(TestUtils):
 
@@ -234,3 +237,20 @@ class ConnectedTest(TestUtils):
         response = self.c.put(self.url_definition_list, definition_updated, format='json')
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'this is the updated definition')
+
+    def test_search_word_by_first_letter(self):
+        data = {'label': 'a word'}
+        self.c.post(self.url_word_list, data, format='json')
+        data = {'label': 'test word'}
+        self.c.post(self.url_word_list, data, format='json')
+        search = self.c.get(self.url_word_search_by_first_letter('t'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]['label'], data['label'])
+        search = self.c.get(self.url_word_search_by_first_letter('a'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]['label'], 'a word')
+        search = self.c.get(self.url_word_search_by_first_letter('z'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 0)
