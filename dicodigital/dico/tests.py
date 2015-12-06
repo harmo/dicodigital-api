@@ -30,6 +30,9 @@ class TestUtils(TestCase):
     def url_word_search_by_definition(self, word):
         return self.url_word_list + '?def_like=' + word
 
+    def url_word_search_without_definition(self, str_bool):
+        return self.url_word_list + '?empty=' + str_bool
+
 
 class AnonymousTest(TestUtils):
 
@@ -280,3 +283,20 @@ class ConnectedTest(TestUtils):
         search = self.c.get(self.url_word_search_by_definition('an inexistant one'))
         results = search.data.get('results')
         self.assertEqual(len(results), 0)
+
+    def test_search_words_without_definition(self):
+        word_data = {'label': 'test word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
+        self.c.post(self.url_definition_list, definition_data, format='json')
+        search = self.c.get(self.url_word_search_without_definition('true'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 0)
+        word2_data = {'label': 'second test word'}
+        self.c.post(self.url_word_list, word2_data, format='json')
+        search = self.c.get(self.url_word_search_without_definition('true'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)
+        search = self.c.get(self.url_word_search_without_definition('false'))
+        results = search.data.get('results')
+        self.assertEqual(len(results), 1)

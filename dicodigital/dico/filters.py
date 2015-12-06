@@ -7,6 +7,7 @@ class WordFilter(filters.FilterSet):
     creator = filters.CharFilter(name='creator__username')
     first = filters.MethodFilter(action='search_by_first_letter')
     def_like = filters.MethodFilter(action='search_by_word_in_definition')
+    empty = filters.MethodFilter(action='search_without_definition')
 
     class Meta:
         model = models.Word
@@ -17,3 +18,7 @@ class WordFilter(filters.FilterSet):
 
     def search_by_word_in_definition(self, queryset, value):
         return queryset.filter(definitions__text__icontains=value)
+
+    def search_without_definition(self, queryset, value):
+        empty = True if value == 'true' else False
+        return queryset.filter(definitions__isnull=empty)
