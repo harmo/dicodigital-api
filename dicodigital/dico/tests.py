@@ -305,15 +305,6 @@ class ConnectedTest(TestUtils):
         self.assertEqual(len(results), 1)
 
     def test_get_one_random_word(self):
-        word_data = {'label': 'test word 1'}
-        self.c.post(self.url_word_list, word_data, format='json')
-        word_data = {'label': 'test word 2'}
-        self.c.post(self.url_word_list, word_data, format='json')
-        word_data = {'label': 'test word 3'}
-        self.c.post(self.url_word_list, word_data, format='json')
-        response = self.c.get(self.url_get_random_word())
-        results = response.data.get('results')
-        self.assertEqual(len(results), 1)
         for i in range(0, 200):
             word_data = {'label': 'test word {}'.format(i)}
             self.c.post(self.url_word_list, word_data, format='json')
@@ -321,3 +312,17 @@ class ConnectedTest(TestUtils):
             response = self.c.get(self.url_get_random_word())
             results = response.data.get('results')
             self.assertEqual(len(results), 1)
+
+    def test_get_one_random_word_on_filtered_words(self):
+        word_data = {'label': 'first word'}
+        self.c.post(self.url_word_list, word_data, format='json')
+        word_data = {'label': 'second word'}
+        self.c.post(self.url_word_list, word_data, format='json')
+        word_data = {'label': 'third word'}
+        self.c.post(self.url_word_list, word_data, format='json')
+        response = self.c.get(self.url_word_list + '?first=s&random')
+        results = response.data.get('results')
+        self.assertEqual(len(results), 1)
+        response = self.c.get(self.url_word_list + '?label=inexistant&random')
+        results = response.data.get('results')
+        self.assertEqual(len(results), 0)
