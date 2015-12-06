@@ -122,7 +122,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 # DOC
 
 SWAGGER_SETTINGS = {
-    'is_authenticated': True,
+    'is_authenticated': False,
     'enabled_methods': ['get', 'post', 'put', 'delete'],
 }
 
