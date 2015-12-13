@@ -326,3 +326,19 @@ class ConnectedTest(TestUtils):
         response = self.c.get(self.url_word_list + '?label=inexistant&random')
         results = response.data.get('results')
         self.assertEqual(len(results), 0)
+
+
+class VotesTest(TestUtils):
+
+    def setUp(self):
+        super(VotesTest, self).setUp()
+        self.c.force_authenticate(user=self.user)
+
+    def test_word_as_no_votes_by_default(self):
+        word_data = {'label': 'first word'}
+        word_response = self.c.post(self.url_word_list, word_data, format='json')
+        self.assertEqual(word_response.data['score'], 0)
+
+    # def test_user_can_vote_on_word(self):
+    #     word_data = {'label': 'first word'}
+    #     self.c.post(self.url_word_list, word_data, format='json')

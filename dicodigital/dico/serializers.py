@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.db.models import Sum
 from . import models
 
 
@@ -35,11 +36,16 @@ class Word(serializers.ModelSerializer):
     definitions = Definition(many=True, required=False)
     creator = serializers.SlugRelatedField(
         slug_field='username', read_only=True)
+    score = serializers.SerializerMethodField()
 
     class Meta:
         model = models.Word
         fields = ('id', 'label', 'creator', 'url',
-                  'created_at', 'definitions')
+                  'created_at', 'definitions', 'score')
+
+    def get_score(self, obj):
+        votes = obj.wordvote_set.aggregate(score=Sum('score'))
+        return votes['score'] if votes['score'] is not None else 0
 
     def create(self, validated_data):
         definitions = []
