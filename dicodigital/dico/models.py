@@ -28,7 +28,7 @@ class Vote(models.Model):
         abstract = True
 
     def __str__(self):
-        return '{s.user} voted {s.score} on the {s.created_at}'.format(s=self)
+        return '{s.elector} voted {s.score} on the {s.created_at}'.format(s=self)
 
 
 class WordVote(Vote):
