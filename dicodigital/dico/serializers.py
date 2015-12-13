@@ -1,4 +1,5 @@
 from rest_framework import serializers
+
 from . import models
 
 
@@ -35,11 +36,13 @@ class Word(serializers.ModelSerializer):
     definitions = Definition(many=True, required=False)
     creator = serializers.SlugRelatedField(
         slug_field='username', read_only=True)
+    score = serializers.IntegerField(
+        source='word_score', read_only=True)
 
     class Meta:
         model = models.Word
         fields = ('id', 'label', 'creator', 'url',
-                  'created_at', 'definitions')
+                  'created_at', 'definitions', 'score')
 
     def create(self, validated_data):
         definitions = []

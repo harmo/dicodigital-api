@@ -18,6 +18,10 @@ class TestUtils(TestCase):
         self.url_word_list = reverse('word-list')
         self.url_definition_list = reverse('definition-list')
 
+    def url_word_by_id(self, id):
+        return '{url}{id}'.format(
+            url=self.url_word_list, id=id)
+
     def url_word_search(self, label):
         return self.url_word_list + '?label=' + label
 
@@ -305,10 +309,10 @@ class ConnectedTest(TestUtils):
         self.assertEqual(len(results), 1)
 
     def test_get_one_random_word(self):
-        for i in range(0, 200):
+        for i in range(1, 200):
             word_data = {'label': 'test word {}'.format(i)}
             self.c.post(self.url_word_list, word_data, format='json')
-        for i in range(0, 10):
+        for i in range(1, 10):
             response = self.c.get(self.url_get_random_word())
             results = response.data.get('results')
             self.assertEqual(len(results), 1)
