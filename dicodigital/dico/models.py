@@ -17,3 +17,23 @@ class Definition(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     word = models.ForeignKey(Word, related_name='definitions')
     is_primary = models.BooleanField(default=False)
+
+
+class Vote(models.Model):
+    elector = models.ForeignKey(settings.AUTH_USER_MODEL)
+    created_at = models.DateTimeField(auto_now_add=True)
+    score = models.SmallIntegerField(default=0)
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return '{s.user} voted {s.score} on the {s.created_at}'.format(s=self)
+
+
+class WordVote(Vote):
+    word = models.ForeignKey(Word)
+
+
+class DefinitionVote(Vote):
+    definition = models.ForeignKey(Definition)
