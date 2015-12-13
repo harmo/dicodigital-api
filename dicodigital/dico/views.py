@@ -2,6 +2,7 @@
 from rest_framework import viewsets, permissions, status, pagination, filters
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
+from django.db.models import Sum
 from . import serializers, models, filters as my_filters
 
 
@@ -53,7 +54,8 @@ class Word(viewsets.ModelViewSet, Checks):
 
     def get_queryset(self):
         return super(Word, self).get_queryset()\
-            .prefetch_related('creator', 'definitions__contributor')
+            .prefetch_related('creator', 'definitions__contributor')\
+            .annotate(word_score=Sum('wordvote__score'))
 
     def perform_create(self, serializer):
         """ Add the current connected user as creator """
