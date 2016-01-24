@@ -23,15 +23,14 @@ class Definition(models.Model):
 
 
 class Vote(models.Model):
-    elector = models.ForeignKey(settings.AUTH_USER_MODEL)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, null=True)
+    ip_address = models.GenericIPAddressField(null=True)
+    cookie = models.CharField(max_length=64, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    score = models.SmallIntegerField(default=0)
+    score = models.IntegerField()
 
     class Meta:
         abstract = True
-
-    def __str__(self):
-        return '{s.elector} voted {s.score} on the {s.created_at}'.format(s=self)
 
 
 class WordVote(Vote):
