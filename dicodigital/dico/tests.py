@@ -17,6 +17,7 @@ class TestUtils(TestCase):
         self.c = APIClient()
         self.url_word_list = reverse('word-list')
         self.url_definition_list = reverse('definition-list')
+        self.url_word_vote_list = reverse('wordvote-list')
 
     def url_word_by_id(self, id):
         return '{url}{id}'.format(
@@ -42,6 +43,10 @@ class TestUtils(TestCase):
 
 
 class AnonymousTest(TestUtils):
+
+    def setUp(self):
+        super(AnonymousTest, self).setUp()
+        self.alternative_ip = '127.0.0.10'
 
     def test_cant_post(self):
         response = self.c.post(self.url_word_list)
@@ -70,6 +75,17 @@ class AnonymousTest(TestUtils):
         self.assertContains(response, 'test word')
         response = self.c.get(self.url_word_search_by_creator('unexistant_user'))
         self.assertEqual(len(response.data.get('results')), 0)
+
+    def test_user_can_vote_on_word(self):
+        models.Word.objects.create(
+            label='test word', creator=self.user)
+        response = self.c.get(self.url_word_search('test word'))
+        results = response.data.get('results')
+        self.assertTrue(results[0]['can_vote'])
+
+    def test_user_missing_word_for_word_vote(self):
+        response = self.c.post(self.url_word_vote_list)
+        self.assertEqual(response.status_code, 400)
 
 
 class ConnectedTest(TestUtils):
@@ -332,18 +348,18 @@ class ConnectedTest(TestUtils):
         self.assertEqual(len(results), 0)
 
 
-class VotesTest(TestUtils):
+# class VotesTest(TestUtils):
 
-    def setUp(self):
-        super(VotesTest, self).setUp()
-        self.c.force_authenticate(user=self.user)
+#     def setUp(self):
+#         super(VotesTest, self).setUp()
+#         self.c.force_authenticate(user=self.user)
 
-    def test_word_as_no_votes_by_default(self):
-        word_data = {'label': 'first word'}
-        word_response = self.c.post(self.url_word_list, word_data, format='json')
-        response = self.c.get(self.url_word_by_id(word_response.data['id']), follow=True)
-        self.assertEqual(response.data['score'], None)
+#     def test_word_as_no_votes_by_default(self):
+#         word_data = {'label': 'first word'}
+#         word_response = self.c.post(self.url_word_list, word_data, format='json')
+#         response = self.c.get(self.url_word_by_id(word_response.data['id']), follow=True)
+#         self.assertEqual(response.data['score'], None)
 
-    # def test_user_can_vote_on_word(self):
-    #     word_data = {'label': 'first word'}
-    #     self.c.post(self.url_word_list, word_data, format='json')
+#     # def test_user_can_vote_on_word(self):
+#     #     word_data = {'label': 'first word'}
+#     #     self.c.post(self.url_word_list, word_data, format='json')
