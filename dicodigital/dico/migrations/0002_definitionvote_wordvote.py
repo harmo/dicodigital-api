@@ -16,11 +16,13 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='DefinitionVote',
             fields=[
-                ('id', models.AutoField(auto_created=True, serialize=False, verbose_name='ID', primary_key=True)),
+                ('id', models.AutoField(serialize=False, primary_key=True, auto_created=True, verbose_name='ID')),
+                ('ip_address', models.GenericIPAddressField(null=True)),
+                ('cookie', models.CharField(blank=True, max_length=64, null=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('score', models.SmallIntegerField(default=0)),
+                ('score', models.IntegerField()),
                 ('definition', models.ForeignKey(to='dico.Definition')),
-                ('elector', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL, null=True)),
             ],
             options={
                 'abstract': False,
@@ -29,10 +31,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='WordVote',
             fields=[
-                ('id', models.AutoField(auto_created=True, serialize=False, verbose_name='ID', primary_key=True)),
+                ('id', models.AutoField(serialize=False, primary_key=True, auto_created=True, verbose_name='ID')),
+                ('ip_address', models.GenericIPAddressField(null=True)),
+                ('cookie', models.CharField(blank=True, max_length=64, null=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('score', models.SmallIntegerField(default=0)),
-                ('elector', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('score', models.IntegerField()),
+                ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL, null=True)),
                 ('word', models.ForeignKey(to='dico.Word')),
             ],
             options={
