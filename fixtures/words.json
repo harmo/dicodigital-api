@@ -1,7 +1,6 @@
 [
     {
         "fields": {
-            "slug": "c0ffee",
             "label": "#c0ffee",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -11,7 +10,6 @@
     },
     {
         "fields": {
-            "slug": "0",
             "label": "0",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -21,7 +19,6 @@
     },
     {
         "fields": {
-            "slug": "0-day",
             "label": "0-day",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -31,7 +28,6 @@
     },
     {
         "fields": {
-            "slug": "1",
             "label": "1",
             "creator": 14,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -41,7 +37,6 @@
     },
     {
         "fields": {
-            "slug": "1",
             "label": "+1",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -51,7 +46,6 @@
     },
     {
         "fields": {
-            "slug": "11",
             "label": "1+1",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -61,7 +55,6 @@
     },
     {
         "fields": {
-            "slug": "11",
             "label": "11",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -71,7 +64,6 @@
     },
     {
         "fields": {
-            "slug": "118-218",
             "label": "118 218",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -81,7 +73,6 @@
     },
     {
         "fields": {
-            "slug": "13",
             "label": "13",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -91,7 +82,6 @@
     },
     {
         "fields": {
-            "slug": "1337",
             "label": "1337",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -101,7 +91,6 @@
     },
     {
         "fields": {
-            "slug": "15-18",
             "label": "15-18",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -111,7 +100,6 @@
     },
     {
         "fields": {
-            "slug": "1970",
             "label": "1970",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -121,7 +109,6 @@
     },
     {
         "fields": {
-            "slug": "20",
             "label": "2.0",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -131,7 +118,6 @@
     },
     {
         "fields": {
-            "slug": "200",
             "label": "200",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -141,7 +127,6 @@
     },
     {
         "fields": {
-            "slug": "30",
             "label": "3.0",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -151,7 +136,6 @@
     },
     {
         "fields": {
-            "slug": "3g",
             "label": "3G",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -161,7 +145,6 @@
     },
     {
         "fields": {
-            "slug": "4g",
             "label": "4G",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -171,7 +154,6 @@
     },
     {
         "fields": {
-            "slug": "301",
             "label": "301",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -181,7 +163,6 @@
     },
     {
         "fields": {
-            "slug": "302",
             "label": "302",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -191,7 +172,6 @@
     },
     {
         "fields": {
-            "slug": "360",
             "label": "360",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -201,7 +181,6 @@
     },
     {
         "fields": {
-            "slug": "3615",
             "label": "3615",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -211,7 +190,6 @@
     },
     {
         "fields": {
-            "slug": "365",
             "label": "365",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -221,7 +199,6 @@
     },
     {
         "fields": {
-            "slug": "401",
             "label": "401",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -231,7 +208,6 @@
     },
     {
         "fields": {
-            "slug": "403",
             "label": "403",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -241,7 +217,6 @@
     },
     {
         "fields": {
-            "slug": "404",
             "label": "404",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -251,7 +226,6 @@
     },
     {
         "fields": {
-            "slug": "410",
             "label": "410",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -261,7 +235,6 @@
     },
     {
         "fields": {
-            "slug": "418",
             "label": "418",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -271,7 +244,6 @@
     },
     {
         "fields": {
-            "slug": "500",
             "label": "500",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -281,7 +253,6 @@
     },
     {
         "fields": {
-            "slug": "42",
             "label": "42",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -291,7 +262,6 @@
     },
     {
         "fields": {
-            "slug": "4chan",
             "label": "4Chan",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -301,7 +271,6 @@
     },
     {
         "fields": {
-            "slug": "4d",
             "label": "4D",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -311,7 +280,6 @@
     },
     {
         "fields": {
-            "slug": "713705",
             "label": "713705",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -321,7 +289,6 @@
     },
     {
         "fields": {
-            "slug": "777",
             "label": "777",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -331,7 +298,6 @@
     },
     {
         "fields": {
-            "slug": "access",
             "label": "Access",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -341,7 +307,6 @@
     },
     {
         "fields": {
-            "slug": "acrobat-reader",
             "label": "Acrobat Reader",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -351,7 +316,6 @@
     },
     {
         "fields": {
-            "slug": "actionscript",
             "label": "ActionScript",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -361,7 +325,6 @@
     },
     {
         "fields": {
-            "slug": "admin",
             "label": "admin",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -371,7 +334,6 @@
     },
     {
         "fields": {
-            "slug": "adminsys",
             "label": "AdminSys",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -381,7 +343,6 @@
     },
     {
         "fields": {
-            "slug": "adobe",
             "label": "Adobe",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -391,7 +352,6 @@
     },
     {
         "fields": {
-            "slug": "afk",
             "label": "AFK",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -401,7 +361,6 @@
     },
     {
         "fields": {
-            "slug": "agario",
             "label": "Agario",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -411,7 +370,6 @@
     },
     {
         "fields": {
-            "slug": "agile",
             "label": "Agile",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -421,7 +379,6 @@
     },
     {
         "fields": {
-            "slug": "ajax",
             "label": "AJAX",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -431,7 +388,6 @@
     },
     {
         "fields": {
-            "slug": "albanel",
             "label": "Albanel",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -441,7 +397,6 @@
     },
     {
         "fields": {
-            "slug": "alexandre-astier",
             "label": "Alexandre Astier",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -451,7 +406,6 @@
     },
     {
         "fields": {
-            "slug": "alice",
             "label": "Alice",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -461,7 +415,6 @@
     },
     {
         "fields": {
-            "slug": "alienware",
             "label": "AlienWare",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -471,7 +424,6 @@
     },
     {
         "fields": {
-            "slug": "all-your-base-are-belong-to-us",
             "label": "All your base are belong to us",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -481,7 +433,6 @@
     },
     {
         "fields": {
-            "slug": "alphabet",
             "label": "Alphabet",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -491,7 +442,6 @@
     },
     {
         "fields": {
-            "slug": "alsacreations",
             "label": "Alsacr\u00e9ations",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -501,7 +451,6 @@
     },
     {
         "fields": {
-            "slug": "alt-f4",
             "label": "Alt + F4",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -511,7 +460,6 @@
     },
     {
         "fields": {
-            "slug": "alta-vista",
             "label": "Alta Vista",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -521,7 +469,6 @@
     },
     {
         "fields": {
-            "slug": "altair",
             "label": "Altair",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -531,7 +478,6 @@
     },
     {
         "fields": {
-            "slug": "altern",
             "label": "Altern",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -541,7 +487,6 @@
     },
     {
         "fields": {
-            "slug": "amazon",
             "label": "Amazon",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -551,7 +496,6 @@
     },
     {
         "fields": {
-            "slug": "amiga",
             "label": "Amiga",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -561,7 +505,6 @@
     },
     {
         "fields": {
-            "slug": "android",
             "label": "Android",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -571,7 +514,6 @@
     },
     {
         "fields": {
-            "slug": "angry-birds",
             "label": "Angry Birds",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -581,7 +523,6 @@
     },
     {
         "fields": {
-            "slug": "angularjs",
             "label": "AngularJS",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -591,7 +532,6 @@
     },
     {
         "fields": {
-            "slug": "anguleux",
             "label": "Anguleux",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -601,7 +541,6 @@
     },
     {
         "fields": {
-            "slug": "animaux",
             "label": "Animaux",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -611,7 +550,6 @@
     },
     {
         "fields": {
-            "slug": "anonymous",
             "label": "Anonymous",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -621,7 +559,6 @@
     },
     {
         "fields": {
-            "slug": "anti-virus",
             "label": "Anti-virus",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -631,7 +568,6 @@
     },
     {
         "fields": {
-            "slug": "aol",
             "label": "AOL",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -641,7 +577,6 @@
     },
     {
         "fields": {
-            "slug": "apache",
             "label": "Apache",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -651,7 +586,6 @@
     },
     {
         "fields": {
-            "slug": "apache-fondation",
             "label": "Apache (Fondation)",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -661,7 +595,6 @@
     },
     {
         "fields": {
-            "slug": "aperoweb",
             "label": "Aperoweb",
             "creator": 12,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -671,7 +604,6 @@
     },
     {
         "fields": {
-            "slug": "appel-doffres",
             "label": "Appel d'offres",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -681,7 +613,6 @@
     },
     {
         "fields": {
-            "slug": "apple",
             "label": "Apple",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -691,7 +622,6 @@
     },
     {
         "fields": {
-            "slug": "applet",
             "label": "Applet",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -701,7 +631,6 @@
     },
     {
         "fields": {
-            "slug": "appli",
             "label": "Appli",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -711,7 +640,6 @@
     },
     {
         "fields": {
-            "slug": "apple-maps",
             "label": "Apple Maps",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -721,7 +649,6 @@
     },
     {
         "fields": {
-            "slug": "archlinux",
             "label": "Archlinux",
             "creator": 14,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -731,7 +658,6 @@
     },
     {
         "fields": {
-            "slug": "arduino",
             "label": "Arduino",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -741,7 +667,6 @@
     },
     {
         "fields": {
-            "slug": "arpanet",
             "label": "Arpanet",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -751,7 +676,6 @@
     },
     {
         "fields": {
-            "slug": "array",
             "label": "Array",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -761,7 +685,6 @@
     },
     {
         "fields": {
-            "slug": "asap",
             "label": "ASAP",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -771,7 +694,6 @@
     },
     {
         "fields": {
-            "slug": "astalavista",
             "label": "Astalavista",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -781,7 +703,6 @@
     },
     {
         "fields": {
-            "slug": "asv",
             "label": "ASV",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -791,7 +712,6 @@
     },
     {
         "fields": {
-            "slug": "atari",
             "label": "Atari",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -801,7 +721,6 @@
     },
     {
         "fields": {
-            "slug": "atom",
             "label": "Atom",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -811,7 +730,6 @@
     },
     {
         "fields": {
-            "slug": "audiogalaxy",
             "label": "AudioGalaxy",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -821,7 +739,6 @@
     },
     {
         "fields": {
-            "slug": "avast",
             "label": "Avast",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -831,7 +748,6 @@
     },
     {
         "fields": {
-            "slug": "back-end",
             "label": "Back-end",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -841,7 +757,6 @@
     },
     {
         "fields": {
-            "slug": "back-up",
             "label": "Back-up",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -851,7 +766,6 @@
     },
     {
         "fields": {
-            "slug": "baguettecom",
             "label": "Baguette.com",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -861,7 +775,6 @@
     },
     {
         "fields": {
-            "slug": "barbu",
             "label": "Barbu",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -871,7 +784,6 @@
     },
     {
         "fields": {
-            "slug": "barrette",
             "label": "Barrette",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -881,7 +793,6 @@
     },
     {
         "fields": {
-            "slug": "basecamp",
             "label": "Basecamp",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -891,7 +802,6 @@
     },
     {
         "fields": {
-            "slug": "basic",
             "label": "Basic",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -901,7 +811,6 @@
     },
     {
         "fields": {
-            "slug": "batterie",
             "label": "Batterie",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -911,7 +820,6 @@
     },
     {
         "fields": {
-            "slug": "bebox",
             "label": "BeBox",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -921,7 +829,6 @@
     },
     {
         "fields": {
-            "slug": "bem",
             "label": "BEM",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -931,7 +838,6 @@
     },
     {
         "fields": {
-            "slug": "beos",
             "label": "BeOS",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -941,7 +847,6 @@
     },
     {
         "fields": {
-            "slug": "bbs",
             "label": "BBS",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -951,7 +856,6 @@
     },
     {
         "fields": {
-            "slug": "bi-bop",
             "label": "Bi-bop",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -961,7 +865,6 @@
     },
     {
         "fields": {
-            "slug": "bibliotheque",
             "label": "Biblioth\u00e8que",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -971,7 +874,6 @@
     },
     {
         "fields": {
-            "slug": "biere",
             "label": "Bi\u00e8re",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -981,7 +883,6 @@
     },
     {
         "fields": {
-            "slug": "bigdata",
             "label": "BigData",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -991,7 +892,6 @@
     },
     {
         "fields": {
-            "slug": "big-bang-theory",
             "label": "Big Bang Theory",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1001,7 +901,6 @@
     },
     {
         "fields": {
-            "slug": "binaire",
             "label": "Binaire",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1011,7 +910,6 @@
     },
     {
         "fields": {
-            "slug": "bios",
             "label": "Bios",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1021,7 +919,6 @@
     },
     {
         "fields": {
-            "slug": "bit",
             "label": "Bit",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1031,7 +928,6 @@
     },
     {
         "fields": {
-            "slug": "bitbucket",
             "label": "BitBucket",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1041,7 +937,6 @@
     },
     {
         "fields": {
-            "slug": "bittorrent",
             "label": "BitTorrent",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1051,7 +946,6 @@
     },
     {
         "fields": {
-            "slug": "blackberry",
             "label": "Blackberry",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1061,7 +955,6 @@
     },
     {
         "fields": {
-            "slug": "blink",
             "label": "Blink",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1071,7 +964,6 @@
     },
     {
         "fields": {
-            "slug": "blendwebmix",
             "label": "BlendWebMix",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1081,7 +973,6 @@
     },
     {
         "fields": {
-            "slug": "blog",
             "label": "Blog",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1091,7 +982,6 @@
     },
     {
         "fields": {
-            "slug": "bluetooth",
             "label": "Bluetooth",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1101,7 +991,6 @@
     },
     {
         "fields": {
-            "slug": "boites-noires",
             "label": "Boites noires",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1111,7 +1000,6 @@
     },
     {
         "fields": {
-            "slug": "bootstrap",
             "label": "Bootstrap",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1121,7 +1009,6 @@
     },
     {
         "fields": {
-            "slug": "brb",
             "label": "BRB",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1131,7 +1018,6 @@
     },
     {
         "fields": {
-            "slug": "bug",
             "label": "Bug",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1141,7 +1027,6 @@
     },
     {
         "fields": {
-            "slug": "bugzilla",
             "label": "Bugzilla",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1151,7 +1036,6 @@
     },
     {
         "fields": {
-            "slug": "build",
             "label": "build",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1161,7 +1045,6 @@
     },
     {
         "fields": {
-            "slug": "buildout",
             "label": "buildout",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1171,7 +1054,6 @@
     },
     {
         "fields": {
-            "slug": "bull",
             "label": "Bull",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1181,7 +1063,6 @@
     },
     {
         "fields": {
-            "slug": "bulle",
             "label": "Bulle",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1191,7 +1072,6 @@
     },
     {
         "fields": {
-            "slug": "burnout",
             "label": "Burnout",
             "creator": 14,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1201,7 +1081,6 @@
     },
     {
         "fields": {
-            "slug": "c",
             "label": "C",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1211,7 +1090,6 @@
     },
     {
         "fields": {
-            "slug": "c",
             "label": "C++",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1221,7 +1099,6 @@
     },
     {
         "fields": {
-            "slug": "c",
             "label": "C#",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1231,7 +1108,6 @@
     },
     {
         "fields": {
-            "slug": "cache",
             "label": "Cache",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1241,7 +1117,6 @@
     },
     {
         "fields": {
-            "slug": "cafeine",
             "label": "Caf\u00e9\u00efne",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1251,7 +1126,6 @@
     },
     {
         "fields": {
-            "slug": "cahier-des-charges",
             "label": "Cahier des charges",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1261,7 +1135,6 @@
     },
     {
         "fields": {
-            "slug": "cahier-decharge",
             "label": "Cahier-d\u00e9charge",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1271,7 +1144,6 @@
     },
     {
         "fields": {
-            "slug": "calvacom",
             "label": "Calvacom",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1281,7 +1153,6 @@
     },
     {
         "fields": {
-            "slug": "caml",
             "label": "Caml",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1291,7 +1162,6 @@
     },
     {
         "fields": {
-            "slug": "candy-crush",
             "label": "Candy Crush",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1301,7 +1171,6 @@
     },
     {
         "fields": {
-            "slug": "capitole-du-libre",
             "label": "Capitole du Libre",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1311,7 +1180,6 @@
     },
     {
         "fields": {
-            "slug": "captcha",
             "label": "CAPTCHA",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1321,7 +1189,6 @@
     },
     {
         "fields": {
-            "slug": "caps-lock",
             "label": "CAPS LOCK",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1331,7 +1198,6 @@
     },
     {
         "fields": {
-            "slug": "captain-obvious",
             "label": "Captain Obvious",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1341,7 +1207,6 @@
     },
     {
         "fields": {
-            "slug": "caramail",
             "label": "Caramail",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1351,7 +1216,6 @@
     },
     {
         "fields": {
-            "slug": "ccc",
             "label": "CCC",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1361,7 +1225,6 @@
     },
     {
         "fields": {
-            "slug": "cd-rom",
             "label": "CD-Rom",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1371,7 +1234,6 @@
     },
     {
         "fields": {
-            "slug": "cerise",
             "label": "Cerise",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1381,7 +1243,6 @@
     },
     {
         "fields": {
-            "slug": "certification",
             "label": "Certification",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1391,7 +1252,6 @@
     },
     {
         "fields": {
-            "slug": "cest-complique",
             "label": "C'est compliqu\u00e9",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1401,7 +1261,6 @@
     },
     {
         "fields": {
-            "slug": "chat",
             "label": "Chat",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1411,7 +1270,6 @@
     },
     {
         "fields": {
-            "slug": "chaton",
             "label": "Chaton",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1421,7 +1279,6 @@
     },
     {
         "fields": {
-            "slug": "chatroulette",
             "label": "Chatroulette",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1431,7 +1288,6 @@
     },
     {
         "fields": {
-            "slug": "chef-de-projet",
             "label": "Chef de projet",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1441,7 +1297,6 @@
     },
     {
         "fields": {
-            "slug": "cheval-de-troie",
             "label": "Cheval de Troie",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1451,7 +1306,6 @@
     },
     {
         "fields": {
-            "slug": "chezcom",
             "label": "Chez.com",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1461,7 +1315,6 @@
     },
     {
         "fields": {
-            "slug": "chiffrer",
             "label": "Chiffrer",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1471,7 +1324,6 @@
     },
     {
         "fields": {
-            "slug": "chuck-norris",
             "label": "Chuck Norris",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1481,7 +1333,6 @@
     },
     {
         "fields": {
-            "slug": "chrome",
             "label": "Chrome",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1491,7 +1342,6 @@
     },
     {
         "fields": {
-            "slug": "chromium",
             "label": "Chromium",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1501,7 +1351,6 @@
     },
     {
         "fields": {
-            "slug": "chrome-os",
             "label": "Chrome OS",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1511,7 +1360,6 @@
     },
     {
         "fields": {
-            "slug": "clavier",
             "label": "Clavier",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1521,7 +1369,6 @@
     },
     {
         "fields": {
-            "slug": "cle-usb",
             "label": "Cl\u00e9 USB",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1531,7 +1378,6 @@
     },
     {
         "fields": {
-            "slug": "client",
             "label": "Client",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1541,7 +1387,6 @@
     },
     {
         "fields": {
-            "slug": "cloud",
             "label": "Cloud",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1551,7 +1396,6 @@
     },
     {
         "fields": {
-            "slug": "club-internet",
             "label": "Club Internet",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1561,7 +1405,6 @@
     },
     {
         "fields": {
-            "slug": "cms",
             "label": "CMS",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1571,7 +1414,6 @@
     },
     {
         "fields": {
-            "slug": "cobol",
             "label": "Cobol",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1581,7 +1423,6 @@
     },
     {
         "fields": {
-            "slug": "coboliste",
             "label": "Coboliste",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1591,7 +1432,6 @@
     },
     {
         "fields": {
-            "slug": "corel-photopaint",
             "label": "Corel PhotoPaint",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1601,7 +1441,6 @@
     },
     {
         "fields": {
-            "slug": "coin",
             "label": "Coin !",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1611,7 +1450,6 @@
     },
     {
         "fields": {
-            "slug": "collaboratif-travail",
             "label": "Collaboratif (Travail)",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1621,7 +1459,6 @@
     },
     {
         "fields": {
-            "slug": "commanditaire",
             "label": "Commanditaire",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1631,7 +1468,6 @@
     },
     {
         "fields": {
-            "slug": "comic-sans",
             "label": "Comic Sans",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1641,7 +1477,6 @@
     },
     {
         "fields": {
-            "slug": "commentaire",
             "label": "Commentaire",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1651,7 +1486,6 @@
     },
     {
         "fields": {
-            "slug": "commentcamarchenet",
             "label": "commentcamarche.net",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1661,7 +1495,6 @@
     },
     {
         "fields": {
-            "slug": "commercial",
             "label": "Commercial",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1671,7 +1504,6 @@
     },
     {
         "fields": {
-            "slug": "commit",
             "label": "Commit",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1681,7 +1513,6 @@
     },
     {
         "fields": {
-            "slug": "commit-strip",
             "label": "Commit Strip",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1691,7 +1522,6 @@
     },
     {
         "fields": {
-            "slug": "community-manager",
             "label": "Community Manager",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1701,7 +1531,6 @@
     },
     {
         "fields": {
-            "slug": "commodore",
             "label": "Commodore",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1711,7 +1540,6 @@
     },
     {
         "fields": {
-            "slug": "compuserve",
             "label": "CompuServe",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1721,7 +1549,6 @@
     },
     {
         "fields": {
-            "slug": "conference",
             "label": "Conf\u00e9rence",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1731,7 +1558,6 @@
     },
     {
         "fields": {
-            "slug": "contributeur",
             "label": "Contributeur",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1741,7 +1567,6 @@
     },
     {
         "fields": {
-            "slug": "cookie",
             "label": "Cookie",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1751,7 +1576,6 @@
     },
     {
         "fields": {
-            "slug": "copyright",
             "label": "Copyright",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1761,7 +1585,6 @@
     },
     {
         "fields": {
-            "slug": "crash",
             "label": "Crash",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1771,7 +1594,6 @@
     },
     {
         "fields": {
-            "slug": "cray",
             "label": "Cray",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1781,7 +1603,6 @@
     },
     {
         "fields": {
-            "slug": "cron",
             "label": "Cron",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1791,7 +1612,6 @@
     },
     {
         "fields": {
-            "slug": "crowdfunding",
             "label": "Crowdfunding",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1801,7 +1621,6 @@
     },
     {
         "fields": {
-            "slug": "crypter",
             "label": "Crypter",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1811,7 +1630,6 @@
     },
     {
         "fields": {
-            "slug": "css",
             "label": "CSS",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1821,7 +1639,6 @@
     },
     {
         "fields": {
-            "slug": "csv",
             "label": "CSV",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1831,7 +1648,6 @@
     },
     {
         "fields": {
-            "slug": "ctrl-alt-suppr",
             "label": "Ctrl + Alt + Suppr",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1841,7 +1657,6 @@
     },
     {
         "fields": {
-            "slug": "cvs",
             "label": "CVS",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1851,7 +1666,6 @@
     },
     {
         "fields": {
-            "slug": "cyalis",
             "label": "Cyalis",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1861,7 +1675,6 @@
     },
     {
         "fields": {
-            "slug": "cyberdyne",
             "label": "Cyberdyne",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1871,7 +1684,6 @@
     },
     {
         "fields": {
-            "slug": "cycle-en-y",
             "label": "Cycle en Y",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1881,7 +1693,6 @@
     },
     {
         "fields": {
-            "slug": "cycle-en-v",
             "label": "Cycle en V",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1891,7 +1702,6 @@
     },
     {
         "fields": {
-            "slug": "dark-web",
             "label": "Dark Web",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1901,7 +1711,6 @@
     },
     {
         "fields": {
-            "slug": "datamining",
             "label": "Datamining",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1911,7 +1720,6 @@
     },
     {
         "fields": {
-            "slug": "dcc",
             "label": "DCC",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1921,7 +1729,6 @@
     },
     {
         "fields": {
-            "slug": "ddd",
             "label": "DDD",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1931,7 +1738,6 @@
     },
     {
         "fields": {
-            "slug": "ddos",
             "label": "DDOS",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1941,7 +1747,6 @@
     },
     {
         "fields": {
-            "slug": "debian",
             "label": "Debian",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1951,7 +1756,6 @@
     },
     {
         "fields": {
-            "slug": "debugger",
             "label": "Debugger",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1961,7 +1765,6 @@
     },
     {
         "fields": {
-            "slug": "dechiffrer",
             "label": "D\u00e9chiffrer",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1971,7 +1774,6 @@
     },
     {
         "fields": {
-            "slug": "decrypter",
             "label": "D\u00e9crypter",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1981,7 +1783,6 @@
     },
     {
         "fields": {
-            "slug": "deezer",
             "label": "Deezer",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -1991,7 +1792,6 @@
     },
     {
         "fields": {
-            "slug": "defacer",
             "label": "Defacer",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2001,7 +1801,6 @@
     },
     {
         "fields": {
-            "slug": "delphi",
             "label": "Delphi",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2011,7 +1810,6 @@
     },
     {
         "fields": {
-            "slug": "deploiement-continu",
             "label": "D\u00e9ploiement continu",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2021,7 +1819,6 @@
     },
     {
         "fields": {
-            "slug": "design",
             "label": "Design",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2031,7 +1828,6 @@
     },
     {
         "fields": {
-            "slug": "design-thinking",
             "label": "Design Thinking",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2041,7 +1837,6 @@
     },
     {
         "fields": {
-            "slug": "designer",
             "label": "Designer",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2051,7 +1846,6 @@
     },
     {
         "fields": {
-            "slug": "developpeur",
             "label": "D\u00e9veloppeur",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2061,7 +1855,6 @@
     },
     {
         "fields": {
-            "slug": "devops",
             "label": "DevOps",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2071,7 +1864,6 @@
     },
     {
         "fields": {
-            "slug": "dhtml",
             "label": "DHTML",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2081,7 +1873,6 @@
     },
     {
         "fields": {
-            "slug": "diaspora",
             "label": "Diaspora",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2091,7 +1882,6 @@
     },
     {
         "fields": {
-            "slug": "digital",
             "label": "Digital",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2101,7 +1891,6 @@
     },
     {
         "fields": {
-            "slug": "disquette",
             "label": "Disquette",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2111,7 +1900,6 @@
     },
     {
         "fields": {
-            "slug": "docker",
             "label": "Docker",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2121,7 +1909,6 @@
     },
     {
         "fields": {
-            "slug": "doctissimo",
             "label": "Doctissimo",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2131,7 +1918,6 @@
     },
     {
         "fields": {
-            "slug": "documentation",
             "label": "Documentation",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2141,7 +1927,6 @@
     },
     {
         "fields": {
-            "slug": "dos",
             "label": "DOS",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2151,7 +1936,6 @@
     },
     {
         "fields": {
-            "slug": "doodle",
             "label": "Doodle",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2161,7 +1945,6 @@
     },
     {
         "fields": {
-            "slug": "dotclear",
             "label": "DotClear",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2171,7 +1954,6 @@
     },
     {
         "fields": {
-            "slug": "doctor-who",
             "label": "Doctor Who",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2181,7 +1963,6 @@
     },
     {
         "fields": {
-            "slug": "dreamweaver",
             "label": "Dreamweaver",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2191,7 +1972,6 @@
     },
     {
         "fields": {
-            "slug": "drive",
             "label": "Drive",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2201,7 +1981,6 @@
     },
     {
         "fields": {
-            "slug": "drm",
             "label": "DRM",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2211,7 +1990,6 @@
     },
     {
         "fields": {
-            "slug": "dropbox",
             "label": "DropBox",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2221,7 +1999,6 @@
     },
     {
         "fields": {
-            "slug": "drupal",
             "label": "Drupal",
             "creator": 17,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2231,7 +2008,6 @@
     },
     {
         "fields": {
-            "slug": "dtc",
             "label": "DTC",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2241,7 +2017,6 @@
     },
     {
         "fields": {
-            "slug": "digital-native",
             "label": "Digital Native",
             "creator": 17,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2251,7 +2026,6 @@
     },
     {
         "fields": {
-            "slug": "e-",
             "label": "e-",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2261,7 +2035,6 @@
     },
     {
         "fields": {
-            "slug": "easter-egg",
             "label": "Easter egg",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2271,7 +2044,6 @@
     },
     {
         "fields": {
-            "slug": "ebay",
             "label": "eBay",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2281,7 +2053,6 @@
     },
     {
         "fields": {
-            "slug": "eclipse",
             "label": "Eclipse",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2291,7 +2062,6 @@
     },
     {
         "fields": {
-            "slug": "ecmascript",
             "label": "ECMAScript",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2301,7 +2071,6 @@
     },
     {
         "fields": {
-            "slug": "ecole-42",
             "label": "Ecole 42",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2311,7 +2080,6 @@
     },
     {
         "fields": {
-            "slug": "ed",
             "label": "Ed",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2321,7 +2089,6 @@
     },
     {
         "fields": {
-            "slug": "edge",
             "label": "Edge",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2331,7 +2098,6 @@
     },
     {
         "fields": {
-            "slug": "edward-snowden",
             "label": "Edward Snowden",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2341,7 +2107,6 @@
     },
     {
         "fields": {
-            "slug": "effet-streisand",
             "label": "Effet Streisand",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2351,7 +2116,6 @@
     },
     {
         "fields": {
-            "slug": "ejb",
             "label": "EJB",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2361,7 +2125,6 @@
     },
     {
         "fields": {
-            "slug": "emacs",
             "label": "Emacs",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2371,7 +2134,6 @@
     },
     {
         "fields": {
-            "slug": "email-documentation",
             "label": "Email (documentation)",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2381,7 +2143,6 @@
     },
     {
         "fields": {
-            "slug": "email-echange",
             "label": "Email (\u00e9change)",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2391,7 +2152,6 @@
     },
     {
         "fields": {
-            "slug": "email-diamant",
             "label": "Email (diamant)",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2401,7 +2161,6 @@
     },
     {
         "fields": {
-            "slug": "emoticone",
             "label": "\u00c9motic\u00f4ne",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2411,7 +2170,6 @@
     },
     {
         "fields": {
-            "slug": "emulateur",
             "label": "\u00c9mulateur",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2421,7 +2179,6 @@
     },
     {
         "fields": {
-            "slug": "emule",
             "label": "Emule",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2431,7 +2188,6 @@
     },
     {
         "fields": {
-            "slug": "entreprise-liberee",
             "label": "Entreprise lib\u00e9r\u00e9e",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2441,7 +2197,6 @@
     },
     {
         "fields": {
-            "slug": "erp",
             "label": "ERP",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2451,7 +2206,6 @@
     },
     {
         "fields": {
-            "slug": "es6",
             "label": "ES6",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2461,7 +2215,6 @@
     },
     {
         "fields": {
-            "slug": "excel",
             "label": "Excel",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2471,7 +2224,6 @@
     },
     {
         "fields": {
-            "slug": "excite",
             "label": "Excite",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2481,7 +2233,6 @@
     },
     {
         "fields": {
-            "slug": "extreme-programming",
             "label": "eXtreme Programming",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2491,7 +2242,6 @@
     },
     {
         "fields": {
-            "slug": "f5",
             "label": "F5",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2501,7 +2251,6 @@
     },
     {
         "fields": {
-            "slug": "fablab",
             "label": "Fablab",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2511,7 +2260,6 @@
     },
     {
         "fields": {
-            "slug": "facebook",
             "label": "Facebook",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2521,7 +2269,6 @@
     },
     {
         "fields": {
-            "slug": "fai",
             "label": "FAI",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2531,7 +2278,6 @@
     },
     {
         "fields": {
-            "slug": "faille",
             "label": "Faille",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2541,7 +2287,6 @@
     },
     {
         "fields": {
-            "slug": "fatalerror",
             "label": "fatalerror",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2551,7 +2296,6 @@
     },
     {
         "fields": {
-            "slug": "fatwire",
             "label": "FatWire",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2561,7 +2305,6 @@
     },
     {
         "fields": {
-            "slug": "fdn",
             "label": "FDN",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2571,7 +2314,6 @@
     },
     {
         "fields": {
-            "slug": "feature",
             "label": "Feature",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2581,7 +2323,6 @@
     },
     {
         "fields": {
-            "slug": "fessesbook",
             "label": "fessesbook",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2591,7 +2332,6 @@
     },
     {
         "fields": {
-            "slug": "fedora",
             "label": "Fedora",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2601,7 +2341,6 @@
     },
     {
         "fields": {
-            "slug": "ffdn",
             "label": "FFDN",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2611,7 +2350,6 @@
     },
     {
         "fields": {
-            "slug": "filemaker",
             "label": "Filemaker",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2621,7 +2359,6 @@
     },
     {
         "fields": {
-            "slug": "fille",
             "label": "Fille",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2631,7 +2368,6 @@
     },
     {
         "fields": {
-            "slug": "firefox",
             "label": "Firefox",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2641,7 +2377,6 @@
     },
     {
         "fields": {
-            "slug": "firefox-os",
             "label": "Firefox OS",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2651,7 +2386,6 @@
     },
     {
         "fields": {
-            "slug": "firmware",
             "label": "Firmware",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2661,7 +2395,6 @@
     },
     {
         "fields": {
-            "slug": "fixme",
             "label": "FIXME",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2671,7 +2404,6 @@
     },
     {
         "fields": {
-            "slug": "flash",
             "label": "Flash",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2681,7 +2413,6 @@
     },
     {
         "fields": {
-            "slug": "flame",
             "label": "Flame",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2691,7 +2422,6 @@
     },
     {
         "fields": {
-            "slug": "flamewar",
             "label": "FlameWar",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2701,7 +2431,6 @@
     },
     {
         "fields": {
-            "slug": "flickr",
             "label": "Flickr",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2711,7 +2440,6 @@
     },
     {
         "fields": {
-            "slug": "flooder",
             "label": "Flooder",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2721,7 +2449,6 @@
     },
     {
         "fields": {
-            "slug": "flora-power",
             "label": "Flora Power",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2731,7 +2458,6 @@
     },
     {
         "fields": {
-            "slug": "fly",
             "label": "Fly",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2741,7 +2467,6 @@
     },
     {
         "fields": {
-            "slug": "follower",
             "label": "Follower",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2751,7 +2476,6 @@
     },
     {
         "fields": {
-            "slug": "fork",
             "label": "Fork",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2761,7 +2485,6 @@
     },
     {
         "fields": {
-            "slug": "fortran",
             "label": "FORTRAN",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2771,7 +2494,6 @@
     },
     {
         "fields": {
-            "slug": "framasoft",
             "label": "Framasoft",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2781,7 +2503,6 @@
     },
     {
         "fields": {
-            "slug": "frame",
             "label": "Frame",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2791,7 +2512,6 @@
     },
     {
         "fields": {
-            "slug": "framerate",
             "label": "FrameRate",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2801,7 +2521,6 @@
     },
     {
         "fields": {
-            "slug": "framework",
             "label": "framework",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2811,7 +2530,6 @@
     },
     {
         "fields": {
-            "slug": "france-explorer",
             "label": "France Explorer",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2821,7 +2539,6 @@
     },
     {
         "fields": {
-            "slug": "free-bsd",
             "label": "Free BSD",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2831,7 +2548,6 @@
     },
     {
         "fields": {
-            "slug": "french-tech",
             "label": "French Tech",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2841,7 +2557,6 @@
     },
     {
         "fields": {
-            "slug": "front-end",
             "label": "Front-end",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2851,7 +2566,6 @@
     },
     {
         "fields": {
-            "slug": "frontpage",
             "label": "FrontPage",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2861,7 +2575,6 @@
     },
     {
         "fields": {
-            "slug": "ftp",
             "label": "FTP",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2871,7 +2584,6 @@
     },
     {
         "fields": {
-            "slug": "fdp",
             "label": "FDP",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2881,7 +2593,6 @@
     },
     {
         "fields": {
-            "slug": "full-stack-developper",
             "label": "Full-stack developper",
             "creator": 12,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2891,7 +2602,6 @@
     },
     {
         "fields": {
-            "slug": "fyi",
             "label": "FYI",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2901,7 +2611,6 @@
     },
     {
         "fields": {
-            "slug": "gandi",
             "label": "Gandi",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2911,7 +2620,6 @@
     },
     {
         "fields": {
-            "slug": "garage",
             "label": "Garage",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2921,7 +2629,6 @@
     },
     {
         "fields": {
-            "slug": "gates-bill",
             "label": "Gates (Bill)",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2931,7 +2638,6 @@
     },
     {
         "fields": {
-            "slug": "gcc",
             "label": "GCC",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2941,7 +2647,6 @@
     },
     {
         "fields": {
-            "slug": "gecko",
             "label": "Gecko",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2951,7 +2656,6 @@
     },
     {
         "fields": {
-            "slug": "geek",
             "label": "Geek",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2961,7 +2665,6 @@
     },
     {
         "fields": {
-            "slug": "generation-x",
             "label": "G\u00e9n\u00e9ration X",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2971,7 +2674,6 @@
     },
     {
         "fields": {
-            "slug": "generation-y",
             "label": "G\u00e9n\u00e9ration Y",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2981,7 +2683,6 @@
     },
     {
         "fields": {
-            "slug": "generation-z",
             "label": "G\u00e9n\u00e9ration Z",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -2991,7 +2692,6 @@
     },
     {
         "fields": {
-            "slug": "geocities",
             "label": "Geocities",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3001,7 +2701,6 @@
     },
     {
         "fields": {
-            "slug": "gif89a",
             "label": "gif89a",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3011,7 +2710,6 @@
     },
     {
         "fields": {
-            "slug": "gimp",
             "label": "Gimp",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3021,7 +2719,6 @@
     },
     {
         "fields": {
-            "slug": "git",
             "label": "git",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3031,7 +2728,6 @@
     },
     {
         "fields": {
-            "slug": "github",
             "label": "github",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3041,7 +2737,6 @@
     },
     {
         "fields": {
-            "slug": "gitlab",
             "label": "gitlab",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3051,7 +2746,6 @@
     },
     {
         "fields": {
-            "slug": "gnome",
             "label": "Gnome",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3061,7 +2755,6 @@
     },
     {
         "fields": {
-            "slug": "go",
             "label": "Go",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3071,7 +2764,6 @@
     },
     {
         "fields": {
-            "slug": "gg",
             "label": "GG",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3081,7 +2773,6 @@
     },
     {
         "fields": {
-            "slug": "gocom",
             "label": "Go.com",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3091,7 +2782,6 @@
     },
     {
         "fields": {
-            "slug": "godwin-point",
             "label": "Godwin (point)",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3101,7 +2791,6 @@
     },
     {
         "fields": {
-            "slug": "google",
             "label": "Google",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3111,7 +2800,6 @@
     },
     {
         "fields": {
-            "slug": "google-glass",
             "label": "Google Glass",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3121,7 +2809,6 @@
     },
     {
         "fields": {
-            "slug": "google",
             "label": "Google+",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3131,7 +2818,6 @@
     },
     {
         "fields": {
-            "slug": "graphique",
             "label": "Graphique",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3141,7 +2827,6 @@
     },
     {
         "fields": {
-            "slug": "graphiste",
             "label": "graphiste",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3151,7 +2836,6 @@
     },
     {
         "fields": {
-            "slug": "grid",
             "label": "Grid",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3161,7 +2845,6 @@
     },
     {
         "fields": {
-            "slug": "groupama",
             "label": "Groupama",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3171,7 +2854,6 @@
     },
     {
         "fields": {
-            "slug": "groupon",
             "label": "Groupon",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3181,7 +2863,6 @@
     },
     {
         "fields": {
-            "slug": "grumpy-cat",
             "label": "Grumpy Cat",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3191,7 +2872,6 @@
     },
     {
         "fields": {
-            "slug": "gwt",
             "label": "GWT",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3201,7 +2881,6 @@
     },
     {
         "fields": {
-            "slug": "gni",
             "label": "GNI",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3211,7 +2890,6 @@
     },
     {
         "fields": {
-            "slug": "gnu",
             "label": "GNU",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3221,7 +2899,6 @@
     },
     {
         "fields": {
-            "slug": "gopher",
             "label": "Gopher",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3231,7 +2908,6 @@
     },
     {
         "fields": {
-            "slug": "gps",
             "label": "GPS",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3241,7 +2917,6 @@
     },
     {
         "fields": {
-            "slug": "grooveshark",
             "label": "Grooveshark",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3251,7 +2926,6 @@
     },
     {
         "fields": {
-            "slug": "grunt",
             "label": "Grunt",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3261,7 +2935,6 @@
     },
     {
         "fields": {
-            "slug": "guichet",
             "label": "Guichet",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3271,7 +2944,6 @@
     },
     {
         "fields": {
-            "slug": "gulp",
             "label": "Gulp",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3281,7 +2953,6 @@
     },
     {
         "fields": {
-            "slug": "guru",
             "label": "Guru",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3291,7 +2962,6 @@
     },
     {
         "fields": {
-            "slug": "hackathon",
             "label": "Hackathon",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3301,7 +2971,6 @@
     },
     {
         "fields": {
-            "slug": "hacker",
             "label": "Hacker",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3311,7 +2980,6 @@
     },
     {
         "fields": {
-            "slug": "hackernews",
             "label": "Hackernews",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3321,7 +2989,6 @@
     },
     {
         "fields": {
-            "slug": "hackerspace",
             "label": "Hackerspace",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3331,7 +2998,6 @@
     },
     {
         "fields": {
-            "slug": "hadopi",
             "label": "HADOPI",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3341,7 +3007,6 @@
     },
     {
         "fields": {
-            "slug": "hal",
             "label": "HAL",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3351,7 +3016,6 @@
     },
     {
         "fields": {
-            "slug": "hangout",
             "label": "Hangout",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3361,7 +3025,6 @@
     },
     {
         "fields": {
-            "slug": "hardware",
             "label": "Hardware",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3371,7 +3034,6 @@
     },
     {
         "fields": {
-            "slug": "hashtag",
             "label": "Hashtag",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3381,7 +3043,6 @@
     },
     {
         "fields": {
-            "slug": "haskell",
             "label": "Haskell",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3391,7 +3052,6 @@
     },
     {
         "fields": {
-            "slug": "hexadecimal",
             "label": "Hexad\u00e9cimal",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3401,7 +3061,6 @@
     },
     {
         "fields": {
-            "slug": "hibernate",
             "label": "Hibernate",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3411,7 +3070,6 @@
     },
     {
         "fields": {
-            "slug": "hipchat",
             "label": "HipChat",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3421,7 +3079,6 @@
     },
     {
         "fields": {
-            "slug": "hipster",
             "label": "Hipster",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3431,7 +3088,6 @@
     },
     {
         "fields": {
-            "slug": "html",
             "label": "HTML",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3441,7 +3097,6 @@
     },
     {
         "fields": {
-            "slug": "html-5",
             "label": "HTML 5",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3451,7 +3106,6 @@
     },
     {
         "fields": {
-            "slug": "historique",
             "label": "Historique",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3461,7 +3115,6 @@
     },
     {
         "fields": {
-            "slug": "hello-world",
             "label": "Hello World",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3471,7 +3124,6 @@
     },
     {
         "fields": {
-            "slug": "hewlett-packard",
             "label": "Hewlett Packard",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3481,7 +3133,6 @@
     },
     {
         "fields": {
-            "slug": "holacratie",
             "label": "Holacratie",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3491,7 +3142,6 @@
     },
     {
         "fields": {
-            "slug": "hooli",
             "label": "Hooli",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3501,7 +3151,6 @@
     },
     {
         "fields": {
-            "slug": "hug",
             "label": "Hug",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3511,7 +3160,6 @@
     },
     {
         "fields": {
-            "slug": "i",
             "label": "i",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3521,7 +3169,6 @@
     },
     {
         "fields": {
-            "slug": "i18n",
             "label": "I18N",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3531,7 +3178,6 @@
     },
     {
         "fields": {
-            "slug": "ibazar",
             "label": "iBazar",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3541,7 +3187,6 @@
     },
     {
         "fields": {
-            "slug": "ibm",
             "label": "IBM",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3551,7 +3196,6 @@
     },
     {
         "fields": {
-            "slug": "icq",
             "label": "ICQ",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3561,7 +3205,6 @@
     },
     {
         "fields": {
-            "slug": "ide",
             "label": "IDE",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3571,7 +3214,6 @@
     },
     {
         "fields": {
-            "slug": "ie6",
             "label": "IE6",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3581,7 +3223,6 @@
     },
     {
         "fields": {
-            "slug": "ietf",
             "label": "IETF",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3591,7 +3232,6 @@
     },
     {
         "fields": {
-            "slug": "iframe",
             "label": "IFrame",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3601,7 +3241,6 @@
     },
     {
         "fields": {
-            "slug": "ihm",
             "label": "IHM",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3611,7 +3250,6 @@
     },
     {
         "fields": {
-            "slug": "imagemagick",
             "label": "ImageMagick",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3621,7 +3259,6 @@
     },
     {
         "fields": {
-            "slug": "i-mode",
             "label": "i-mode",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3631,7 +3268,6 @@
     },
     {
         "fields": {
-            "slug": "imprimante",
             "label": "Imprimante",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3641,7 +3277,6 @@
     },
     {
         "fields": {
-            "slug": "imprimante-3d",
             "label": "Imprimante 3D",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3651,7 +3286,6 @@
     },
     {
         "fields": {
-            "slug": "infonie",
             "label": "Infonie",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3661,7 +3295,6 @@
     },
     {
         "fields": {
-            "slug": "instagram",
             "label": "Instagram",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3671,7 +3304,6 @@
     },
     {
         "fields": {
-            "slug": "integrateur",
             "label": "Int\u00e9grateur",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3681,7 +3313,6 @@
     },
     {
         "fields": {
-            "slug": "integration-continue",
             "label": "Int\u00e9gration continue",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3691,7 +3322,6 @@
     },
     {
         "fields": {
-            "slug": "intelligence-artificielle",
             "label": "Intelligence artificielle",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3701,7 +3331,6 @@
     },
     {
         "fields": {
-            "slug": "interface",
             "label": "Interface",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3711,7 +3340,6 @@
     },
     {
         "fields": {
-            "slug": "internet",
             "label": "Internet",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3721,7 +3349,6 @@
     },
     {
         "fields": {
-            "slug": "internet-des-objets-iot",
             "label": "Internet des Objets (IoT)",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3731,7 +3358,6 @@
     },
     {
         "fields": {
-            "slug": "internet-explorer",
             "label": "Internet Explorer",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3741,7 +3367,6 @@
     },
     {
         "fields": {
-            "slug": "interoperabilite",
             "label": "Interoperabilit\u00e9",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3751,7 +3376,6 @@
     },
     {
         "fields": {
-            "slug": "intranet",
             "label": "Intranet",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3761,7 +3385,6 @@
     },
     {
         "fields": {
-            "slug": "io",
             "label": "io",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3771,7 +3394,6 @@
     },
     {
         "fields": {
-            "slug": "ios",
             "label": "IOS",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3781,7 +3403,6 @@
     },
     {
         "fields": {
-            "slug": "ip",
             "label": "IP",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3791,7 +3412,6 @@
     },
     {
         "fields": {
-            "slug": "ipencil",
             "label": "iPencil",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3801,7 +3421,6 @@
     },
     {
         "fields": {
-            "slug": "ipv4",
             "label": "IPV4",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3811,7 +3430,6 @@
     },
     {
         "fields": {
-            "slug": "ipv6",
             "label": "IPV6",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3821,7 +3439,6 @@
     },
     {
         "fields": {
-            "slug": "irc",
             "label": "IRC",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3831,7 +3448,6 @@
     },
     {
         "fields": {
-            "slug": "ircop",
             "label": "IrcOp",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3841,7 +3457,6 @@
     },
     {
         "fields": {
-            "slug": "irl",
             "label": "IRL",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3851,7 +3466,6 @@
     },
     {
         "fields": {
-            "slug": "issue",
             "label": "Issue",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3861,7 +3475,6 @@
     },
     {
         "fields": {
-            "slug": "jabber",
             "label": "Jabber",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3871,7 +3484,6 @@
     },
     {
         "fields": {
-            "slug": "jackie-michel",
             "label": "Jackie & Michel",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3881,7 +3493,6 @@
     },
     {
         "fields": {
-            "slug": "jargon-file",
             "label": "Jargon File",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3891,7 +3502,6 @@
     },
     {
         "fields": {
-            "slug": "java",
             "label": "Java",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3901,7 +3511,6 @@
     },
     {
         "fields": {
-            "slug": "javascript",
             "label": "JavaScript",
             "creator": 6,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3911,7 +3520,6 @@
     },
     {
         "fields": {
-            "slug": "jai-de-la-chance-google",
             "label": "J'ai de la chance (Google)",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3921,7 +3529,6 @@
     },
     {
         "fields": {
-            "slug": "jboss",
             "label": "JBoss",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3931,7 +3538,6 @@
     },
     {
         "fields": {
-            "slug": "jdcjdr",
             "label": "Jd\u00e7jdr",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3941,7 +3547,6 @@
     },
     {
         "fields": {
-            "slug": "je-code-avec-le-cul",
             "label": "Je code avec le cul",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3951,7 +3556,6 @@
     },
     {
         "fields": {
-            "slug": "je-pose-la-question",
             "label": "Je pose la question",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3961,7 +3565,6 @@
     },
     {
         "fields": {
-            "slug": "jee-j2e",
             "label": "JEE /J2E",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3971,7 +3574,6 @@
     },
     {
         "fields": {
-            "slug": "jobs-steve",
             "label": "Jobs (Steve)",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3981,7 +3583,6 @@
     },
     {
         "fields": {
-            "slug": "joomla",
             "label": "Joomla",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -3991,7 +3592,6 @@
     },
     {
         "fields": {
-            "slug": "js",
             "label": "JS",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4001,7 +3601,6 @@
     },
     {
         "fields": {
-            "slug": "json",
             "label": "JSON",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4011,7 +3610,6 @@
     },
     {
         "fields": {
-            "slug": "jquery",
             "label": "JQuery",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4021,7 +3619,6 @@
     },
     {
         "fields": {
-            "slug": "jquipleure",
             "label": "JQuiPleure",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4031,7 +3628,6 @@
     },
     {
         "fields": {
-            "slug": "julian-assange",
             "label": "Julian Assange",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4041,7 +3637,6 @@
     },
     {
         "fields": {
-            "slug": "kanban",
             "label": "Kanban",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4051,7 +3646,6 @@
     },
     {
         "fields": {
-            "slug": "kazaa",
             "label": "Kazaa",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4061,7 +3655,6 @@
     },
     {
         "fields": {
-            "slug": "kasskooye",
             "label": "Kasskooye",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4071,7 +3664,6 @@
     },
     {
         "fields": {
-            "slug": "kelkoo",
             "label": "Kelkoo",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4081,7 +3673,6 @@
     },
     {
         "fields": {
-            "slug": "koala",
             "label": "Koala",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4091,7 +3682,6 @@
     },
     {
         "fields": {
-            "slug": "kernel",
             "label": "Kernel",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4101,7 +3691,6 @@
     },
     {
         "fields": {
-            "slug": "kernel-panic",
             "label": "Kernel Panic",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4111,7 +3700,6 @@
     },
     {
         "fields": {
-            "slug": "keygen",
             "label": "KeyGen",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4121,7 +3709,6 @@
     },
     {
         "fields": {
-            "slug": "keynote",
             "label": "Keynote",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4131,7 +3718,6 @@
     },
     {
         "fields": {
-            "slug": "kilo-octet",
             "label": "kilo-octet",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4141,7 +3727,6 @@
     },
     {
         "fields": {
-            "slug": "konami-code",
             "label": "Konami code",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4151,7 +3736,6 @@
     },
     {
         "fields": {
-            "slug": "korben",
             "label": "Korben",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4161,7 +3745,6 @@
     },
     {
         "fields": {
-            "slug": "kde",
             "label": "KDE",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4171,7 +3754,6 @@
     },
     {
         "fields": {
-            "slug": "krita",
             "label": "Krita",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4181,7 +3763,6 @@
     },
     {
         "fields": {
-            "slug": "kudos",
             "label": "Kudos",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4191,7 +3772,6 @@
     },
     {
         "fields": {
-            "slug": "kebkac",
             "label": "KEBKAC",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4201,7 +3781,6 @@
     },
     {
         "fields": {
-            "slug": "lamp",
             "label": "LAMP",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4211,7 +3790,6 @@
     },
     {
         "fields": {
-            "slug": "lan",
             "label": "LAN",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4221,7 +3799,6 @@
     },
     {
         "fields": {
-            "slug": "latex",
             "label": "LaTeX",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4231,7 +3808,6 @@
     },
     {
         "fields": {
-            "slug": "le-bon-coin",
             "label": "Le Bon Coin",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4241,7 +3817,6 @@
     },
     {
         "fields": {
-            "slug": "le-web",
             "label": "Le Web",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4251,7 +3826,6 @@
     },
     {
         "fields": {
-            "slug": "lean",
             "label": "Lean",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4261,7 +3835,6 @@
     },
     {
         "fields": {
-            "slug": "lean-startup",
             "label": "Lean startup",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4271,7 +3844,6 @@
     },
     {
         "fields": {
-            "slug": "less",
             "label": "LESS",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4281,7 +3853,6 @@
     },
     {
         "fields": {
-            "slug": "lhc",
             "label": "LHC",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4291,7 +3862,6 @@
     },
     {
         "fields": {
-            "slug": "liberty-surf",
             "label": "Liberty Surf",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4301,7 +3871,6 @@
     },
     {
         "fields": {
-            "slug": "librairie",
             "label": "Librairie",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4311,7 +3880,6 @@
     },
     {
         "fields": {
-            "slug": "libre",
             "label": "Libre",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4321,7 +3889,6 @@
     },
     {
         "fields": {
-            "slug": "libreoffice",
             "label": "LibreOffice",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4331,7 +3898,6 @@
     },
     {
         "fields": {
-            "slug": "libriste",
             "label": "Libriste",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4341,7 +3907,6 @@
     },
     {
         "fields": {
-            "slug": "licorne",
             "label": "Licorne",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4351,7 +3916,6 @@
     },
     {
         "fields": {
-            "slug": "ligne-de-commande",
             "label": "Ligne de commande",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4361,7 +3925,6 @@
     },
     {
         "fields": {
-            "slug": "like",
             "label": "Like",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4371,7 +3934,6 @@
     },
     {
         "fields": {
-            "slug": "linux",
             "label": "Linux",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4381,7 +3943,6 @@
     },
     {
         "fields": {
-            "slug": "liseuse",
             "label": "Liseuse",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4391,7 +3952,6 @@
     },
     {
         "fields": {
-            "slug": "lisp",
             "label": "LISP",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4401,7 +3961,6 @@
     },
     {
         "fields": {
-            "slug": "linkedin",
             "label": "LinkedIn",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4411,7 +3970,6 @@
     },
     {
         "fields": {
-            "slug": "linux",
             "label": "Linux",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4421,7 +3979,6 @@
     },
     {
         "fields": {
-            "slug": "linuxfr",
             "label": "LinuxFR",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4431,7 +3988,6 @@
     },
     {
         "fields": {
-            "slug": "lisa",
             "label": "Lisa",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4441,7 +3997,6 @@
     },
     {
         "fields": {
-            "slug": "le-site-du-zero",
             "label": "Le Site Du Z\u00e9ro",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4451,7 +4006,6 @@
     },
     {
         "fields": {
-            "slug": "lmgtfy",
             "label": "LMGTFY",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4461,7 +4015,6 @@
     },
     {
         "fields": {
-            "slug": "loi-de-moore",
             "label": "Loi de Moore",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4471,7 +4024,6 @@
     },
     {
         "fields": {
-            "slug": "lol",
             "label": "LOL",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4481,7 +4033,6 @@
     },
     {
         "fields": {
-            "slug": "loleme",
             "label": "LoLeMe",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4491,7 +4042,6 @@
     },
     {
         "fields": {
-            "slug": "lolcat",
             "label": "Lolcat",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4501,7 +4051,6 @@
     },
     {
         "fields": {
-            "slug": "lycos",
             "label": "Lycos",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4511,7 +4060,6 @@
     },
     {
         "fields": {
-            "slug": "mac",
             "label": "Mac",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4521,7 +4069,6 @@
     },
     {
         "fields": {
-            "slug": "macromedia",
             "label": "Macromedia",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4531,7 +4078,6 @@
     },
     {
         "fields": {
-            "slug": "magento",
             "label": "Magento",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4541,7 +4087,6 @@
     },
     {
         "fields": {
-            "slug": "mailchimp",
             "label": "Mailchimp",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4551,7 +4096,6 @@
     },
     {
         "fields": {
-            "slug": "mailman",
             "label": "Mailman",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4561,7 +4105,6 @@
     },
     {
         "fields": {
-            "slug": "malware",
             "label": "Malware",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4571,7 +4114,6 @@
     },
     {
         "fields": {
-            "slug": "maquette",
             "label": "Maquette",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4581,7 +4123,6 @@
     },
     {
         "fields": {
-            "slug": "makefile",
             "label": "Makefile",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4591,7 +4132,6 @@
     },
     {
         "fields": {
-            "slug": "man",
             "label": "man",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4601,7 +4141,6 @@
     },
     {
         "fields": {
-            "slug": "management",
             "label": "Management",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4611,7 +4150,6 @@
     },
     {
         "fields": {
-            "slug": "manifeste",
             "label": "Manifeste",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4621,7 +4159,6 @@
     },
     {
         "fields": {
-            "slug": "mandrake-mandriva",
             "label": "Mandrake / Mandriva",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4631,7 +4168,6 @@
     },
     {
         "fields": {
-            "slug": "mantis",
             "label": "Mantis",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4641,7 +4177,6 @@
     },
     {
         "fields": {
-            "slug": "mapgl",
             "label": "MapGL",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4651,7 +4186,6 @@
     },
     {
         "fields": {
-            "slug": "markdown",
             "label": "Markdown",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4661,7 +4195,6 @@
     },
     {
         "fields": {
-            "slug": "markup",
             "label": "MarkUp",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4671,7 +4204,6 @@
     },
     {
         "fields": {
-            "slug": "matlab",
             "label": "Matlab",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4681,7 +4213,6 @@
     },
     {
         "fields": {
-            "slug": "maven",
             "label": "Maven",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4691,7 +4222,6 @@
     },
     {
         "fields": {
-            "slug": "mdr",
             "label": "MDR",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4701,7 +4231,6 @@
     },
     {
         "fields": {
-            "slug": "media-queries",
             "label": "Media queries",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4711,7 +4240,6 @@
     },
     {
         "fields": {
-            "slug": "meetic",
             "label": "Meetic",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4721,7 +4249,6 @@
     },
     {
         "fields": {
-            "slug": "mega-octet",
             "label": "Mega-octet",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4731,7 +4258,6 @@
     },
     {
         "fields": {
-            "slug": "mel",
             "label": "M\u00e9l",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4741,7 +4267,6 @@
     },
     {
         "fields": {
-            "slug": "meme-internet",
             "label": "M\u00e8me Internet",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4751,7 +4276,6 @@
     },
     {
         "fields": {
-            "slug": "merge",
             "label": "Merge",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4761,7 +4285,6 @@
     },
     {
         "fields": {
-            "slug": "merise",
             "label": "Merise",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4771,7 +4294,6 @@
     },
     {
         "fields": {
-            "slug": "methodes-agiles",
             "label": "M\u00e9thodes agiles",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4781,7 +4303,6 @@
     },
     {
         "fields": {
-            "slug": "micral",
             "label": "Micral",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4791,7 +4312,6 @@
     },
     {
         "fields": {
-            "slug": "microsoft",
             "label": "Microsoft",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4801,7 +4321,6 @@
     },
     {
         "fields": {
-            "slug": "midi",
             "label": "Midi",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4811,7 +4330,6 @@
     },
     {
         "fields": {
-            "slug": "minitel",
             "label": "Minitel",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4821,7 +4339,6 @@
     },
     {
         "fields": {
-            "slug": "mise-a-jour",
             "label": "Mise \u00e0 jour",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4831,7 +4348,6 @@
     },
     {
         "fields": {
-            "slug": "mise-en-production",
             "label": "Mise en production",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4841,7 +4357,6 @@
     },
     {
         "fields": {
-            "slug": "mobile",
             "label": "Mobile",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4851,7 +4366,6 @@
     },
     {
         "fields": {
-            "slug": "modem",
             "label": "Modem",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4861,7 +4375,6 @@
     },
     {
         "fields": {
-            "slug": "modo",
             "label": "Modo",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4871,7 +4384,6 @@
     },
     {
         "fields": {
-            "slug": "motorola",
             "label": "Motorola",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4881,7 +4393,6 @@
     },
     {
         "fields": {
-            "slug": "mot-croisillon",
             "label": "Mot croisillon",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4891,7 +4402,6 @@
     },
     {
         "fields": {
-            "slug": "mot-de-passe",
             "label": "Mot de passe",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4901,7 +4411,6 @@
     },
     {
         "fields": {
-            "slug": "mosaic",
             "label": "Mosaic",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4911,7 +4420,6 @@
     },
     {
         "fields": {
-            "slug": "mozilla",
             "label": "Mozilla",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4921,7 +4429,6 @@
     },
     {
         "fields": {
-            "slug": "mozinor",
             "label": "Mozinor",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4931,7 +4438,6 @@
     },
     {
         "fields": {
-            "slug": "mqseries",
             "label": "MQseries",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4941,7 +4447,6 @@
     },
     {
         "fields": {
-            "slug": "ms-dos",
             "label": "MS-DOS",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4951,7 +4456,6 @@
     },
     {
         "fields": {
-            "slug": "mvc",
             "label": "MVC",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4961,7 +4465,6 @@
     },
     {
         "fields": {
-            "slug": "mvp",
             "label": "MVP",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4971,7 +4474,6 @@
     },
     {
         "fields": {
-            "slug": "mycosycloud",
             "label": "MyCosyCloud",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4981,7 +4483,6 @@
     },
     {
         "fields": {
-            "slug": "mygaleorg",
             "label": "Mygale.org",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -4991,7 +4492,6 @@
     },
     {
         "fields": {
-            "slug": "myspace",
             "label": "MySpace",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5001,7 +4501,6 @@
     },
     {
         "fields": {
-            "slug": "mysql",
             "label": "MySQL",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5011,7 +4510,6 @@
     },
     {
         "fields": {
-            "slug": "nano",
             "label": "Nano",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5021,7 +4519,6 @@
     },
     {
         "fields": {
-            "slug": "napster",
             "label": "Napster",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5031,7 +4528,6 @@
     },
     {
         "fields": {
-            "slug": "nathalie",
             "label": "Nathalie",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5041,7 +4537,6 @@
     },
     {
         "fields": {
-            "slug": "nerd",
             "label": "Nerd",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5051,7 +4546,6 @@
     },
     {
         "fields": {
-            "slug": "netbeans",
             "label": "NetBeans",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5061,7 +4555,6 @@
     },
     {
         "fields": {
-            "slug": "netflix",
             "label": "NetFlix",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5071,7 +4564,6 @@
     },
     {
         "fields": {
-            "slug": "netscape",
             "label": "Netscape",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5081,7 +4573,6 @@
     },
     {
         "fields": {
-            "slug": "next",
             "label": "NeXT",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5091,7 +4582,6 @@
     },
     {
         "fields": {
-            "slug": "newsgroup",
             "label": "Newsgroup",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5101,7 +4591,6 @@
     },
     {
         "fields": {
-            "slug": "nfc",
             "label": "NFC",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5111,7 +4600,6 @@
     },
     {
         "fields": {
-            "slug": "nginx",
             "label": "nginx",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5121,7 +4609,6 @@
     },
     {
         "fields": {
-            "slug": "nodejs",
             "label": "NodeJS",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5131,7 +4618,6 @@
     },
     {
         "fields": {
-            "slug": "nokia",
             "label": "Nokia",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5141,7 +4627,6 @@
     },
     {
         "fields": {
-            "slug": "noob",
             "label": "Noob",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5151,7 +4636,6 @@
     },
     {
         "fields": {
-            "slug": "normcore",
             "label": "NormCore",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5161,7 +4645,6 @@
     },
     {
         "fields": {
-            "slug": "nosql",
             "label": "NoSQL",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5171,7 +4654,6 @@
     },
     {
         "fields": {
-            "slug": "nouvelles-technologies",
             "label": "Nouvelles Technologies",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5181,7 +4663,6 @@
     },
     {
         "fields": {
-            "slug": "nullpointerexception",
             "label": "NullPointerException",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5191,7 +4672,6 @@
     },
     {
         "fields": {
-            "slug": "numerique",
             "label": "Num\u00e9rique",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5201,7 +4681,6 @@
     },
     {
         "fields": {
-            "slug": "nsa",
             "label": "NSA",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5211,7 +4690,6 @@
     },
     {
         "fields": {
-            "slug": "nsfw",
             "label": "NSFW",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5221,7 +4699,6 @@
     },
     {
         "fields": {
-            "slug": "nyan-cat",
             "label": "Nyan Cat",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5231,7 +4708,6 @@
     },
     {
         "fields": {
-            "slug": "objective-c",
             "label": "Objective C",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5241,7 +4717,6 @@
     },
     {
         "fields": {
-            "slug": "objet-connecte",
             "label": "Objet connect\u00e9",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5251,7 +4726,6 @@
     },
     {
         "fields": {
-            "slug": "octal",
             "label": "Octal",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5261,7 +4735,6 @@
     },
     {
         "fields": {
-            "slug": "octet",
             "label": "Octet",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5271,7 +4744,6 @@
     },
     {
         "fields": {
-            "slug": "octocat",
             "label": "octocat",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5281,7 +4753,6 @@
     },
     {
         "fields": {
-            "slug": "omg",
             "label": "OMG",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5291,7 +4762,6 @@
     },
     {
         "fields": {
-            "slug": "omfg",
             "label": "OMFG",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5301,7 +4771,6 @@
     },
     {
         "fields": {
-            "slug": "one-more-thing",
             "label": "One more thing",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5311,7 +4780,6 @@
     },
     {
         "fields": {
-            "slug": "onion",
             "label": "Onion",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5321,7 +4789,6 @@
     },
     {
         "fields": {
-            "slug": "oocss",
             "label": "OOCSS",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5331,7 +4798,6 @@
     },
     {
         "fields": {
-            "slug": "openbsd",
             "label": "OpenBSD",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5341,7 +4807,6 @@
     },
     {
         "fields": {
-            "slug": "opendata",
             "label": "OpenData",
             "creator": 12,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5351,7 +4816,6 @@
     },
     {
         "fields": {
-            "slug": "openoffice",
             "label": "OpenOffice",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5361,7 +4825,6 @@
     },
     {
         "fields": {
-            "slug": "open-street-maps",
             "label": "Open Street Maps",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5371,7 +4834,6 @@
     },
     {
         "fields": {
-            "slug": "opensuse",
             "label": "OpenSUSE",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5381,7 +4843,6 @@
     },
     {
         "fields": {
-            "slug": "openweb",
             "label": "Openweb",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5391,7 +4852,6 @@
     },
     {
         "fields": {
-            "slug": "opera",
             "label": "Opera",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5401,7 +4861,6 @@
     },
     {
         "fields": {
-            "slug": "optimisation",
             "label": "Optimisation",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5411,7 +4870,6 @@
     },
     {
         "fields": {
-            "slug": "orthographe",
             "label": "Orthographe",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5421,7 +4879,6 @@
     },
     {
         "fields": {
-            "slug": "os",
             "label": "OS",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5431,7 +4888,6 @@
     },
     {
         "fields": {
-            "slug": "os2-warp",
             "label": "OS2 Warp",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5441,7 +4897,6 @@
     },
     {
         "fields": {
-            "slug": "oseb",
             "label": "OSEB",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5451,7 +4906,6 @@
     },
     {
         "fields": {
-            "slug": "osef",
             "label": "OSEF",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5461,7 +4915,6 @@
     },
     {
         "fields": {
-            "slug": "osm",
             "label": "OSM",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5471,7 +4924,6 @@
     },
     {
         "fields": {
-            "slug": "osx",
             "label": "OSX",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5481,7 +4933,6 @@
     },
     {
         "fields": {
-            "slug": "overblog",
             "label": "OverBlog",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5491,7 +4942,6 @@
     },
     {
         "fields": {
-            "slug": "ovh",
             "label": "OVH",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5501,7 +4951,6 @@
     },
     {
         "fields": {
-            "slug": "owncloud",
             "label": "Owncloud",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5511,7 +4960,6 @@
     },
     {
         "fields": {
-            "slug": "owned",
             "label": "Owned",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5521,7 +4969,6 @@
     },
     {
         "fields": {
-            "slug": "p2p",
             "label": "P2P",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5531,7 +4978,6 @@
     },
     {
         "fields": {
-            "slug": "pebcak",
             "label": "Pebcak",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5541,7 +4987,6 @@
     },
     {
         "fields": {
-            "slug": "packager",
             "label": "Packager",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5551,7 +4996,6 @@
     },
     {
         "fields": {
-            "slug": "pagemaker",
             "label": "PageMaker",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5561,7 +5005,6 @@
     },
     {
         "fields": {
-            "slug": "pair-programming",
             "label": "Pair programming",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5571,7 +5014,6 @@
     },
     {
         "fields": {
-            "slug": "palc-proxy-a-la-con",
             "label": "PALC (Proxy \u00c0 La Con)",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5581,7 +5023,6 @@
     },
     {
         "fields": {
-            "slug": "paris-web",
             "label": "Paris Web",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5591,7 +5032,6 @@
     },
     {
         "fields": {
-            "slug": "pascal",
             "label": "Pascal",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5601,7 +5041,6 @@
     },
     {
         "fields": {
-            "slug": "password",
             "label": "Password",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5611,7 +5050,6 @@
     },
     {
         "fields": {
-            "slug": "pau",
             "label": "Pau",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5621,7 +5059,6 @@
     },
     {
         "fields": {
-            "slug": "pc",
             "label": "PC",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5631,7 +5068,6 @@
     },
     {
         "fields": {
-            "slug": "pernot-pablo",
             "label": "Pernot (Pablo)",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5641,7 +5077,6 @@
     },
     {
         "fields": {
-            "slug": "pdf",
             "label": "PDF",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5651,7 +5086,6 @@
     },
     {
         "fields": {
-            "slug": "perl",
             "label": "Perl",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5661,7 +5095,6 @@
     },
     {
         "fields": {
-            "slug": "personal-branding",
             "label": "Personal branding",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5671,7 +5104,6 @@
     },
     {
         "fields": {
-            "slug": "pgp",
             "label": "PGP",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5681,7 +5113,6 @@
     },
     {
         "fields": {
-            "slug": "phishing",
             "label": "Phishing",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5691,7 +5122,6 @@
     },
     {
         "fields": {
-            "slug": "php",
             "label": "PHP",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5701,7 +5131,6 @@
     },
     {
         "fields": {
-            "slug": "phpbb",
             "label": "phpBB",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5711,7 +5140,6 @@
     },
     {
         "fields": {
-            "slug": "phpstorm",
             "label": "PHPStorm",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5721,7 +5149,6 @@
     },
     {
         "fields": {
-            "slug": "photoshop",
             "label": "Photoshop",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5731,7 +5158,6 @@
     },
     {
         "fields": {
-            "slug": "picasa",
             "label": "Picasa",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5741,7 +5167,6 @@
     },
     {
         "fields": {
-            "slug": "ping",
             "label": "ping",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5751,7 +5176,6 @@
     },
     {
         "fields": {
-            "slug": "pirate",
             "label": "Pirate",
             "creator": 11,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5761,7 +5185,6 @@
     },
     {
         "fields": {
-            "slug": "pirate-bay",
             "label": "Pirate Bay",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5771,7 +5194,6 @@
     },
     {
         "fields": {
-            "slug": "pixel",
             "label": "Pixel",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5781,7 +5203,6 @@
     },
     {
         "fields": {
-            "slug": "pizza",
             "label": "Pizza",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5791,7 +5212,6 @@
     },
     {
         "fields": {
-            "slug": "plone",
             "label": "Plone",
             "creator": 6,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5801,7 +5221,6 @@
     },
     {
         "fields": {
-            "slug": "plussoyer",
             "label": "Plussoyer",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5811,7 +5230,6 @@
     },
     {
         "fields": {
-            "slug": "poc",
             "label": "PoC",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5821,7 +5239,6 @@
     },
     {
         "fields": {
-            "slug": "poke",
             "label": "Poke",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5831,7 +5248,6 @@
     },
     {
         "fields": {
-            "slug": "pomme",
             "label": "Pomme",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5841,7 +5257,6 @@
     },
     {
         "fields": {
-            "slug": "pomodoro",
             "label": "Pomodoro",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5851,7 +5266,6 @@
     },
     {
         "fields": {
-            "slug": "poney",
             "label": "Poney",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5861,7 +5275,6 @@
     },
     {
         "fields": {
-            "slug": "pornhub",
             "label": "PornHub",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5871,7 +5284,6 @@
     },
     {
         "fields": {
-            "slug": "portfolio",
             "label": "portfolio",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5881,7 +5293,6 @@
     },
     {
         "fields": {
-            "slug": "postgresql",
             "label": "PostgreSQL",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5891,7 +5302,6 @@
     },
     {
         "fields": {
-            "slug": "post-it",
             "label": "Post-it",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5901,7 +5311,6 @@
     },
     {
         "fields": {
-            "slug": "postpone",
             "label": "Postpone",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5911,7 +5320,6 @@
     },
     {
         "fields": {
-            "slug": "powerbuilder",
             "label": "PowerBuilder",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5921,7 +5329,6 @@
     },
     {
         "fields": {
-            "slug": "power-point",
             "label": "Power Point",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5931,7 +5338,6 @@
     },
     {
         "fields": {
-            "slug": "prestashop",
             "label": "Prestashop",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5941,7 +5347,6 @@
     },
     {
         "fields": {
-            "slug": "pre-prod",
             "label": "Pr\u00e9-prod",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5951,7 +5356,6 @@
     },
     {
         "fields": {
-            "slug": "procrastination",
             "label": "Procrastination",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5961,7 +5365,6 @@
     },
     {
         "fields": {
-            "slug": "product-manager-pm",
             "label": "Product Manager (PM)",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5971,7 +5374,6 @@
     },
     {
         "fields": {
-            "slug": "product-owner-po",
             "label": "Product Owner (PO)",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5981,7 +5383,6 @@
     },
     {
         "fields": {
-            "slug": "programmateur",
             "label": "Programmateur",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -5991,7 +5392,6 @@
     },
     {
         "fields": {
-            "slug": "programmation-fonctionnelle",
             "label": "Programmation Fonctionnelle",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6001,7 +5401,6 @@
     },
     {
         "fields": {
-            "slug": "protocole",
             "label": "Protocole",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6011,7 +5410,6 @@
     },
     {
         "fields": {
-            "slug": "prototype",
             "label": "prototype",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6021,7 +5419,6 @@
     },
     {
         "fields": {
-            "slug": "prototypejs",
             "label": "prototype.js",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6031,7 +5428,6 @@
     },
     {
         "fields": {
-            "slug": "proxy",
             "label": "Proxy",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6041,7 +5437,6 @@
     },
     {
         "fields": {
-            "slug": "publisher",
             "label": "Publisher",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6051,7 +5446,6 @@
     },
     {
         "fields": {
-            "slug": "python",
             "label": "Python",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6061,7 +5455,6 @@
     },
     {
         "fields": {
-            "slug": "pwned",
             "label": "Pwned",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6071,7 +5464,6 @@
     },
     {
         "fields": {
-            "slug": "quadrature-du-net",
             "label": "Quadrature du Net",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6081,7 +5473,6 @@
     },
     {
         "fields": {
-            "slug": "quadra-dure-du-net",
             "label": "Quadra dure du net",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6091,7 +5482,6 @@
     },
     {
         "fields": {
-            "slug": "qualite",
             "label": "Qualit\u00e9",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6101,7 +5491,6 @@
     },
     {
         "fields": {
-            "slug": "quantum-leap",
             "label": "Quantum Leap",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6111,7 +5500,6 @@
     },
     {
         "fields": {
-            "slug": "quota",
             "label": "Quota",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6121,7 +5509,6 @@
     },
     {
         "fields": {
-            "slug": "quantique",
             "label": "Quantique",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6131,7 +5518,6 @@
     },
     {
         "fields": {
-            "slug": "quicktime",
             "label": "QuickTime",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6141,7 +5527,6 @@
     },
     {
         "fields": {
-            "slug": "raccourcis-clavier",
             "label": "Raccourcis clavier",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6151,7 +5536,6 @@
     },
     {
         "fields": {
-            "slug": "ram",
             "label": "RAM",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6161,7 +5545,6 @@
     },
     {
         "fields": {
-            "slug": "rapport-de-bug",
             "label": "Rapport de bug",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6171,7 +5554,6 @@
     },
     {
         "fields": {
-            "slug": "raspberry-pi",
             "label": "Raspberry pi",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6181,7 +5563,6 @@
     },
     {
         "fields": {
-            "slug": "real",
             "label": "Real",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6191,7 +5572,6 @@
     },
     {
         "fields": {
-            "slug": "react",
             "label": "React",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6201,7 +5581,6 @@
     },
     {
         "fields": {
-            "slug": "readme",
             "label": "README",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6211,7 +5590,6 @@
     },
     {
         "fields": {
-            "slug": "recruteur",
             "label": "Recruteur",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6221,7 +5599,6 @@
     },
     {
         "fields": {
-            "slug": "reddit",
             "label": "Reddit",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6231,7 +5608,6 @@
     },
     {
         "fields": {
-            "slug": "redhat",
             "label": "Redhat",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6241,7 +5617,6 @@
     },
     {
         "fields": {
-            "slug": "redmine",
             "label": "Redmine",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6251,7 +5626,6 @@
     },
     {
         "fields": {
-            "slug": "referencement",
             "label": "R\u00e9f\u00e9rencement",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6261,7 +5635,6 @@
     },
     {
         "fields": {
-            "slug": "regle-34",
             "label": "R\u00e8gle 34",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6271,7 +5644,6 @@
     },
     {
         "fields": {
-            "slug": "regle-35",
             "label": "R\u00e8gle 35",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6281,7 +5653,6 @@
     },
     {
         "fields": {
-            "slug": "repo",
             "label": "Repo",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6291,7 +5662,6 @@
     },
     {
         "fields": {
-            "slug": "repository",
             "label": "Repository",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6301,7 +5671,6 @@
     },
     {
         "fields": {
-            "slug": "reseau",
             "label": "R\u00e9seau",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6311,7 +5680,6 @@
     },
     {
         "fields": {
-            "slug": "reseaux-sociaux",
             "label": "R\u00e9seaux sociaux",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6321,7 +5689,6 @@
     },
     {
         "fields": {
-            "slug": "reset",
             "label": "Reset",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6331,7 +5698,6 @@
     },
     {
         "fields": {
-            "slug": "responsive",
             "label": "Responsive",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6341,7 +5707,6 @@
     },
     {
         "fields": {
-            "slug": "rfc",
             "label": "RFC",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6351,7 +5716,6 @@
     },
     {
         "fields": {
-            "slug": "rmll",
             "label": "RMLL",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6361,7 +5725,6 @@
     },
     {
         "fields": {
-            "slug": "rofl",
             "label": "ROFL",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6371,7 +5734,6 @@
     },
     {
         "fields": {
-            "slug": "rom",
             "label": "ROM",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6381,7 +5743,6 @@
     },
     {
         "fields": {
-            "slug": "root",
             "label": "root",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6391,7 +5752,6 @@
     },
     {
         "fields": {
-            "slug": "rss",
             "label": "RSS",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6401,7 +5761,6 @@
     },
     {
         "fields": {
-            "slug": "rtfm",
             "label": "RTFM",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6411,7 +5770,6 @@
     },
     {
         "fields": {
-            "slug": "ruby",
             "label": "Ruby",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6421,7 +5779,6 @@
     },
     {
         "fields": {
-            "slug": "ruby-on-rails",
             "label": "Ruby on Rails",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6431,7 +5788,6 @@
     },
     {
         "fields": {
-            "slug": "safari",
             "label": "Safari",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6441,7 +5797,6 @@
     },
     {
         "fields": {
-            "slug": "sap",
             "label": "SAP",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6451,7 +5806,6 @@
     },
     {
         "fields": {
-            "slug": "sass",
             "label": "Sass",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6461,7 +5815,6 @@
     },
     {
         "fields": {
-            "slug": "scala",
             "label": "scala",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6471,7 +5824,6 @@
     },
     {
         "fields": {
-            "slug": "scam",
             "label": "Scam",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6481,7 +5833,6 @@
     },
     {
         "fields": {
-            "slug": "scriptaculous",
             "label": "scrip.taculo.us",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6491,7 +5842,6 @@
     },
     {
         "fields": {
-            "slug": "scrum",
             "label": "Scrum",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6501,7 +5851,6 @@
     },
     {
         "fields": {
-            "slug": "scrum-master",
             "label": "Scrum Master",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6511,7 +5860,6 @@
     },
     {
         "fields": {
-            "slug": "selinux",
             "label": "SELinux",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6521,7 +5869,6 @@
     },
     {
         "fields": {
-            "slug": "seo",
             "label": "SEO",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6531,7 +5878,6 @@
     },
     {
         "fields": {
-            "slug": "sem",
             "label": "SEM",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6541,7 +5887,6 @@
     },
     {
         "fields": {
-            "slug": "sharepoint",
             "label": "SharePoint",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6551,7 +5896,6 @@
     },
     {
         "fields": {
-            "slug": "shell",
             "label": "Shell",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6561,7 +5905,6 @@
     },
     {
         "fields": {
-            "slug": "shockwave",
             "label": "Shockwave",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6571,7 +5914,6 @@
     },
     {
         "fields": {
-            "slug": "silicon-graphics",
             "label": "Silicon Graphics",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6581,7 +5923,6 @@
     },
     {
         "fields": {
-            "slug": "silicon-valley-la-serie",
             "label": "Silicon valley (la s\u00e9rie)",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6591,7 +5932,6 @@
     },
     {
         "fields": {
-            "slug": "silicon-valley-le-lieu",
             "label": "Silicon Valley (le lieu)",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6601,7 +5941,6 @@
     },
     {
         "fields": {
-            "slug": "siri",
             "label": "Siri",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6611,7 +5950,6 @@
     },
     {
         "fields": {
-            "slug": "skyblog",
             "label": "Skyblog",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6621,7 +5959,6 @@
     },
     {
         "fields": {
-            "slug": "skynet",
             "label": "Skynet",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6631,7 +5968,6 @@
     },
     {
         "fields": {
-            "slug": "skype",
             "label": "Skype",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6641,7 +5977,6 @@
     },
     {
         "fields": {
-            "slug": "sketch",
             "label": "Sketch",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6651,7 +5986,6 @@
     },
     {
         "fields": {
-            "slug": "sketchapp",
             "label": "SketchApp",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6661,7 +5995,6 @@
     },
     {
         "fields": {
-            "slug": "slack",
             "label": "slack",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6671,7 +6004,6 @@
     },
     {
         "fields": {
-            "slug": "slideshow",
             "label": "Slideshow",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6681,7 +6013,6 @@
     },
     {
         "fields": {
-            "slug": "smacss",
             "label": "SMACSS",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6691,7 +6022,6 @@
     },
     {
         "fields": {
-            "slug": "smartphone",
             "label": "Smartphone",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6701,7 +6031,6 @@
     },
     {
         "fields": {
-            "slug": "smartwatch",
             "label": "Smartwatch",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6711,7 +6040,6 @@
     },
     {
         "fields": {
-            "slug": "smiley",
             "label": "Smiley",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6721,7 +6049,6 @@
     },
     {
         "fields": {
-            "slug": "sms",
             "label": "SMS",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6731,7 +6058,6 @@
     },
     {
         "fields": {
-            "slug": "snapchat",
             "label": "SnapChat",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6741,7 +6067,6 @@
     },
     {
         "fields": {
-            "slug": "social-network",
             "label": "Social network",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6751,7 +6076,6 @@
     },
     {
         "fields": {
-            "slug": "sociocratie",
             "label": "Sociocratie",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6761,7 +6085,6 @@
     },
     {
         "fields": {
-            "slug": "socket",
             "label": "Socket",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6771,7 +6094,6 @@
     },
     {
         "fields": {
-            "slug": "software",
             "label": "Software",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6781,7 +6103,6 @@
     },
     {
         "fields": {
-            "slug": "software-craftsmanship",
             "label": "Software Craftsmanship",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6791,7 +6112,6 @@
     },
     {
         "fields": {
-            "slug": "solaris",
             "label": "Solaris",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6801,7 +6121,6 @@
     },
     {
         "fields": {
-            "slug": "soundcloud",
             "label": "Soundcloud",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6811,7 +6130,6 @@
     },
     {
         "fields": {
-            "slug": "sourceforge",
             "label": "Sourceforge",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6821,7 +6139,6 @@
     },
     {
         "fields": {
-            "slug": "spaghetti",
             "label": "Spaghetti",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6831,7 +6148,6 @@
     },
     {
         "fields": {
-            "slug": "spam",
             "label": "Spam",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6841,7 +6157,6 @@
     },
     {
         "fields": {
-            "slug": "spip",
             "label": "Spip",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6851,7 +6166,6 @@
     },
     {
         "fields": {
-            "slug": "spotify",
             "label": "Spotify",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6861,7 +6175,6 @@
     },
     {
         "fields": {
-            "slug": "spring",
             "label": "Spring",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6871,7 +6184,6 @@
     },
     {
         "fields": {
-            "slug": "ssii",
             "label": "SSII",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6881,7 +6193,6 @@
     },
     {
         "fields": {
-            "slug": "ssh",
             "label": "SSH",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6891,7 +6202,6 @@
     },
     {
         "fields": {
-            "slug": "ssll",
             "label": "SSLL",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6901,7 +6211,6 @@
     },
     {
         "fields": {
-            "slug": "stackoverflow",
             "label": "Stackoverflow",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6911,7 +6220,6 @@
     },
     {
         "fields": {
-            "slug": "stacktrace",
             "label": "Stacktrace",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6921,7 +6229,6 @@
     },
     {
         "fields": {
-            "slug": "stage",
             "label": "Stage",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6931,7 +6238,6 @@
     },
     {
         "fields": {
-            "slug": "stagiaire",
             "label": "Stagiaire",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6941,7 +6247,6 @@
     },
     {
         "fields": {
-            "slug": "standing-desk",
             "label": "Standing desk",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6951,7 +6256,6 @@
     },
     {
         "fields": {
-            "slug": "stargate",
             "label": "Stargate",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6961,7 +6265,6 @@
     },
     {
         "fields": {
-            "slug": "start-up",
             "label": "Start-up",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6971,7 +6274,6 @@
     },
     {
         "fields": {
-            "slug": "star-trek",
             "label": "Star Trek",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6981,7 +6283,6 @@
     },
     {
         "fields": {
-            "slug": "star-wars",
             "label": "Star Wars",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -6991,7 +6292,6 @@
     },
     {
         "fields": {
-            "slug": "statut",
             "label": "Statut",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7001,7 +6301,6 @@
     },
     {
         "fields": {
-            "slug": "steve",
             "label": "Steve",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7011,7 +6310,6 @@
     },
     {
         "fields": {
-            "slug": "stochastique",
             "label": "stochastique",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7021,7 +6319,6 @@
     },
     {
         "fields": {
-            "slug": "struts",
             "label": "Struts",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7031,7 +6328,6 @@
     },
     {
         "fields": {
-            "slug": "sql",
             "label": "SQL",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7041,7 +6337,6 @@
     },
     {
         "fields": {
-            "slug": "ssl",
             "label": "SSL",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7051,7 +6346,6 @@
     },
     {
         "fields": {
-            "slug": "stallman-richard",
             "label": "Stallman (Richard)",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7061,7 +6355,6 @@
     },
     {
         "fields": {
-            "slug": "string",
             "label": "String",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7071,7 +6364,6 @@
     },
     {
         "fields": {
-            "slug": "sublime-text",
             "label": "Sublime Text",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7081,7 +6373,6 @@
     },
     {
         "fields": {
-            "slug": "sudo",
             "label": "Sudo",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7091,7 +6382,6 @@
     },
     {
         "fields": {
-            "slug": "sudweb",
             "label": "SudWeb",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7101,7 +6391,6 @@
     },
     {
         "fields": {
-            "slug": "sun",
             "label": "Sun",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7111,7 +6400,6 @@
     },
     {
         "fields": {
-            "slug": "surcouf",
             "label": "Surcouf",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7121,7 +6409,6 @@
     },
     {
         "fields": {
-            "slug": "svn",
             "label": "SVN",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7131,7 +6418,6 @@
     },
     {
         "fields": {
-            "slug": "symfony",
             "label": "Symfony",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7141,7 +6427,6 @@
     },
     {
         "fields": {
-            "slug": "sysadmin",
             "label": "Sysadmin",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7151,7 +6436,6 @@
     },
     {
         "fields": {
-            "slug": "systemd",
             "label": "Systemd",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7161,7 +6445,6 @@
     },
     {
         "fields": {
-            "slug": "tactile",
             "label": "Tactile",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7171,7 +6454,6 @@
     },
     {
         "fields": {
-            "slug": "tdd",
             "label": "TDD",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7181,7 +6463,6 @@
     },
     {
         "fields": {
-            "slug": "tele2",
             "label": "Tele2",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7191,7 +6472,6 @@
     },
     {
         "fields": {
-            "slug": "telecran",
             "label": "T\u00e9l\u00e9cran",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7201,7 +6481,6 @@
     },
     {
         "fields": {
-            "slug": "televerser",
             "label": "T\u00e9l\u00e9verser",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7211,7 +6490,6 @@
     },
     {
         "fields": {
-            "slug": "telnet",
             "label": "Telnet",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7221,7 +6499,6 @@
     },
     {
         "fields": {
-            "slug": "teapot",
             "label": "Teapot",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7231,7 +6508,6 @@
     },
     {
         "fields": {
-            "slug": "techcrunch",
             "label": "TechCrunch",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7241,7 +6517,6 @@
     },
     {
         "fields": {
-            "slug": "test-unitaire",
             "label": "Test unitaire",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7251,7 +6526,6 @@
     },
     {
         "fields": {
-            "slug": "tetalab",
             "label": "Tetalab",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7261,7 +6535,6 @@
     },
     {
         "fields": {
-            "slug": "thsf",
             "label": "THSF",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7271,7 +6544,6 @@
     },
     {
         "fields": {
-            "slug": "thunderbird",
             "label": "Thunderbird",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7281,7 +6553,6 @@
     },
     {
         "fields": {
-            "slug": "tic",
             "label": "TIC",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7291,7 +6562,6 @@
     },
     {
         "fields": {
-            "slug": "tim-berners-lee",
             "label": "Tim Berners-Lee",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7301,7 +6571,6 @@
     },
     {
         "fields": {
-            "slug": "tinder",
             "label": "Tinder",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7311,7 +6580,6 @@
     },
     {
         "fields": {
-            "slug": "tirware",
             "label": "Tirware",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7321,7 +6589,6 @@
     },
     {
         "fields": {
-            "slug": "tiscali",
             "label": "Tiscali",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7331,7 +6598,6 @@
     },
     {
         "fields": {
-            "slug": "tld",
             "label": "TLD",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7341,7 +6607,6 @@
     },
     {
         "fields": {
-            "slug": "tl-dr",
             "label": "TL ; DR.",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7351,7 +6616,6 @@
     },
     {
         "fields": {
-            "slug": "todo",
             "label": "TODO",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7361,7 +6625,6 @@
     },
     {
         "fields": {
-            "slug": "toto",
             "label": "Toto",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7371,7 +6634,6 @@
     },
     {
         "fields": {
-            "slug": "tomcat",
             "label": "Tomcat",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7381,7 +6643,6 @@
     },
     {
         "fields": {
-            "slug": "tomee",
             "label": "TomEE",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7391,7 +6652,6 @@
     },
     {
         "fields": {
-            "slug": "topito",
             "label": "Topito",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7401,7 +6661,6 @@
     },
     {
         "fields": {
-            "slug": "tor",
             "label": "TOR",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7411,7 +6670,6 @@
     },
     {
         "fields": {
-            "slug": "torrent",
             "label": "torrent",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7421,7 +6679,6 @@
     },
     {
         "fields": {
-            "slug": "torvalds-linus",
             "label": "Torvalds (Linus)",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7431,7 +6688,6 @@
     },
     {
         "fields": {
-            "slug": "touch",
             "label": "Touch",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7441,7 +6697,6 @@
     },
     {
         "fields": {
-            "slug": "trajan",
             "label": "Trajan",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7451,7 +6706,6 @@
     },
     {
         "fields": {
-            "slug": "transistor",
             "label": "Transistor",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7461,7 +6715,6 @@
     },
     {
         "fields": {
-            "slug": "travis",
             "label": "Travis",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7471,7 +6724,6 @@
     },
     {
         "fields": {
-            "slug": "troll",
             "label": "troll",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7481,7 +6733,6 @@
     },
     {
         "fields": {
-            "slug": "trolldi",
             "label": "Trolldi",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7491,7 +6742,6 @@
     },
     {
         "fields": {
-            "slug": "trololo",
             "label": "Trololo",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7501,7 +6751,6 @@
     },
     {
         "fields": {
-            "slug": "trojan",
             "label": "Trojan",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7511,7 +6760,6 @@
     },
     {
         "fields": {
-            "slug": "trello",
             "label": "Trello",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7521,7 +6769,6 @@
     },
     {
         "fields": {
-            "slug": "truecrypt",
             "label": "TrueCrypt",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7531,7 +6778,6 @@
     },
     {
         "fields": {
-            "slug": "tumblr",
             "label": "Tumblr",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7541,7 +6787,6 @@
     },
     {
         "fields": {
-            "slug": "turbo-pascal",
             "label": "Turbo Pascal",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7551,7 +6796,6 @@
     },
     {
         "fields": {
-            "slug": "turing",
             "label": "Turing",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7561,7 +6805,6 @@
     },
     {
         "fields": {
-            "slug": "tutoriel",
             "label": "Tutoriel",
             "creator": 9,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7571,7 +6814,6 @@
     },
     {
         "fields": {
-            "slug": "twitter",
             "label": "Twitter",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7581,7 +6823,6 @@
     },
     {
         "fields": {
-            "slug": "tweet",
             "label": "Tweet",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7591,7 +6832,6 @@
     },
     {
         "fields": {
-            "slug": "the-game-factory",
             "label": "The Game Factory",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7601,7 +6841,6 @@
     },
     {
         "fields": {
-            "slug": "ubuntu",
             "label": "Ubuntu",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7611,7 +6850,6 @@
     },
     {
         "fields": {
-            "slug": "ui",
             "label": "UI",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7621,7 +6859,6 @@
     },
     {
         "fields": {
-            "slug": "uml",
             "label": "UML",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7631,7 +6868,6 @@
     },
     {
         "fields": {
-            "slug": "url",
             "label": "URL",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7641,7 +6877,6 @@
     },
     {
         "fields": {
-            "slug": "usb",
             "label": "USB",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7651,7 +6886,6 @@
     },
     {
         "fields": {
-            "slug": "usenet",
             "label": "Usenet",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7661,7 +6895,6 @@
     },
     {
         "fields": {
-            "slug": "usenet-fr",
             "label": "Usenet-Fr",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7671,7 +6904,6 @@
     },
     {
         "fields": {
-            "slug": "ux",
             "label": "UX",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7681,7 +6913,6 @@
     },
     {
         "fields": {
-            "slug": "unix",
             "label": "Unix",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7691,7 +6922,6 @@
     },
     {
         "fields": {
-            "slug": "usine-logicielle",
             "label": "Usine logicielle",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7701,7 +6931,6 @@
     },
     {
         "fields": {
-            "slug": "utilisateur",
             "label": "Utilisateur",
             "creator": 11,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7711,7 +6940,6 @@
     },
     {
         "fields": {
-            "slug": "v1agra",
             "label": "V1agrA",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7721,7 +6949,6 @@
     },
     {
         "fields": {
-            "slug": "vala-langage",
             "label": "Vala (langage)",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7731,7 +6958,6 @@
     },
     {
         "fields": {
-            "slug": "vaporware",
             "label": "Vaporware",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7741,7 +6967,6 @@
     },
     {
         "fields": {
-            "slug": "vatferware",
             "label": "Vatferware",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7751,7 +6976,6 @@
     },
     {
         "fields": {
-            "slug": "veille",
             "label": "Veille",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7761,7 +6985,6 @@
     },
     {
         "fields": {
-            "slug": "vendredi",
             "label": "Vendredi",
             "creator": 10,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7771,7 +6994,6 @@
     },
     {
         "fields": {
-            "slug": "ver-worm",
             "label": "Ver (worm)",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7781,7 +7003,6 @@
     },
     {
         "fields": {
-            "slug": "vi",
             "label": "VI",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7791,7 +7012,6 @@
     },
     {
         "fields": {
-            "slug": "viadeo",
             "label": "Viadeo",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7801,7 +7021,6 @@
     },
     {
         "fields": {
-            "slug": "vim",
             "label": "VIM",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7811,7 +7030,6 @@
     },
     {
         "fields": {
-            "slug": "vinton-cerf",
             "label": "Vinton Cerf",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7821,7 +7039,6 @@
     },
     {
         "fields": {
-            "slug": "virus",
             "label": "Virus",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7831,7 +7048,6 @@
     },
     {
         "fields": {
-            "slug": "vista",
             "label": "Vista",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7841,7 +7057,6 @@
     },
     {
         "fields": {
-            "slug": "visual-c",
             "label": "Visual C++",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7851,7 +7066,6 @@
     },
     {
         "fields": {
-            "slug": "visual-studio-code",
             "label": "Visual Studio Code",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7861,7 +7075,6 @@
     },
     {
         "fields": {
-            "slug": "vlc",
             "label": "VLC",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7871,7 +7084,6 @@
     },
     {
         "fields": {
-            "slug": "vlog",
             "label": "Vlog",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7881,7 +7093,6 @@
     },
     {
         "fields": {
-            "slug": "voilafr",
             "label": "Voila.fr",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7891,7 +7102,6 @@
     },
     {
         "fields": {
-            "slug": "vmware",
             "label": "vmware",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7901,7 +7111,6 @@
     },
     {
         "fields": {
-            "slug": "w3c",
             "label": "W3C",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7911,7 +7120,6 @@
     },
     {
         "fields": {
-            "slug": "walking-devs",
             "label": "Walking devs",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7921,7 +7129,6 @@
     },
     {
         "fields": {
-            "slug": "wan",
             "label": "WAN",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7931,7 +7138,6 @@
     },
     {
         "fields": {
-            "slug": "wanadoo",
             "label": "Wanadoo",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7941,7 +7147,6 @@
     },
     {
         "fields": {
-            "slug": "wap",
             "label": "WAP",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7951,7 +7156,6 @@
     },
     {
         "fields": {
-            "slug": "warez",
             "label": "Warez",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7961,7 +7165,6 @@
     },
     {
         "fields": {
-            "slug": "wayland",
             "label": "Wayland",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7971,7 +7174,6 @@
     },
     {
         "fields": {
-            "slug": "wearables",
             "label": "wearables",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7981,7 +7183,6 @@
     },
     {
         "fields": {
-            "slug": "web",
             "label": "web",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -7991,7 +7192,6 @@
     },
     {
         "fields": {
-            "slug": "webcrawler",
             "label": "WebCrawler",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8001,7 +7201,6 @@
     },
     {
         "fields": {
-            "slug": "webapp",
             "label": "Webapp",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8011,7 +7210,6 @@
     },
     {
         "fields": {
-            "slug": "webdev",
             "label": "WebDev",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8021,7 +7219,6 @@
     },
     {
         "fields": {
-            "slug": "website",
             "label": "Website",
             "creator": 13,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8031,7 +7228,6 @@
     },
     {
         "fields": {
-            "slug": "webgl",
             "label": "WebGL",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8041,7 +7237,6 @@
     },
     {
         "fields": {
-            "slug": "webmaster",
             "label": "Webmaster",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8051,7 +7246,6 @@
     },
     {
         "fields": {
-            "slug": "wiki",
             "label": "Wiki",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8061,7 +7255,6 @@
     },
     {
         "fields": {
-            "slug": "wikimedia",
             "label": "Wikimedia",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8071,7 +7264,6 @@
     },
     {
         "fields": {
-            "slug": "wikipedia",
             "label": "Wikipedia",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8081,7 +7273,6 @@
     },
     {
         "fields": {
-            "slug": "wikileaks",
             "label": "Wikileaks",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8091,7 +7282,6 @@
     },
     {
         "fields": {
-            "slug": "winamp",
             "label": "WinAmp",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8101,7 +7291,6 @@
     },
     {
         "fields": {
-            "slug": "windev",
             "label": "Windev",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8111,7 +7300,6 @@
     },
     {
         "fields": {
-            "slug": "windows",
             "label": "Windows",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8121,7 +7309,6 @@
     },
     {
         "fields": {
-            "slug": "windows-phone",
             "label": "Windows Phone",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8131,7 +7318,6 @@
     },
     {
         "fields": {
-            "slug": "windows-vista",
             "label": "Windows Vista",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8141,7 +7327,6 @@
     },
     {
         "fields": {
-            "slug": "wine",
             "label": "Wine",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8151,7 +7336,6 @@
     },
     {
         "fields": {
-            "slug": "winrar",
             "label": "WinRAR",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8161,7 +7345,6 @@
     },
     {
         "fields": {
-            "slug": "wireframe",
             "label": "Wireframe",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8171,7 +7354,6 @@
     },
     {
         "fields": {
-            "slug": "wordpress",
             "label": "WordPress",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8181,7 +7363,6 @@
     },
     {
         "fields": {
-            "slug": "workflow",
             "label": "Workflow",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8191,7 +7372,6 @@
     },
     {
         "fields": {
-            "slug": "wtf",
             "label": "WTF",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8201,7 +7381,6 @@
     },
     {
         "fields": {
-            "slug": "www",
             "label": "www",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8211,7 +7390,6 @@
     },
     {
         "fields": {
-            "slug": "x11",
             "label": "X11",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8221,7 +7399,6 @@
     },
     {
         "fields": {
-            "slug": "x86",
             "label": "x86",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8231,7 +7408,6 @@
     },
     {
         "fields": {
-            "slug": "xd",
             "label": "XD",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8241,7 +7417,6 @@
     },
     {
         "fields": {
-            "slug": "xfce",
             "label": "XFCE",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8251,7 +7426,6 @@
     },
     {
         "fields": {
-            "slug": "xkcd",
             "label": "XKCD",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8261,7 +7435,6 @@
     },
     {
         "fields": {
-            "slug": "xml",
             "label": "XML",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8271,7 +7444,6 @@
     },
     {
         "fields": {
-            "slug": "xhtml",
             "label": "XHTML",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8281,7 +7453,6 @@
     },
     {
         "fields": {
-            "slug": "xml2",
             "label": "XML2",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8291,7 +7462,6 @@
     },
     {
         "fields": {
-            "slug": "xmpp",
             "label": "XMPP",
             "creator": 4,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8301,7 +7471,6 @@
     },
     {
         "fields": {
-            "slug": "xul",
             "label": "XUL",
             "creator": 16,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8311,7 +7480,6 @@
     },
     {
         "fields": {
-            "slug": "yacc",
             "label": "yacc",
             "creator": 19,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8321,7 +7489,6 @@
     },
     {
         "fields": {
-            "slug": "yahoo",
             "label": "YAHOO!",
             "creator": 15,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8331,7 +7498,6 @@
     },
     {
         "fields": {
-            "slug": "yaml",
             "label": "yaml",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8341,7 +7507,6 @@
     },
     {
         "fields": {
-            "slug": "yeti-sports",
             "label": "Y\u00e9ti sports",
             "creator": 8,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8351,7 +7516,6 @@
     },
     {
         "fields": {
-            "slug": "yo",
             "label": "Yo",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8361,7 +7525,6 @@
     },
     {
         "fields": {
-            "slug": "yolo",
             "label": "YOLO",
             "creator": 3,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8371,7 +7534,6 @@
     },
     {
         "fields": {
-            "slug": "youtube",
             "label": "Youtube",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8381,7 +7543,6 @@
     },
     {
         "fields": {
-            "slug": "youporn",
             "label": "Youporn",
             "creator": 2,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8391,7 +7552,6 @@
     },
     {
         "fields": {
-            "slug": "zend-framework",
             "label": "Zend Framework",
             "creator": 18,
             "created_at": "2015-10-10T22:38:03.864271Z"
@@ -8401,7 +7561,6 @@
     },
     {
         "fields": {
-            "slug": "zoning",
             "label": "Zoning",
             "creator": 7,
             "created_at": "2015-10-10T22:38:03.864271Z"
