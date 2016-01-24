@@ -6,6 +6,7 @@ from . import views
 router = DefaultRouter()
 router.register(r'word', views.Word)
 router.register(r'definition', views.Definition)
+router.register(r'word-vote', views.WordVote)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
