@@ -17,3 +17,7 @@ class Definition(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     word = models.ForeignKey(Word, related_name='definitions')
     is_primary = models.BooleanField(default=False)
+
+    def __str__(self):
+        return '{word} : {s.text}'.format(word=self.word.label.upper(), s=self)
+
