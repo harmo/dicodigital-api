@@ -1,4 +1,4 @@
-django
+django<1.9
 djangorestframework
 django-filter
 django-cors-headers
