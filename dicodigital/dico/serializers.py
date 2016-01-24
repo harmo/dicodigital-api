@@ -36,13 +36,12 @@ class Word(serializers.ModelSerializer):
     definitions = Definition(many=True, required=False)
     creator = serializers.SlugRelatedField(
         slug_field='username', read_only=True)
-    score = serializers.IntegerField(
-        source='word_score', read_only=True)
+    can_vote = serializers.SerializerMethodField()
 
     class Meta:
         model = models.Word
         fields = ('id', 'label', 'creator', 'url',
-                  'created_at', 'definitions', 'score')
+                  'created_at', 'definitions', 'can_vote')
 
     def create(self, validated_data):
         definitions = []
@@ -57,3 +56,18 @@ class Word(serializers.ModelSerializer):
                 is_primary=is_primary,
                 **definition)
         return word
+
+    def get_can_vote(self, obj):
+        return True
+
+
+class WordVote(serializers.ModelSerializer):
+    word = serializers.HyperlinkedRelatedField(
+        view_name='word-detail',
+        lookup_field='id',
+        read_only=True)
+
+    class Meta:
+        model = models.WordVote
+        fields = ('id', 'word', 'score', 'created_at',
+                  'user', 'ip_address', 'cookie')
