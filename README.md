@@ -57,3 +57,16 @@ Run the magic:
 ```bash
 ./manage.py runserver_plus
 ```
+
+## With Docker
+
+To run a container with everything in local, there is an image for that
+from the docker hub [https://hub.docker.com/u/dicodigital](https://hub.docker.com/u/dicodigital).
+
+Run the container with:
+
+```
+docker run --rm --name dicodigital-api -p 8000:8000 dicodigital/dicodigital-api
+```
+
+To build a new images, run `docker build -t dicodigital-api .`
