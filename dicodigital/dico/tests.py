@@ -34,7 +34,7 @@ class TestUtils(TestCase):
         return self.url_word_list + '?empty=' + str_bool
 
     def url_get_random_word(self):
-        return self.url_word_list + '?random'
+        return self.url_word_list + '?random=True'
 
 
 class AnonymousTest(TestUtils):
@@ -292,15 +292,15 @@ class ConnectedTest(TestUtils):
         word_response = self.c.post(self.url_word_list, word_data, format='json')
         definition_data = {'text': 'this is the definition', 'word': word_response.data['id']}
         self.c.post(self.url_definition_list, definition_data, format='json')
-        search = self.c.get(self.url_word_search_without_definition('true'))
+        search = self.c.get(self.url_word_search_without_definition('True'))
         results = search.data.get('results')
         self.assertEqual(len(results), 0)
         word2_data = {'label': 'second test word'}
         self.c.post(self.url_word_list, word2_data, format='json')
-        search = self.c.get(self.url_word_search_without_definition('true'))
+        search = self.c.get(self.url_word_search_without_definition('True'))
         results = search.data.get('results')
         self.assertEqual(len(results), 1)
-        search = self.c.get(self.url_word_search_without_definition('false'))
+        search = self.c.get(self.url_word_search_without_definition('False'))
         results = search.data.get('results')
         self.assertEqual(len(results), 1)
 
