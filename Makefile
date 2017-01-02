@@ -9,8 +9,8 @@ help:
 	@echo "	up  			run app and dependancies"
 	@echo "	down 			stop app and dependancies + remove containers"
 	@echo "	shell			connect to container with bash shell"
-	@echo "	shell_plus		run enhanced development shell"
-	@echo "	tests 			run unit tests "
+	@echo "	shell-plus		run enhanced development shell"
+	@echo "	unit-tests 			run unit tests "
 	@echo "	watch-tests		also run unit tests whenever python files changed"
 	
 
@@ -41,14 +41,14 @@ install: build up migrations
 shell:
 	$(EXEC) web /bin/bash
 
-shell_plus:
+shell-plus:
 	$(EXEC) web shell_plus
 
-tests:
+test:
 	$(RUN) web tests
 
-watch-tests:
+watch-test:
 	$(RUN) web watch-tests
 
 logs:
-	$(EXEC) web logs
+	docker-compose logs -f web 
