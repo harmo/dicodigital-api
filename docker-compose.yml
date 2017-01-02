@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  web:
+    restart: always
+    build: .
+    expose:
+      - "8000"
+    volumes:
+      - ./:/usr/src/app/
+    env_file: .env
+    command: /venv/bin/python /usr/src/app/manage.py runserver 0.0.0.0:8000
+
+  nginx:
+    restart: always
+    build: ./docker/nginx/
+    ports:
+      - "80:80"
+    volumes_from:
+      - web

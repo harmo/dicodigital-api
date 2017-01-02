@@ -11,4 +11,4 @@ pytest-django
 pytest-pep8
 pytest-sugar
 Werkzeug
-psycopg2
+watchdog
