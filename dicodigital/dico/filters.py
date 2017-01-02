@@ -6,10 +6,10 @@ from . import models
 class WordFilter(filters.FilterSet):
 
     creator = filters.CharFilter(name='creator__username')
-    first = filters.MethodFilter(action='search_by_first_letter')
-    def_like = filters.MethodFilter(action='search_by_word_in_definition')
-    empty = filters.MethodFilter(action='search_without_definition')
-    random = filters.MethodFilter(action='get_random_word')
+    first = filters.ModelChoiceFilter(method='search_by_first_letter')
+    def_like = filters.ModelChoiceFilter(method='search_by_word_in_definition')
+    empty = filters.ModelChoiceFilter(method='search_without_definition')
+    random = filters.ModelChoiceFilter(method='get_random_word')
 
     class Meta:
         model = models.Word
