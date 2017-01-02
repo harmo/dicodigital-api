@@ -14,9 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
 import os
+
+from rest_framework_swagger.views import get_swagger_view
+
 from django.conf.urls import include, url
 from django.contrib import admin
+
 import dicodigital.dico.urls
+
+
+schema_view = get_swagger_view(title='Doc')
 
 
 urlpatterns = [
@@ -26,5 +33,5 @@ urlpatterns = [
 
 if 'TRAVIS' not in os.environ:
     urlpatterns += [
-        url(r'^docs/', include('rest_framework_swagger.urls')),
+        url(r'^doc/', schema_view)
     ]
