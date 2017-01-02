@@ -36,7 +36,7 @@ build:
 	docker-compose build
 
 install: build up migrations
-	echo "Done."
+	$(RUN) web install-fixtures
 
 shell:
 	$(EXEC) web /bin/bash

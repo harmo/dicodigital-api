@@ -39,6 +39,7 @@ case $1 in
         export DATABASE_URL=sqlite:///:memory:
         pytest -s
         ;;
+
     watch-tests)
         shift
         export DJANGO_SETTINGS_MODULE=tests.settings
@@ -51,6 +52,13 @@ case $1 in
             --drop \
             ./
         ;;
+
+    install-fixtures)
+        python manage.py loaddata fixtures/users.json 
+        python manage.py loaddata fixtures/words.json
+        python manage.py loaddata fixtures/definitions.json
+        ;;
+
     *)
         $*
         ;;
