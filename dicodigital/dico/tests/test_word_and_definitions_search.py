@@ -3,7 +3,7 @@ from django.core.urlresolvers import reverse
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from rest_framework.test import APIClient
-from . import models
+from .. import models
 
 
 class TestUtils(TestCase):
@@ -346,20 +346,3 @@ class ConnectedTest(TestUtils):
         response = self.c.get(self.url_word_list + '?label=inexistant&random')
         results = response.data.get('results')
         self.assertEqual(len(results), 0)
-
-
-# class VotesTest(TestUtils):
-
-#     def setUp(self):
-#         super(VotesTest, self).setUp()
-#         self.c.force_authenticate(user=self.user)
-
-#     def test_word_as_no_votes_by_default(self):
-#         word_data = {'label': 'first word'}
-#         word_response = self.c.post(self.url_word_list, word_data, format='json')
-#         response = self.c.get(self.url_word_by_id(word_response.data['id']), follow=True)
-#         self.assertEqual(response.data['score'], None)
-
-#     # def test_user_can_vote_on_word(self):
-#     #     word_data = {'label': 'first word'}
-#     #     self.c.post(self.url_word_list, word_data, format='json')
