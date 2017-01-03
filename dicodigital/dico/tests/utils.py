@@ -39,3 +39,24 @@ class TestUtils(TestCase):
 
     def url_get_random_word(self):
         return self.url_word_list + '?random=True'
+
+    def create_word(self, label=''):
+        return self.c.post(
+            self.url_word_list,
+            {'label': self.word_label if not label else label},
+            format='json'
+        )
+
+    def create_definition(self, word=None, definition=None):
+        data = {
+            'text': 'this is the definition' if not definition else definition
+        }
+
+        if word:
+            data['word'] = word.data['id']
+
+        return self.c.post(
+            self.url_definition_list,
+            data,
+            format='json'
+        )

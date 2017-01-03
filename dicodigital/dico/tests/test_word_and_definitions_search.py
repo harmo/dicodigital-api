@@ -108,13 +108,6 @@ class ConnectedTest(TestUtils):
 
         self.assertEqual(len(response.data.get('results')), 0)
 
-    def create_word(self, label=''):
-        return self.c.post(
-            self.url_word_list,
-            {'label': self.word_label if not label else label},
-            format='json'
-        )
-
     def update_word(self, word=None):
         updated_data = {'label': self.word_updated_label}
         if word:
@@ -211,20 +204,6 @@ class ConnectedTest(TestUtils):
         )
 
         self.assertTrue(response.data['definitions'][0]['is_primary'])
-
-    def create_definition(self, word=None, definition=None):
-        data = {
-            'text': 'this is the definition' if not definition else definition
-        }
-
-        if word:
-            data['word'] = word.data['id']
-
-        return self.c.post(
-            self.url_definition_list,
-            data,
-            format='json'
-        )
 
     def test_add_definition_to_none_word(self):
         response = self.create_definition()
