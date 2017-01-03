@@ -69,7 +69,7 @@ class Word(viewsets.ModelViewSet, Checks):
         message = self.check_word_id()
         if message is not None:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
-        word_id = request.data.pop('word')
+        word_id = request.data.get('word')
         queryset = models.Word.objects.all()
         word = get_object_or_404(queryset, id=word_id)
         serializer = serializers.Word(
@@ -117,7 +117,7 @@ class Definition(viewsets.ModelViewSet, Checks):
         if message is not None:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
 
-        definition_id = request.data.pop('definition')
+        definition_id = request.data.get('definition')
         queryset = models.Definition.objects.all()
         definition = get_object_or_404(queryset, id=definition_id)
         serializer = serializers.Definition(
