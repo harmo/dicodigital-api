@@ -1,5 +1,6 @@
-from django.db import models
 from django.conf import settings
+from django.db import models
+from django.db.models import Sum
 
 
 class Word(models.Model):
@@ -20,6 +21,11 @@ class Definition(models.Model):
 
     def __str__(self):
         return '{word} : {s.text}'.format(word=self.word.label.upper(), s=self)
+
+    @property
+    def score(self):
+        total = self.vote_set.all().aggregate(Sum('score'))
+        return total['score__sum']
 
 
 class Vote(models.Model):
