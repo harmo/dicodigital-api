@@ -85,9 +85,7 @@ class Word(viewsets.ModelViewSet, Checks):
         return Response(serializer.data)
 
     def list(self, request, *args, **kwargs):
-        """
-        Search a word with label
-        """
+        """ Search a word with label """
         return super(Word, self).list(request, *args, **kwargs)
 
 
@@ -107,8 +105,10 @@ class Definition(viewsets.ModelViewSet, Checks):
         if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
 
-        serializer.save(contributor=self.request.user,
-                        word=self.request.data['word'])
+        serializer.save(
+            contributor=self.request.user,
+            word=self.request.data['word']
+        )
 
     def create(self, request, *args, **kwargs):
         """ Create the definition, with the word """
