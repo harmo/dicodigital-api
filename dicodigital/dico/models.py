@@ -28,14 +28,4 @@ class Vote(models.Model):
     cookie = models.CharField(max_length=64, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     score = models.IntegerField()
-
-    class Meta:
-        abstract = True
-
-
-class WordVote(Vote):
-    word = models.ForeignKey(Word)
-
-
-class DefinitionVote(Vote):
     definition = models.ForeignKey(Definition)

@@ -61,13 +61,13 @@ class Word(serializers.ModelSerializer):
         return True
 
 
-class WordVote(serializers.ModelSerializer):
-    word = serializers.HyperlinkedRelatedField(
-        view_name='word-detail',
+class Vote(serializers.ModelSerializer):
+    definition = serializers.HyperlinkedRelatedField(
+        view_name='definition-detail',
         lookup_field='id',
         read_only=True)
 
     class Meta:
-        model = models.WordVote
-        fields = ('id', 'word', 'score', 'created_at',
+        model = models.Vote
+        fields = ('id', 'definition', 'score', 'created_at',
                   'user', 'ip_address', 'cookie')

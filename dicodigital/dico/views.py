@@ -128,16 +128,16 @@ class Definition(viewsets.ModelViewSet, Checks):
         return Response(serializer.data)
 
 
-class WordVote(viewsets.ModelViewSet, Checks):
-    queryset = models.WordVote.objects.all()
-    serializer_class = serializers.WordVote
+class Vote(viewsets.ModelViewSet, Checks):
+    queryset = models.Vote.objects.all()
+    serializer_class = serializers.Vote
     permission_classes = (permissions.AllowAny,)
     pagination_class = DefinitionCursorPagination
 
     def create(self, request, *args, **kwargs):
-        """ Add a word vote, with the word """
+        """ Add a vote, with the definition """
         message = self.check_word_id()
-        if message is not None:
+        if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
-        import ipdb; ipdb.set_trace()
+
         return super(WordVote, self).create(request, *args, **kwargs)
