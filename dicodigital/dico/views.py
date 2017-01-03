@@ -54,8 +54,7 @@ class Word(viewsets.ModelViewSet, Checks):
 
     def get_queryset(self):
         return super(Word, self).get_queryset()\
-            .prefetch_related('creator', 'definitions__contributor')\
-            .annotate(word_score=Sum('wordvote__score'))
+            .prefetch_related('creator', 'definitions__contributor')
 
     def perform_create(self, serializer):
         """ Add the current connected user as creator """
