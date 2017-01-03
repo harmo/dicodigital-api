@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-from rest_framework import viewsets, permissions, status, pagination, filters
-from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
-from django.db.models import Sum
-from . import serializers, models, filters as my_filters
+
+from rest_framework import filters, pagination, permissions, status, viewsets
+from rest_framework.response import Response
+
+from . import filters as my_filters, models, serializers
 
 
 class WordCursorPagination(pagination.CursorPagination):
@@ -25,21 +26,23 @@ class Checks(object):
         """ Check if <keyword> parameter is in data """
         if keyword not in self.request.data:
             return '{} parameter is missing'.format(keyword)
+
         """ Check if <keyword> parameter is not None """
         if self.request.data[keyword] == '':
             return '{} ID cannot be None'.format(keyword)
+
         """ Check if <keyword> parameter is > 0 """
         if int(self.request.data[keyword]) < 1:
             return '{} ID must be an integer > 0'.format(keyword)
 
     def check_word_id(self):
         message = self._check_id('word')
-        if message is not None:
+        if message:
             return message
 
     def check_definition_id(self):
         message = self._check_id('definition')
-        if message is not None:
+        if message:
             return message
 
 
@@ -67,15 +70,18 @@ class Word(viewsets.ModelViewSet, Checks):
     def put(self, request, *args, **kwargs):
         """ Retrieve a word with its ID and update it """
         message = self.check_word_id()
-        if message is not None:
+        if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
-        word_id = request.data.get('word')
+
         queryset = models.Word.objects.all()
-        word = get_object_or_404(queryset, id=word_id)
+        word = get_object_or_404(queryset, id=request.data.get('word'))
+
         serializer = serializers.Word(
-            word, data=request.data, context={'request': request})
+            word, data=request.data, context={'request': request}
+        )
         if serializer.is_valid():
             serializer.save()
+
         return Response(serializer.data)
 
     def list(self, request, *args, **kwargs):
@@ -98,7 +104,7 @@ class Definition(viewsets.ModelViewSet, Checks):
     def perform_create(self, serializer):
         """ Add the current connected user as contributor """
         message = self.check_word_id()
-        if message is not None:
+        if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
 
         serializer.save(contributor=self.request.user,
@@ -107,23 +113,27 @@ class Definition(viewsets.ModelViewSet, Checks):
     def create(self, request, *args, **kwargs):
         """ Create the definition, with the word """
         message = self.check_word_id()
-        if message is not None:
+        if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
+
         return super(Definition, self).create(request, *args, **kwargs)
 
     def put(self, request, *args, **kwargs):
         """ Retrieve a definition with its ID and update it """
         message = self.check_definition_id()
-        if message is not None:
+        if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
 
-        definition_id = request.data.get('definition')
         queryset = models.Definition.objects.all()
-        definition = get_object_or_404(queryset, id=definition_id)
+        definition = get_object_or_404(
+            queryset, id=request.data.get('definition')
+        )
+
         serializer = serializers.Definition(
             definition, data=request.data, context={'request': request})
         if serializer.is_valid():
             serializer.save()
+
         return Response(serializer.data)
 
 
@@ -139,4 +149,4 @@ class Vote(viewsets.ModelViewSet, Checks):
         if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
 
-        return super(WordVote, self).create(request, *args, **kwargs)
+        return super(Vote, self).create(request, *args, **kwargs)
