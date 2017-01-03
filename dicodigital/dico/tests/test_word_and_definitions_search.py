@@ -1,45 +1,6 @@
 # -*- coding: utf-8 -*-
-from django.core.urlresolvers import reverse
-from django.contrib.auth import get_user_model
-from django.test import TestCase
-from rest_framework.test import APIClient
+from .utils import TestUtils
 from .. import models
-
-
-class TestUtils(TestCase):
-
-    def setUp(self):
-        super(TestUtils, self).setUp()
-        self.user = get_user_model().objects.create(
-            username='test_user', password='test')
-        self.user2 = get_user_model().objects.create(
-            username='test_user2', password='test')
-        self.c = APIClient()
-        self.url_word_list = reverse('word-list')
-        self.url_definition_list = reverse('definition-list')
-        self.url_word_vote_list = reverse('wordvote-list')
-
-    def url_word_by_id(self, id):
-        return '{url}{id}'.format(
-            url=self.url_word_list, id=id)
-
-    def url_word_search(self, label):
-        return self.url_word_list + '?label=' + label
-
-    def url_word_search_by_creator(self, creator):
-        return self.url_word_list + '?creator=' + creator
-
-    def url_word_search_by_first_letter(self, letter):
-        return self.url_word_list + '?first=' + letter
-
-    def url_word_search_by_definition(self, word):
-        return self.url_word_list + '?def_like=' + word
-
-    def url_word_search_without_definition(self, str_bool):
-        return self.url_word_list + '?empty=' + str_bool
-
-    def url_get_random_word(self):
-        return self.url_word_list + '?random=True'
 
 
 class AnonymousTest(TestUtils):
@@ -75,17 +36,6 @@ class AnonymousTest(TestUtils):
         self.assertContains(response, 'test word')
         response = self.c.get(self.url_word_search_by_creator('unexistant_user'))
         self.assertEqual(len(response.data.get('results')), 0)
-
-    def test_user_can_vote_on_word(self):
-        models.Word.objects.create(
-            label='test word', creator=self.user)
-        response = self.c.get(self.url_word_search('test word'))
-        results = response.data.get('results')
-        self.assertTrue(results[0]['can_vote'])
-
-    def test_user_missing_word_for_word_vote(self):
-        response = self.c.post(self.url_word_vote_list)
-        self.assertEqual(response.status_code, 400)
 
 
 class ConnectedTest(TestUtils):
