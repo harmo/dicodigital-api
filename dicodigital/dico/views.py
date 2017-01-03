@@ -141,11 +141,17 @@ class Vote(viewsets.ModelViewSet, Checks):
     queryset = models.Vote.objects.all()
     serializer_class = serializers.Vote
     permission_classes = (permissions.AllowAny,)
-    pagination_class = DefinitionCursorPagination
+
+    def perform_create(self, serializer):
+        """ Add the current connected user as voter """
+        serializer.save(
+            user=self.request.user,
+            definition=self.request.data['definition']
+        )
 
     def create(self, request, *args, **kwargs):
         """ Add a vote, with the definition """
-        message = self.check_word_id()
+        message = self.check_definition_id()
         if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
 

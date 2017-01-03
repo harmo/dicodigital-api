@@ -71,7 +71,7 @@ class Word(serializers.ModelSerializer):
 class Vote(serializers.ModelSerializer):
     definition = serializers.HyperlinkedRelatedField(
         view_name='definition-detail',
-        lookup_field='id',
+        lookup_field='pk',
         read_only=True
     )
 
@@ -80,4 +80,13 @@ class Vote(serializers.ModelSerializer):
         fields = (
             'id', 'definition', 'score', 'created_at',
             'user', 'ip_address', 'cookie'
+        )
+
+    def create(self, validated_data):
+        definition_id = validated_data.pop('definition')
+        definition = models.Definition.objects.get(id=definition_id)
+
+        return models.Vote.objects.create(
+            definition=definition,
+            **validated_data
         )
