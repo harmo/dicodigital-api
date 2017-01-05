@@ -23,15 +23,15 @@ class Checks(object):
         abstract = True
 
     def _check_id(self, keyword):
-        """ Check if <keyword> parameter is in data """
+        """Check if <keyword> parameter is in data."""
         if keyword not in self.request.data:
             return '{} parameter is missing'.format(keyword)
 
-        """ Check if <keyword> parameter is not None """
+        """Check if <keyword> parameter is not None."""
         if self.request.data[keyword] == '':
             return '{} ID cannot be None'.format(keyword)
 
-        """ Check if <keyword> parameter is > 0 """
+        """Check if <keyword> parameter is > 0."""
         if int(self.request.data[keyword]) < 1:
             return '{} ID must be an integer > 0'.format(keyword)
 
@@ -60,15 +60,15 @@ class Word(viewsets.ModelViewSet, Checks):
             .prefetch_related('creator', 'definitions__contributor')
 
     def perform_create(self, serializer):
-        """ Add the current connected user as creator """
+        """Add the current connected user as creator."""
         serializer.save(creator=self.request.user)
 
     def create(self, request, *args, **kwargs):
-        """ Create the word """
+        """Create the word."""
         return super(Word, self).create(request, *args, **kwargs)
 
     def put(self, request, *args, **kwargs):
-        """ Retrieve a word with its ID and update it """
+        """Retrieve a word with its ID and update it."""
         message = self.check_word_id()
         if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
@@ -85,7 +85,7 @@ class Word(viewsets.ModelViewSet, Checks):
         return Response(serializer.data)
 
     def list(self, request, *args, **kwargs):
-        """ Search a word with label """
+        """Search a word with label."""
         return super(Word, self).list(request, *args, **kwargs)
 
 
@@ -100,7 +100,7 @@ class Definition(viewsets.ModelViewSet, Checks):
             .prefetch_related('contributor', 'word')
 
     def perform_create(self, serializer):
-        """ Add the current connected user as contributor """
+        """Add the current connected user as contributor."""
         message = self.check_word_id()
         if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
@@ -111,7 +111,7 @@ class Definition(viewsets.ModelViewSet, Checks):
         )
 
     def create(self, request, *args, **kwargs):
-        """ Create the definition, with the word """
+        """Create the definition, with the word."""
         message = self.check_word_id()
         if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
@@ -119,7 +119,7 @@ class Definition(viewsets.ModelViewSet, Checks):
         return super(Definition, self).create(request, *args, **kwargs)
 
     def put(self, request, *args, **kwargs):
-        """ Retrieve a definition with its ID and update it """
+        """Retrieve a definition with its ID and update it."""
         message = self.check_definition_id()
         if message:
             return Response(message, status=status.HTTP_400_BAD_REQUEST)
@@ -143,14 +143,14 @@ class Vote(viewsets.ModelViewSet, Checks):
     permission_classes = (permissions.AllowAny,)
 
     def perform_create(self, serializer):
-        """ Add the current connected user as voter """
+        """Add the current connected user as voter."""
         serializer.save(
             user=self.request.user,
             definition=self.request.data['definition']
         )
 
     def create(self, request, *args, **kwargs):
-        """ Add a vote, with the definition """
+        """Add a vote, with the definition."""
         error = self.make_checks()
         if error:
             return Response(error, status=status.HTTP_400_BAD_REQUEST)
