@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from .utils import TestUtils
-from .. import models
+from ..models import Definition, Vote
 
 
 class TestAnonymousVote(TestUtils):
@@ -14,6 +14,31 @@ class TestAnonymousVote(TestUtils):
         response = self.c.post(self.url_vote_list)
 
         self.assertNotEqual(response.status_code, 403)
+
+    def test_ip_adress_is_already_registered(self):
+        word = self.create_word(label='a word')
+        definition = self.create_definition(word=word)
+        ip_address = '0.0.0.0'
+        first_vote = Vote.objects.create(
+            definition=definition,
+            ip_address=ip_address,
+            score=1
+        )
+        data = {
+            'definition': definition.pk,
+            'ip_address': ip_address,
+            'score': 1
+        }
+
+        response = self.c.post(self.url_vote_list, data, format='json')
+
+        self.assertEqual(
+            response.data,
+            'user has already voted with IP %s (%s)' % (
+                ip_address,
+                first_vote.created_at
+            )
+        )
 
 
 class TestConnectedVote(TestUtils):
@@ -39,24 +64,29 @@ class TestConnectedVote(TestUtils):
 
         self.assertEqual(response.status_code, 400)
 
-    def vote(self, definition, score=1):
-        data = {'definition': definition.data['id'], 'score': score}
+    def vote(self, definition, ip_address='0.0.0.0', score=1):
+        data = {
+            'definition': definition.data['id'],
+            'ip_address': ip_address,
+            'score': score
+        }
         self.c.post(self.url_vote_list, data, format='json')
 
     def test_add_1_to_score(self):
         definition = self.create_word_and_definition()
         self.vote(definition)
 
-        definition = models.Definition.objects.get(id=definition.data['id'])
+        definition = Definition.objects.get(id=definition.data['id'])
 
         self.assertEqual(definition.score, 1)
 
     def test_add_10_to_score(self):
         definition = self.create_word_and_definition()
         for i in range(0, 10):
-            self.vote(definition)
+            ip_address = '0.0.0.%s' % i
+            self.vote(definition=definition, ip_address=ip_address)
 
-        definition = models.Definition.objects.get(id=definition.data['id'])
+        definition = Definition.objects.get(id=definition.data['id'])
 
         self.assertEqual(definition.score, 10)
 
@@ -64,15 +94,16 @@ class TestConnectedVote(TestUtils):
         definition = self.create_word_and_definition()
         self.vote(definition, score=-1)
 
-        definition = models.Definition.objects.get(id=definition.data['id'])
+        definition = Definition.objects.get(id=definition.data['id'])
 
         self.assertEqual(definition.score, -1)
 
     def test_remove_10_to_score(self):
         definition = self.create_word_and_definition()
         for i in range(0, 10):
-            self.vote(definition, score=-1)
+            ip_address = '0.0.0.%s' % i
+            self.vote(definition, score=-1, ip_address=ip_address)
 
-        definition = models.Definition.objects.get(id=definition.data['id'])
+        definition = Definition.objects.get(id=definition.data['id'])
 
         self.assertEqual(definition.score, -10)

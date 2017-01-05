@@ -151,8 +151,28 @@ class Vote(viewsets.ModelViewSet, Checks):
 
     def create(self, request, *args, **kwargs):
         """ Add a vote, with the definition """
-        message = self.check_definition_id()
-        if message:
-            return Response(message, status=status.HTTP_400_BAD_REQUEST)
+        error = self.make_checks()
+        if error:
+            return Response(error, status=status.HTTP_400_BAD_REQUEST)
 
         return super(Vote, self).create(request, *args, **kwargs)
+
+    def make_checks(self):
+        error = self.check_ip_address()
+        if not error:
+            error = self.check_definition_id()
+
+        return error or None
+
+    def check_ip_address(self):
+        try:
+            vote = models.Vote.objects.get(
+                definition__id=self.request.data.get('definition'),
+                ip_address=self.request.data.get('ip_address')
+            )
+            return 'user has already voted with IP %s (%s)' % (
+                vote.ip_address, vote.created_at
+            )
+
+        except models.Vote.DoesNotExist:
+            pass
