@@ -4,8 +4,12 @@ from django.test import TestCase
 
 from rest_framework.test import APIClient
 
+from ..models import Word, Definition
+
 
 class TestUtils(TestCase):
+
+    word_label = 'test word'
 
     def setUp(self):
         super(TestUtils, self).setUp()
@@ -40,23 +44,41 @@ class TestUtils(TestCase):
     def url_get_random_word(self):
         return self.url_word_list + '?random=True'
 
-    def create_word(self, label=''):
-        return self.c.post(
-            self.url_word_list,
-            {'label': self.word_label if not label else label},
-            format='json'
-        )
+    def create_word(self, label=None, api_return=False):
+        if not api_return:
+            return Word.objects.create(
+                label=label if label else self.word_label,
+                creator=self.user
+            )
 
-    def create_definition(self, word=None, definition=None):
-        data = {
-            'text': 'this is the definition' if not definition else definition
-        }
+        else:
+            return self.c.post(
+                self.url_word_list,
+                {'label': self.word_label if not label else label},
+                format='json'
+            )
 
-        if word:
-            data['word'] = word.data['id']
+    def create_definition(self, word=None, definition=None, api_return=False):
+        text = definition if definition else 'this is the definition'
 
-        return self.c.post(
-            self.url_definition_list,
-            data,
-            format='json'
-        )
+        if not api_return:
+            if not word:
+                return None
+
+            return Definition.objects.create(
+                contributor=self.user,
+                word=word,
+                text=text
+            )
+
+        else:
+            data = {'text': text}
+
+            if word:
+                data['word'] = word.data['id']
+
+            return self.c.post(
+                self.url_definition_list,
+                data,
+                format='json'
+            )

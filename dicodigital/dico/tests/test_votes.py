@@ -3,7 +3,7 @@ from .utils import TestUtils
 from .. import models
 
 
-class AnonymousVotesTest(TestUtils):
+class TestAnonymousVote(TestUtils):
 
     def test_anonymous_user_can_list_votes(self):
         response = self.c.get(self.url_vote_list)
@@ -16,12 +16,15 @@ class AnonymousVotesTest(TestUtils):
         self.assertNotEqual(response.status_code, 403)
 
 
-class VotesTest(TestUtils):
+class TestConnectedVote(TestUtils):
+
+    def setUp(self):
+        super(TestConnectedVote, self).setUp()
+        self.c.force_authenticate(user=self.user)
 
     def create_word_and_definition(self):
-        self.c.force_authenticate(user=self.user)
-        word = self.create_word('a word')
-        return self.create_definition(word)
+        word = self.create_word(label='a word', api_return=True)
+        return self.create_definition(word=word, api_return=True)
 
     def test_missing_definition_parameter_during_post(self):
         response = self.c.post(self.url_vote_list)

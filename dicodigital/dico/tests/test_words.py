@@ -1,27 +1,14 @@
-# -*- coding: utf-8 -*-
 from unittest.mock import Mock
 
 from .utils import TestUtils
-from .. import models
 
 
-class AnonymousTest(TestUtils):
-
-    def setUp(self):
-        super(AnonymousTest, self).setUp()
-
-    def test_cant_post(self):
-        response = self.c.post(self.url_word_list)
-
-        self.assertEqual(response.status_code, 403)
+class TestAnonymousWordSearch(TestUtils):
 
     def test_can_list(self):
         response = self.c.get(self.url_word_list)
 
         self.assertEqual(response.status_code, 200)
-
-    def create_word(self):
-        models.Word.objects.create(label='test word', creator=self.user)
 
     def test_search_existant_word_by_label(self):
         self.create_word()
@@ -54,33 +41,29 @@ class AnonymousTest(TestUtils):
         self.assertEqual(len(response.data.get('results')), 0)
 
 
-class ConnectedTest(TestUtils):
+class TestAnonymousWordCreate(TestUtils):
 
-    word_label = 'test_word'
-    word_updated_label = 'test_word (updated)'
-
-    def setUp(self):
-        super(ConnectedTest, self).setUp()
-        self.c.force_authenticate(user=self.user)
-
-    def test_can_post_after_login(self):
+    def test_cant_post(self):
         response = self.c.post(self.url_word_list)
 
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, 403)
+
+    def test_cant_update(self):
+        response = self.c.put(self.url_word_list)
+
+        self.assertEqual(response.status_code, 403)
+
+
+class TestConnectedWordSearch(TestUtils):
+
+    def setUp(self):
+        super(TestConnectedWordSearch, self).setUp()
+        self.c.force_authenticate(user=self.user)
 
     def test_can_list_after_login(self):
         response = self.c.get(self.url_word_list)
 
         self.assertEqual(response.status_code, 200)
-
-    def test_creator_linked_during_word_creation(self):
-        data = {'label': self.word_label}
-
-        response = self.c.post(self.url_word_list, data, format='json')
-
-        self.assertEqual(response.status_code, 201)
-        self.assertEqual(response.data['label'], data['label'])
-        self.assertEqual(response.data['creator'], self.user.username)
 
     def test_search_word_by_label(self):
         data = {'label': self.word_label}
@@ -108,6 +91,36 @@ class ConnectedTest(TestUtils):
 
         self.assertEqual(len(response.data.get('results')), 0)
 
+
+class TestConnectedWordCreate(TestUtils):
+
+    def setUp(self):
+        super(TestConnectedWordCreate, self).setUp()
+        self.c.force_authenticate(user=self.user)
+
+    def test_can_post_after_login(self):
+        response = self.c.post(self.url_word_list)
+
+        self.assertEqual(response.status_code, 400)
+
+    def test_creator_linked_during_word_creation(self):
+        data = {'label': self.word_label}
+
+        response = self.c.post(self.url_word_list, data, format='json')
+
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.data['label'], data['label'])
+        self.assertEqual(response.data['creator'], self.user.username)
+
+
+class TestConnectedWordUpdate(TestUtils):
+
+    word_updated_label = 'test_word (updated)'
+
+    def setUp(self):
+        super(TestConnectedWordUpdate, self).setUp()
+        self.c.force_authenticate(user=self.user)
+
     def update_word(self, word=None):
         updated_data = {'label': self.word_updated_label}
         if word:
@@ -116,14 +129,14 @@ class ConnectedTest(TestUtils):
         return self.c.put(self.url_word_list, updated_data, format='json')
 
     def test_when_word_updated_it_returns_updated_one(self):
-        word = self.create_word()
+        word = self.create_word(api_return=True)
 
         response = self.update_word(word)
 
         self.assertEqual(response.data['label'], self.word_updated_label)
 
     def test_when_word_updated_it_dont_returns_original_one(self):
-        word = self.create_word()
+        word = self.create_word(api_return=True)
         self.update_word(word)
 
         response = self.c.get(self.url_word_search(self.word_label))
@@ -131,7 +144,7 @@ class ConnectedTest(TestUtils):
         self.assertEqual(len(response.data.get('results')), 0)
 
     def test_updated_word_is_found(self):
-        word = self.create_word()
+        word = self.create_word(api_return=True)
         self.update_word(word)
 
         response = self.c.get(self.url_word_search(self.word_updated_label))
@@ -159,138 +172,8 @@ class ConnectedTest(TestUtils):
 
         self.assertEqual(response.data, 'word parameter is missing')
 
-    def create_word_with_definitions(self, definitions=[{}]):
-        data = {
-            'label': self.word_label,
-            'definitions': definitions
-        }
 
-        return self.c.post(self.url_word_list, data, format='json')
-
-    def test_add_empty_definition_to_new_word(self):
-        response = self.create_word_with_definitions()
-
-        self.assertEqual(response.status_code, 400)
-
-    def test_creator_linked_during_add_definition_to_new_word(self):
-        response = self.create_word_with_definitions(
-            definitions=[{'text': 'this is the definition'}]
-        )
-
-        self.assertEqual(response.status_code, 201)
-        self.assertEqual(len(response.data['definitions']), 1)
-        self.assertEqual(
-            response.data['creator'],
-            response.data['definitions'][0]['contributor']
-        )
-
-    def test_add_multiples_definitions_to_new_word(self):
-        response = self.create_word_with_definitions(
-            definitions=[
-                {'text': 'this is the definition'},
-                {'text': 'this is another definition'}
-            ]
-        )
-
-        self.assertEqual(response.status_code, 201)
-        self.assertEqual(len(response.data['definitions']), 2)
-
-    def test_primary_definition_was_set_during_add_multiple_to_new_word(self):
-        response = self.create_word_with_definitions(
-            definitions=[
-                {'text': 'this is the definition'},
-                {'text': 'this is another definition'}
-            ]
-        )
-
-        self.assertTrue(response.data['definitions'][0]['is_primary'])
-
-    def test_add_definition_to_none_word(self):
-        response = self.create_definition()
-
-        self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'word parameter is missing')
-
-    def test_add_definition_to_existant_word(self):
-        word = self.create_word()
-
-        definition = self.create_definition(word)
-
-        self.assertEqual(definition.status_code, 201)
-        self.assertEqual(word.data['url'], definition.data['word'])
-
-    def test_definition_contributor_different_than_word_creator(self):
-        word = self.create_word()
-        self.c.logout()
-        self.c.force_authenticate(user=self.user2)
-
-        definition = self.create_definition(word)
-
-        self.assertNotEqual(
-            definition.data['contributor'], word.data['creator']
-        )
-
-    def test_if_definition_is_primary_only_if_first_added(self):
-        word = self.create_word()
-        self.create_definition(word)
-
-        definition = self.create_definition(
-            word, definition='this is a second definition'
-        )
-
-        self.assertFalse(definition.data['is_primary'])
-
-    def update_definition(self, definition=None):
-        return self.c.put(self.url_definition_list, definition)
-
-    def test_definition_update_with_missing_id(self):
-        word = self.create_word()
-        self.create_definition(word)
-        definition_updated = {'text': 'this is the updated definition'}
-
-        response = self.update_definition(definition_updated)
-
-        self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'definition parameter is missing')
-
-    def test_definition_update_with_none_id(self):
-        word = self.create_word()
-        self.create_definition(word)
-        definition_updated = {
-            'text': 'this is the updated definition',
-            'definition': ''
-        }
-
-        response = self.update_definition(definition_updated)
-
-        self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'definition ID cannot be None')
-
-    def test_definition_update_with_unknow_id(self):
-        word = self.create_word()
-        self.create_definition(word)
-        definition_updated = {
-            'text': 'this is the updated definition',
-            'definition': 0
-        }
-
-        response = self.update_definition(definition_updated)
-
-        self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.data, 'definition ID must be an integer > 0')
-
-    def test_definition_update_successful(self):
-        word = self.create_word()
-        definition = self.create_definition(word)
-        definition_updated = {
-            'text': 'this is the updated definition',
-            'definition': definition.data['id']
-        }
-
-        response = self.update_definition(definition_updated)
-
-        self.assertEqual(response.status_code, 200)
-        self.assertContains(response, 'this is the updated definition')
+class TestSpecialWordSearch(TestUtils):
 
     def test_search_word_by_first_letter(self):
         self.create_word(label='a word')
@@ -356,6 +239,9 @@ class ConnectedTest(TestUtils):
         search = self.c.get(self.url_word_search_without_definition('False'))
 
         self.assertEqual(len(search.data.get('results')), 1)
+
+
+class TestGetRandomWords(TestUtils):
 
     def test_get_one_random_word(self):
         for i in range(1, 200):
