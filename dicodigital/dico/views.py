@@ -165,6 +165,9 @@ class Vote(viewsets.ModelViewSet, Checks):
         return error or None
 
     def check_ip_address(self):
+        if not self.request.data.get('ip_address'):
+            return 'missing IP address'
+
         try:
             vote = models.Vote.objects.get(
                 definition__id=self.request.data.get('definition'),

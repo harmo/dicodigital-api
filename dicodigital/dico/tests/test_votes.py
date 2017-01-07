@@ -51,8 +51,15 @@ class TestConnectedVote(TestUtils):
         word = self.create_word(label='a word', api_return=True)
         return self.create_definition(word=word, api_return=True)
 
-    def test_missing_definition_parameter_during_post(self):
+    def test_missing_ip_address(self):
         response = self.c.post(self.url_vote_list)
+
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.data, 'missing IP address')
+
+    def test_missing_definition_parameter_during_post(self):
+        data = {'ip_address': '0.0.0.0'}
+        response = self.c.post(self.url_vote_list, data)
 
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.data, 'definition parameter is missing')
@@ -70,7 +77,7 @@ class TestConnectedVote(TestUtils):
             'ip_address': ip_address,
             'score': score
         }
-        self.c.post(self.url_vote_list, data, format='json')
+        return self.c.post(self.url_vote_list, data, format='json')
 
     def test_add_1_to_score(self):
         definition = self.create_word_and_definition()
