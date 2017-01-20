@@ -34,4 +34,6 @@ class Vote(models.Model):
     cookie = models.CharField(max_length=64, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     score = models.IntegerField()
-    definition = models.ForeignKey(Definition)
+    definition = models.ForeignKey(
+        Definition, related_name='votes', on_delete=models.CASCADE
+    )
