@@ -12,7 +12,7 @@ help:
 	@echo "	shell-plus		run enhanced development shell"
 	@echo "	unit-tests 			run unit tests "
 	@echo "	watch-tests		also run unit tests whenever python files changed"
-	
+
 
 RUN=docker-compose run --rm
 EXEC=docker-compose exec
@@ -51,4 +51,4 @@ watch-test:
 	$(RUN) web watch-tests
 
 logs:
-	docker-compose logs -f web 
+	docker-compose logs -f web

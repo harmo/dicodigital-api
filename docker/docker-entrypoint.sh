@@ -54,7 +54,7 @@ case $1 in
         ;;
 
     install-fixtures)
-        python manage.py loaddata fixtures/users.json 
+        python manage.py loaddata fixtures/users.json
         python manage.py loaddata fixtures/words.json
         python manage.py loaddata fixtures/definitions.json
         ;;

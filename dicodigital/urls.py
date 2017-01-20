@@ -15,10 +15,10 @@ Including another URLconf
 """
 import os
 
+import dicodigital.dico.urls
+
 from django.conf.urls import include, url
 from django.contrib import admin
-
-import dicodigital.dico.urls
 
 
 urlpatterns = [
@@ -30,7 +30,7 @@ if 'TRAVIS' not in os.environ:
     from rest_framework_swagger.views import get_swagger_view
 
     schema_view = get_swagger_view(title='Doc')
-    
+
     urlpatterns += [
         url(r'^doc/', schema_view)
     ]

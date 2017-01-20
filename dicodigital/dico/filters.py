@@ -26,6 +26,7 @@ class WordFilter(filters.FilterSet):
 
     def get_random_word(self, queryset, name, value):
         ids = [word.id for word in queryset.all()]
+        ids.sort()
         if len(ids) > 1:
             return queryset.filter(id=randint(ids[0], ids[-1]))
         return queryset

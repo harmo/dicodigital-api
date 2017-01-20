@@ -1,9 +1,11 @@
 from django.contrib import admin
+
 from . import models
 
 
 class DefinitionDetailAdmin(admin.ModelAdmin):
-	search_fields = ('word__label', 'text', )
+    search_fields = ('word__label', 'text', )
+
 
 class DefinitionAdmin(admin.StackedInline):
     model = models.Definition
