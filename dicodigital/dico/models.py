@@ -24,7 +24,7 @@ class Definition(models.Model):
 
     @property
     def score(self):
-        total = self.vote_set.all().aggregate(Sum('score'))
+        total = self.votes.all().aggregate(Sum('score'))
         return total['score__sum']
 
 

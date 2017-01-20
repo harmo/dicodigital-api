@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import json
+
 from .utils import TestUtils
 from ..models import Definition, Vote
 
@@ -114,3 +116,12 @@ class TestConnectedVote(TestUtils):
         definition = Definition.objects.get(id=definition.data['id'])
 
         self.assertEqual(definition.score, -10)
+
+    def test_definition_has_vote_in_response(self):
+        definition = self.create_word_and_definition()
+        self.vote(definition, score=1, ip_address='0.0.0.0')
+        vote = self.c.get(self.url_vote_list, {'id': 1})
+
+        response = self.c.get(self.url_definition_list, {'id': 1})
+
+        self.assertContains(response, vote.content)

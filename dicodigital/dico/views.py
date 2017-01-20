@@ -97,7 +97,7 @@ class Definition(viewsets.ModelViewSet, Checks):
 
     def get_queryset(self):
         return super(Definition, self).get_queryset()\
-            .prefetch_related('contributor', 'word')
+            .prefetch_related('contributor', 'word', 'votes')
 
     def perform_create(self, serializer):
         """Add the current connected user as contributor."""

@@ -3,6 +3,33 @@ from rest_framework import serializers
 from . import models
 
 
+class Vote(serializers.ModelSerializer):
+    definition = serializers.HyperlinkedRelatedField(
+        view_name='definition-detail',
+        lookup_field='pk',
+        read_only=True
+    )
+
+    class Meta:
+        model = models.Vote
+        fields = (
+            'id', 'definition', 'score', 'created_at',
+            'user', 'ip_address', 'cookie'
+        )
+
+    def create(self, validated_data):
+        definition_id = validated_data.pop('definition')
+        definition = models.Definition.objects.get(id=definition_id)
+
+        if validated_data.get('user').is_anonymous():
+            validated_data['user'] = None
+
+        return models.Vote.objects.create(
+            definition=definition,
+            **validated_data
+        )
+
+
 class Definition(serializers.ModelSerializer):
     contributor = serializers.SlugRelatedField(
         slug_field='username', read_only=True)
@@ -11,11 +38,16 @@ class Definition(serializers.ModelSerializer):
         lookup_field='id',
         read_only=True
     )
+    votes = Vote(
+        many=True,
+        required=False,
+        read_only=True
+    )
 
     class Meta:
         model = models.Definition
         fields = ('id', 'word', 'text', 'contributor',
-                  'is_primary', 'created_at')
+                  'is_primary', 'created_at', 'votes')
 
     def create(self, validated_data):
         word_id = validated_data.pop('word')
@@ -66,30 +98,3 @@ class Word(serializers.ModelSerializer):
             )
 
         return word
-
-
-class Vote(serializers.ModelSerializer):
-    definition = serializers.HyperlinkedRelatedField(
-        view_name='definition-detail',
-        lookup_field='pk',
-        read_only=True
-    )
-
-    class Meta:
-        model = models.Vote
-        fields = (
-            'id', 'definition', 'score', 'created_at',
-            'user', 'ip_address', 'cookie'
-        )
-
-    def create(self, validated_data):
-        definition_id = validated_data.pop('definition')
-        definition = models.Definition.objects.get(id=definition_id)
-
-        if validated_data.get('user').is_anonymous():
-            validated_data['user'] = None
-
-        return models.Vote.objects.create(
-            definition=definition,
-            **validated_data
-        )
