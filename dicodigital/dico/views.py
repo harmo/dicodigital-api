@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import get_object_or_404
-
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, pagination, permissions, status, viewsets
 from rest_framework.response import Response
 
@@ -52,7 +52,7 @@ class Word(viewsets.ModelViewSet, Checks):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     lookup_field = 'id'
     pagination_class = WordCursorPagination
-    filter_backends = (filters.DjangoFilterBackend,)
+    filter_backends = (DjangoFilterBackend,)
     filter_class = my_filters.WordFilter
 
     def get_queryset(self):
