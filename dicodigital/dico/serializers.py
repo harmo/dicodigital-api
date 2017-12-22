@@ -21,7 +21,7 @@ class Vote(serializers.ModelSerializer):
         definition_id = validated_data.pop('definition')
         definition = models.Definition.objects.get(id=definition_id)
 
-        if validated_data.get('user').is_anonymous():
+        if validated_data.get('user').is_anonymous:
             validated_data['user'] = None
 
         return models.Vote.objects.create(
