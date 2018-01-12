@@ -4,9 +4,10 @@ import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 SECRET_KEY = os.environ.get(
-        'DJANGO_SECRET_KEY',
-        '*a8-=b!z34(hv2ak7s(c_guh5*7aq!7z=da=cp&t3gd&ifrl6i'
-    )
+    'DJANGO_SECRET_KEY',
+    '*a8-=b!z34(hv2ak7s(c_guh5*7aq!7z=da=cp&t3gd&ifrl6i'
+)
+
 DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = ['*']
@@ -38,16 +39,15 @@ PROJECT_APPS = (
 if 'TRAVIS' not in os.environ:
     INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
 )
 
 ROOT_URLCONF = 'dicodigital.urls'
@@ -142,7 +142,7 @@ if DEBUG:
             'debug_toolbar',
         )
 
-        MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + (
+        MIDDLEWARE = MIDDLEWARE + (
             'debug_toolbar.middleware.DebugToolbarMiddleware',
         )
 
@@ -152,13 +152,13 @@ if DEBUG:
         }
 
         DEBUG_TOOLBAR_PANELS = (
-            'debug_toolbar.panels.timer.TimerDebugPanel',
-            'debug_toolbar.panels.request_vars.RequestVarsDebugPanel',
-            'debug_toolbar.panels.template.TemplateDebugPanel',
-            'debug_toolbar.panels.sql.SQLDebugPanel',
-            'debug_toolbar.panels.signals.SignalDebugPanel',
-            # 'debug_toolbar.panels.settings_vars.SettingsVarsDebugPanel',
-            # 'debug_toolbar.panels.headers.HeaderDebugPanel',
-            # 'debug_toolbar.panels.version.VersionDebugPanel',
+            'debug_toolbar.panels.timer.TimerPanel',
+            'debug_toolbar.panels.request.RequestPanel',
+            'debug_toolbar.panels.templates.TemplatesPanel',
+            'debug_toolbar.panels.sql.SQLPanel',
+            'debug_toolbar.panels.signals.SignalsPanel',
+            # 'debug_toolbar.panels.settings_vars.SettingsVarsPanel',
+            # 'debug_toolbar.panels.headers.HeaderPanel',
+            # 'debug_toolbar.panels.version.VersionPanel',
             # 'debug_toolbar.panels.logger.LoggingPanel',
         )

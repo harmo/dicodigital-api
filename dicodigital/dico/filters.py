@@ -5,7 +5,7 @@ from . import models
 
 class WordFilter(filters.FilterSet):
 
-    creator = filters.CharFilter(name='creator__username')
+    creator = filters.CharFilter(field_name='creator__username')
     first = filters.CharFilter(method='search_by_first_letter')
     def_like = filters.CharFilter(method='search_by_word_in_definition')
     empty = filters.BooleanFilter(method='search_without_definition')

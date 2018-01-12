@@ -5,7 +5,10 @@ from django.db.models import Sum
 
 class Word(models.Model):
     label = models.CharField(max_length=128)
-    creator = models.ForeignKey(settings.AUTH_USER_MODEL)
+    creator = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -13,10 +16,17 @@ class Word(models.Model):
 
 
 class Definition(models.Model):
-    contributor = models.ForeignKey(settings.AUTH_USER_MODEL)
+    contributor = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE
+    )
     text = models.TextField(max_length=500)
     created_at = models.DateTimeField(auto_now_add=True)
-    word = models.ForeignKey(Word, related_name='definitions')
+    word = models.ForeignKey(
+        Word,
+        related_name='definitions',
+        on_delete=models.CASCADE
+    )
     is_primary = models.BooleanField(default=False)
 
     def __str__(self):
@@ -29,11 +39,17 @@ class Definition(models.Model):
 
 
 class Vote(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True, null=True)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        blank=True, null=True,
+        on_delete=models.CASCADE,
+    )
     ip_address = models.GenericIPAddressField()
     cookie = models.CharField(max_length=64, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     score = models.IntegerField()
     definition = models.ForeignKey(
-        Definition, related_name='votes', on_delete=models.CASCADE
+        Definition,
+        related_name='votes',
+        on_delete=models.CASCADE,
     )

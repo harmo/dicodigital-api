@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('text', models.TextField(max_length=500)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('is_primary', models.BooleanField(default=False)),
-                ('contributor', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('contributor', models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)),
             ],
         ),
         migrations.CreateModel(
@@ -28,12 +28,12 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('label', models.CharField(max_length=128)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('creator', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('creator', models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)),
             ],
         ),
         migrations.AddField(
             model_name='definition',
             name='word',
-            field=models.ForeignKey(to='dico.Word', related_name='definitions'),
+            field=models.ForeignKey(to='dico.Word', related_name='definitions', on_delete=models.CASCADE),
         ),
     ]
